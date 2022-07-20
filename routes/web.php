@@ -18,9 +18,12 @@ use App\Http\Controllers\Admin\ProductController;
 */
 
 Route::group(['middleware' => 'web'], function () {
-    Route::get('/', function () {
+    Route::get('/', function () { 
         return view('front.home');
-    });
+    })->name('home');
+    Route::get('/about', function () {
+        return view('front.about');
+    })->name('about_page');
 
     /*******************Admin Login ************************/
     Route::get('admin/login', [LoginController::class, 'index'])->name('admin.login');
