@@ -101,6 +101,7 @@
                                         </div>
                                     </div>
                                 </div>
+                                <div class="large-latter">EXPLORE</div>
                             </div>
                         </div>
                         <div id="step-2" class="video ptb-50">
@@ -119,6 +120,7 @@
                                     <img src="/front/images/cloths.jpg">
                                     <a href="https://www.youtube.com/watch?v=D0UnqGm_miA"></a>
                                 </div>
+                                <div class="large-latter">plan</div>
                             </div>
                         </div>
                         <div id="step-3" class="source ptb-50 remove-top-padding">
@@ -131,8 +133,10 @@
                                 </div>
                                 <div class="source-image">
                                     <img src="/front/images/mix-cloths.jpg">
+                                    <div class="large-latter">Source</div>
                                 </div>
                             </div>
+
                         </div>
                         <div id="step-4" class="samples ptb-50">
                             <div class="samples-wrap">
@@ -145,6 +149,7 @@
                                     <img src="/front/images/sample-2.jpg">
                                 </div>
                             </div>
+                            <div class="large-latter">samples</div>
                         </div>
                         <div id="step-5" class="order ptb-50">
                             <h2 class="default-title text-center">Fabric shopping can not become <br> more accessible and reliable.</h2>
