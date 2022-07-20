@@ -22,22 +22,22 @@
                     <ul class="social-media-list">
                         <li>
                             <a href="">
-                                <img src="./images/youtube.png">
+                                <img src="/front/images/youtube.png">
                             </a>
                         </li>
                         <li>
                             <a href="">
-                                <img src="./images/insta.png">
+                                <img src="/front/images/insta.png">
                             </a>
                         </li>
                         <li>
                             <a href="">
-                                <img src="./images/tweet.png">
+                                <img src="/front/images/tweet.png">
                             </a>
                         </li>
                         <li>
                             <a href="">
-                                <img src="./images/facebook.png">
+                                <img src="/front/images/facebook.png">
                             </a>
                         </li>
                     </ul>
