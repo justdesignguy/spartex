@@ -12,7 +12,7 @@
             </div>
         </div>          
     </section>
-    <section class="about-section ptb-100" style="background-image: url('/front/images/about-bg.jpg');">
+    <section class="about-section ptb-130" style="background-image: url('/front/images/about-bg.jpg');">
         <div class="wrapper">
             <div class="about-wrap">
                 <div class="about-content">
@@ -44,7 +44,7 @@
     </section>
     <section class="process">
         <div class="wrapper">
-            <div class="process-title-wrap text-center pt-100">
+            <div class="process-title-wrap text-center ptb-130">
                     <h2 class="default-title">Our Process</h2>
                     <p>Spartex is the leading supplier of anything and everything fabric - from sustainable material to fashion fabric - for brands, fashion and sewing enthusiasts who love being individual. </p>
             </div>
@@ -73,38 +73,42 @@
                 </ul>
             </div>
             <div class="process-steps">
-                <div class="wrapper">
-                    <div class="process-step">
-                        <div id="step-1" class="explore ptb-50">
-                            <div class="explore-img">
-                                <img src="/front/images/explore.jpg">
-                            </div>
-                            <div class="explore-content">
-                                <h2 class="default-title">Explore our wide range of woven and knit fabrics. </h2>
-                                <div class="explore-lists">
-                                    <div class="explore-box">
-                                        <div class="explore-box-wrap">
-                                            <h3 class="explore-count">200,000+</h3>
-                                            <p>Wholesale Fabric Online</p>
-                                        </div>
-                                    </div>
-                                    <div class="explore-box">
-                                        <div class="explore-box-wrap">
-                                            <h3 class="explore-count">750+</h3>
-                                            <p>Suppliers from korea</p>
-                                        </div>
-                                    </div>
-                                    <div class="explore-box">
-                                        <div class="explore-box-wrap">
-                                            <h3 class="explore-count">200+</h3>
-                                            <p>Eco - Forward Option</p>
-                                        </div>
-                                    </div>
+                <div class="process-step">
+                    <div id="step-1" class="explore ptb-130">
+                        <div class="wrapper">
+                            <div class="explore-wrap">
+                                <div class="explore-img">
+                                    <img src="/front/images/explore.jpg">
                                 </div>
-                                <div class="large-latter">EXPLORE</div>
+                                <div class="explore-content">
+                                    <h2 class="default-title">Explore our wide range of woven and knit fabrics. </h2>
+                                    <div class="explore-lists">
+                                        <div class="explore-box">
+                                            <div class="explore-box-wrap">
+                                                <h3 class="explore-count">200,000+</h3>
+                                                <p>Wholesale Fabric Online</p>
+                                            </div>
+                                        </div>
+                                        <div class="explore-box">
+                                            <div class="explore-box-wrap">
+                                                <h3 class="explore-count">750+</h3>
+                                                <p>Suppliers from korea</p>
+                                            </div>
+                                        </div>
+                                        <div class="explore-box">
+                                            <div class="explore-box-wrap">
+                                                <h3 class="explore-count">200+</h3>
+                                                <p>Eco - Forward Option</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="large-latter">EXPLORE</div>
+                                </div>
                             </div>
                         </div>
-                        <div id="step-2" class="video ptb-50">
+                    </div>
+                    <div id="step-2" class="video ptb-130">
+                        <div class="wrapper">
                             <div class="video-wrap">
                                 <div class="video-content">
                                     <p>Plan your next collection, find fabrics that suit it the best and stay organised in one place.</p>
@@ -123,7 +127,9 @@
                                 <div class="large-latter">plan</div>
                             </div>
                         </div>
-                        <div id="step-3" class="source ptb-50 remove-top-padding">
+                    </div>
+                    <div id="step-3" class="source ptb-130 remove-top-padding">
+                        <div class="wrapper">
                             <div class="source-wrap">
                                 <div class="source-content">
                                     <p><strong>Now source fabric for your collection at a one-stop platform and access, manage and experience the fabric in a new way!</strong></p>
@@ -136,9 +142,10 @@
                                     <div class="large-latter">Source</div>
                                 </div>
                             </div>
-
                         </div>
-                        <div id="step-4" class="samples ptb-50">
+                    </div>
+                    <div id="step-4" class="samples ptb-130">
+                        <div class="wrapper">
                             <div class="samples-wrap">
                                 <div class="samples-left">
                                     <img src="/front/images/sample-1.jpg">
@@ -151,7 +158,9 @@
                             </div>
                             <div class="large-latter">samples</div>
                         </div>
-                        <div id="step-5" class="order ptb-50">
+                    </div>
+                    <div id="step-5" class="order ptb-130">
+                        <div class="wrapper">
                             <h2 class="default-title text-center">Fabric shopping can not become <br> more accessible and reliable.</h2>
                             <div class="order-wrap">
                                 <div class="order-box">
@@ -189,7 +198,9 @@
                                 </div>
                             </div>
                         </div>
-                        <div id="step-6" class="ship ptb-50">
+                    </div>
+                    <div id="step-6" class="ship ptb-130">
+                        <div class="wrapper">
                             <h2 class="default-title text-center">Always doing more than required,<br> So you don’t have to.</h2>
                             <div class="ship-wrap">
                                 <div class="ship-step">
@@ -223,7 +234,7 @@
             </div>
         </div>
     </section>
-    <section class="focus-formula ptb-100">
+    <section class="focus-formula ptb-130">
         <div class="wrapper">
             <div class="focus-formula-wrap">
                 <div class="formula">
