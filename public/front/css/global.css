@@ -38,7 +38,7 @@ a{ color: #000000; transition: 0.5s; -webkit-transition: 0.5s; -moz-transition: 
 .remove-bottom-padding{padding-bottom: 0 !important;}
 .ptb-130{padding: 130px 0;}
 /* site-header */
-.site-header {position: absolute;z-index: 2; top: 0; left: 0; right: 0; width: 100%; padding: 40px 0;}
+.site-header {position: absolute;z-index: 9; top: 0; left: 0; right: 0; width: 100%; padding: 40px 0;}
 .site-logo {max-width: 230px; width: 100%; }
 .site-header-wrap {display: flex; justify-content: space-between; flex-wrap: wrap; align-items: center; }
 .site-menu .menu .menu-list a {font-size: 18px; font-family: 'Kantumruy Pro', sans-serif; color: rgb(255, 255, 255); line-height: 1.2; }
@@ -46,7 +46,40 @@ a{ color: #000000; transition: 0.5s; -webkit-transition: 0.5s; -moz-transition: 
 .site-menu .menu .menu-list:before{display: none; }
 .site-menu .menu .menu-list{padding: 0 25px;margin: 0;}
 .site-menu .menu{display: flex;flex-wrap: wrap; list-style-type: none; margin: 0;padding: 0;}
-
+.site-menu .toggle{display: none;}
+.toggle-button {
+    display: block; position: relative; z-index: 9;cursor: pointer;
+}
+.toggle {
+    display: flex; flex-wrap: wrap; align-items: center; justify-content: flex-start;
+}
+.navigation-header {
+    padding-right: 10%;
+}
+.toggle p {
+    margin: 0 10px 0 0; color: #ffffff; text-transform: uppercase; letter-spacing: 8px; font-size: 20px;
+}
+.toggle-button span {
+    width: 40px; height: 2px; border-radius: 50px; display: block; margin-bottom: 10px; background: #ffffff; position: relative; transition: 0.5s all;
+}
+.toggle-button span:last-child {
+    margin-bottom: 0;
+}
+.menu-bar {
+    order: 3; margin-left: 20px; display: inline-block; vertical-align: middle;
+}
+.toggle-button.active span {
+    background: #ffffff;
+}
+.toggle-button.active span:nth-child(1) {
+    transform: rotate(45deg); top: 12px;
+}
+.toggle-button.active span:nth-child(2) {
+    visibility: hidden; opacity: 0;
+}
+.toggle-button.active span:nth-child(3) {
+    transform: rotate(-45deg); top: -12px;
+}
 
 /* banner-section */
 .banner-section {padding-top: 50%; background: #000000; position: relative; overflow: hidden;}

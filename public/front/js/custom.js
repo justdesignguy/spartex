@@ -19,4 +19,14 @@ jQuery(document).ready(function () {
     jQuery('.process-menu a').click(function () {
        jQuery(this).addClass('active');
     });
+
+    jQuery('.toggle').click(function() {
+        jQuery('.toggle-button').toggleClass('active');
+    });
+    jQuery('.toggle').click(function(e){
+        jQuery(this).toggleClass('active');
+        jQuery('.site-menu .menu').toggleClass('active');
+        jQuery('html,body').toggleClass('scroll-off');
+        e.preventDefault();
+    });
 });

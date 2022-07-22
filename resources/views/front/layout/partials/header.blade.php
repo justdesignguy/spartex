@@ -21,6 +21,13 @@
                         <a href="#">Blog</a>
                     </li>
                 </ul>
+                <a class="toggle" href="#toggle-btn">
+                    <div class="toggle-button">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </a>
             </div>
             <div class="site-btn">
                 <a class="common-btn" href="#">Contact Us</a>
