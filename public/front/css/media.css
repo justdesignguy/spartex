@@ -35,6 +35,8 @@
     .large-latter{font-size: 70px;}
     .video-content{padding: 0 50px 0 0;}
     .samples-wrap .default-title, .video-content .default-title {font-size: 28px; }
+    .process-menu li {padding: 20px 0;}
+    .process-menu li a{font-size: 16px;}
     
 }
 @media only screen and (max-width: 1200px) {
@@ -154,6 +156,7 @@
     .site-menu .menu .menu-list{padding: 0;}
     .site-menu .menu .menu-list a{width: 100%;padding: 15px;display: inline-block; border-bottom: 2px solid #fff;}
 
+    
 
 }
 @media only screen and (max-width: 640px) {
@@ -177,7 +180,7 @@
     .process-menu li {padding: 15px 10px; }
 }
 @media only screen and (max-width: 480px) {
-    .banner-section{padding-top: 120%;}
+    .banner-section{padding-top: 140%;}
     .ptb-130 {padding:40px 0;}
     .section-title {font-size: 32px;}
     .process-menu li {padding: 10px 6px; }
