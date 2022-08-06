@@ -1,4 +1,5 @@
 jQuery(document).ready(function () {
+    AOS.init();
     jQuery('.process-menu a').click(function (e) {
         e.preventDefault();
         var href = jQuery(this).attr('href');
