@@ -20,8 +20,8 @@
 <div class="d-md-flex flex-row-reverse">
     <div class="signin-right">
         <div class="signin-box">
-            <h2 class="signin-title-primary">Get Started!</h2>
-            <h3 class="signin-title-secondary">It's free to signup and only takes a minute</h3>
+            <h3 class="signin-title-primary">Get Started!</h3>
+            <h5 class="signin-title-secondary">It's free to signup and only takes a minute</h5>
             @include('admin.layout.partials.flash_messages')
             <form method="post" class="text-left form-validate login-form"
                   action="{{ route('user.store') }}">
