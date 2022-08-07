@@ -3,8 +3,7 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
-use App\Http\Requests\ValidateCategory;
-use App\Models\Blog;
+use App\Http\Requests\ValidateProduct;
 use App\Models\Category;
 use App\Models\Product;
 
@@ -22,7 +21,7 @@ class ProductController extends Controller
         return view('admin.products.create', compact('categories'));
     }
 
-    public function store(ValidateCategory $request): \Illuminate\Http\RedirectResponse
+    public function store(ValidateProduct $request): \Illuminate\Http\RedirectResponse
     {
         $requestData = $request->except('_token');
         if (isset($requestData['image'])){
@@ -39,7 +38,7 @@ class ProductController extends Controller
         return view('admin.products.edit', compact('product', 'categories'));
     }
 
-    public function update(ValidateCategory $request, $id): \Illuminate\Http\RedirectResponse
+    public function update(ValidateProduct $request, $id): \Illuminate\Http\RedirectResponse
     {
         $requestData = $request->except('_token');
         $product = Product::findOrFail($id);

@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\UserAuthController;
 use App\Http\Controllers\Admin\LoginController;
 use App\Http\Controllers\Admin\UserController;
 use App\Http\Controllers\Admin\CategoryController;
@@ -18,7 +19,7 @@ use App\Http\Controllers\Admin\ProductController;
 */
 
 Route::group(['middleware' => 'web'], function () {
-    Route::get('/', function () { 
+    Route::get('/', function () {
         return view('front.home');
     })->name('home');
     Route::get('/about', function () {
@@ -28,6 +29,13 @@ Route::group(['middleware' => 'web'], function () {
     /*******************Admin Login ************************/
     Route::get('admin/login', [LoginController::class, 'index'])->name('admin.login');
     Route::post('admin/authenticate', [LoginController::class, 'authenticate'])->name('admin.authenticate');
+
+    /*******************Admin Login ************************/
+    Route::get('login', [UserAuthController::class, 'index'])->name('user.login');
+    Route::post('authenticate', [UserAuthController::class, 'authenticate'])->name('user.authenticate');
+    Route::get('register', [UserAuthController::class, 'register'])->name('user.register');
+    Route::post('user/store', [UserAuthController::class, 'store'])->name('user.store');
+    Route::get('logout', [UserAuthController::class, 'logout'])->name('user.logout');
 
     Route::group(['prefix' => 'admin', 'as' => 'admin.'], function () {
         Route::get('logout', [LoginController::class, 'logout'])->name('logout');
