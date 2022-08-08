@@ -30,6 +30,7 @@
                        data-validation="email">
             </div>
             <button type="submit" class="btn btn-primary btn-block btn-signin">Send Mail</button>
+            <p class="mg-b-0">Back to <a href="{{ route('user.login') }}">Login</a></p>
         </form>
     </div>
 </div>
