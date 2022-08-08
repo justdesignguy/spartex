@@ -30,10 +30,11 @@
                     <input type="email" name="email" class="form-control" placeholder="Enter your email"
                            data-validation="email">
                 </div>
-                <div class="form-group mg-b-50">
+                <div class="form-group mg-b-30">
                     <input type="password" name="password" class="form-control" placeholder="Enter your password"
                            data-validation="required">
                 </div>
+                <p class="mg-b-10 text-right"><a href="{{ route('user.forgot_password') }}">Forgot Password?</a></p>
                 <button type="submit" class="btn btn-primary btn-block btn-signin">Sign In</button>
                 <p class="mg-b-0">Don't have an account? <a href="{{ route('user.register') }}">Sign Up</a></p>
             </form>

@@ -37,6 +37,11 @@ Route::group(['middleware' => 'web'], function () {
     Route::post('user/store', [UserAuthController::class, 'store'])->name('user.store');
     Route::get('logout', [UserAuthController::class, 'logout'])->name('user.logout');
 
+    Route::get('user/forgot-password', [UserAuthController::class, 'forgotUserPassword'])->name('user.forgot_password');
+    Route::post('user/forgot-password/send-mail', [UserAuthController::class, 'sendForgotPasswordMail'])->name('user.forgot_password.send_mail');
+    Route::get('user/reset-password/{token}', [UserAuthController::class, 'resetUserPassword'])->name('user.reset_password');
+    Route::post('user/reset-password', [UserAuthController::class, 'resetPasswordStore'])->name('user.reset_password.store');
+
     Route::group(['prefix' => 'admin', 'as' => 'admin.'], function () {
         Route::get('logout', [LoginController::class, 'logout'])->name('logout');
 
