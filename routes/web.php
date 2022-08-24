@@ -25,6 +25,12 @@ Route::group(['middleware' => 'web'], function () {
     Route::get('/about', function () {
         return view('front.about');
     })->name('about_page');
+    Route::get('/signup', function () {
+        return view('front.signup');
+    })->name('signup_page');
+    Route::get('/signupform', function () {
+        return view('front.signupform');
+    })->name('signupform_page');
 
     /*******************Admin Login ************************/
     Route::get('admin/login', [LoginController::class, 'index'])->name('admin.login');

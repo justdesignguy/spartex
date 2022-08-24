@@ -14,9 +14,9 @@ p:last-child{ margin: 0 !important; }
 h1, h2, h3, h4, h5, h6{font-size: 48px; margin-top: 0;letter-spacing: 0px; color: #0e2f56; font-weight: 700; font-family: 'Kantumruy Pro', sans-serif;
 margin: 0 0 30px;}
 a:hover{color: #fdc108;}
-ul li {position: relative; padding-left: 30px; line-height: 1.45; list-style-type: none; margin: 0 0 20px; }
+ul li {position: relative; padding-left:40px; line-height: 1.45; list-style-type: none; margin: 0 0 6px; }
 ul li:last-child{margin-bottom: 0 !important;}
-ul li:before {border: 2px solid #fdc108; content: ""; position: absolute; width: 10px; height: 10px; border-radius: 50%; top: 6px; left: 0; }
+ul li:before {content: ""; position: absolute; top: 8px; left: 0; background-image: url(/front/images/b-arrow.png); background-repeat: no-repeat; width: 28px; height: 12px; } 
 ul {padding: 0; margin: 0; }
 .entry-content h1, .entry-content h2, .entry-content h3, .entry-content h4, .entry-content h5, .entry-content h6{display: inline-block;}
 blockquote{margin: 0; background-color: #0e192114; padding: 30px; border-left: 8px solid #0e1921;margin-bottom: 30px;}
@@ -260,3 +260,232 @@ ul.logo-list li img {max-height: 80px; margin: auto; }
 .copyright p {font-size: 15px; font-family: "Kantumruy Pro"; color: #959595; line-height: 1; }
 .copyright {background: #222222; text-align: center; }
 .copyright-wrap {padding: 30px 0; border-top: 2px solid #959595; }
+
+
+/* Signup */
+.signup-form {
+    padding: 223px 0 123px 0;
+    background: url(/front/images/gray-bg.jpg) no-repeat center center;
+    background-size: cover;
+}
+.common-title {
+    font-size: 48px;
+    width:100%;
+    font-family: "Kantumruy Pro";
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.2;
+    text-align: center;
+}
+.signup-main-title{
+    margin: 0 0 60px;
+}
+
+.signup-boxes {
+    max-width: 1170px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.signup-box {
+    max-width: 50%;
+    width: 100%;
+    border:4px solid
+    rgb(215, 215, 215);
+    background-color: rgb(255, 255, 255);
+    border-right-width: 2px;
+    position: relative;
+}
+
+.recommended-box {
+    border-left-width: 2px;
+    border-right-width: 4px;
+}
+
+.signup-box-wrap {
+    height: 100%;
+    padding: 70px 50px 127px;
+}
+
+.signup-title {
+    font-size: 36px;
+    font-family: "Kantumruy Pro";
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+    font-weight: 500;
+    line-height: 1.2;
+    margin: 0 0 32px 0;
+    padding-bottom: 32px;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+h3.signup-title span {
+    color: #00254c;
+    font-weight: 700;
+}
+
+.signup-subtitle {
+    font-size: 20px;
+    font-family: "Kantumruy Pro";
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+    line-height: 1.2;
+    letter-spacing: 0.26em;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+
+.signup-box-wrap p {
+    font-size: 16px;
+    font-family: "Kantumruy Pro";
+    color: rgb(0, 0, 0);
+    line-height: 1.625;
+    max-width: 380px;
+    width: 100%;
+}
+
+p.recommended {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+    display: inline-block;
+    background-color: rgb(0, 37, 76);
+    font-size: 16px;
+    font-family: "Kantumruy Pro";
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    padding: 10px 20px;
+    line-height: 1.2;
+    width: auto;
+}
+
+.signup-btn {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: auto;
+    display: inline-block;
+    padding: 26px 80px 26px 0px;
+    line-height: 1;
+}
+
+.signup-btn:before {
+    width: 70px;
+    height: 70px;
+    content: "";
+    position: absolute;
+    right: 0;
+    background-color: #00254c;
+    top: 0;
+    background-image: url(/front/images/arrow.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+
+/* Form css for signup */
+/* Hide all steps by default: */
+.tab {
+  display: none;
+}
+
+.signup-form-page {
+    padding: 100px 0;
+}
+
+.signup-form-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.signup-instruction {
+    max-width: 40%;
+    width: 100%;
+    background-color: #f1f5f8;
+    padding: 40px;
+}
+
+.intro-title {
+    font-size: 24px;
+    font-family: "Kantumruy Pro";
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    line-height: 1.2;
+    text-align: left;
+}
+
+.signup-instruction ol {
+    padding-left: 0;
+    list-style-type: none;
+    margin: 0;
+}
+
+.signup-instruction ol li {
+    font-size: 15px;
+    font-family: "Kantumruy Pro";
+    color: rgb(0, 0, 0);
+    line-height: 1.467;
+    text-align: left;
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+    position: relative;
+    counter-increment: my-awesome-counter;
+    padding: 22px 0 22px 20px;
+}
+
+.signup-instruction ol li:before {
+    content:  counter(my-awesome-counter) ".";
+    font-size: 15px;
+    font-family: "Kantumruy Pro";
+    color: rgb(0, 0, 0);
+    line-height: 1.467;
+    position: absolute;
+    left: 0;
+}
+.signup-instruction ol li:first-child {padding-top:0;}
+.signup-instruction ol li:last-child {padding-bottom:0;border-bottom:0;}
+.step.active {
+}
+.step.finish:before {
+    background-color: #002345;
+}
+.master-form {
+    max-width: 60%;
+    width: 100%;
+    padding-left: 40px;
+}
+
+.steps-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.step {
+    max-width: 32%;
+    width: 100%;
+    margin: 0;
+    padding-bottom: 10px;
+    font-size: 16px;
+    font-family: "Kantumruy Pro";
+    color: rgb(0, 35, 69);
+    line-height: 1.375;
+    position: relative;
+}
+
+.step:before {
+    background-color: #e5e5e5;
+    content:
+    "";
+    width: 100%;
+    height: 5px;
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+}

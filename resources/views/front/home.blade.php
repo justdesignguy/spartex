@@ -102,8 +102,8 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="large-latter">EXPLORE</div>
                                 </div>
+                                <div class="large-latter">EXPLORE</div>
                             </div>
                         </div>
                     </div>
