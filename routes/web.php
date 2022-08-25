@@ -31,6 +31,9 @@ Route::group(['middleware' => 'web'], function () {
     Route::get('/signupform', function () {
         return view('front.signupform');
     })->name('signupform_page');
+    Route::get('/explore', function () {
+        return view('front.explore');
+    })->name('explore_page');
 
     /*******************Admin Login ************************/
     Route::get('admin/login', [LoginController::class, 'index'])->name('admin.login');

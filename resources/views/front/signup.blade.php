@@ -16,7 +16,7 @@
                                 <li>Free swatch samples</li>
                                 <li>Dedicated fabric sourcing manager</li>
                             </ul>
-                            <a class="signup-btn" href="#">Get Access</a>
+                            <a class="signup-btn" href="/signupform/">Get Access</a>
                         </div>
                     </div>
                     <div class="signup-box recommended-box">
@@ -31,7 +31,7 @@
                                 <li>Free swatch samples</li>
                                 <li>Dedicated fabric sourcing manager</li>
                             </ul>
-                            <a class="signup-btn" href="#">Get Access</a>
+                            <a class="signup-btn" href="/signupform/">Get Access</a>
                         </div>
                     </div>
                 </div>

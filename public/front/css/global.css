@@ -1,5 +1,5 @@
 /*======================================================================
-	Custom CSS
+    Custom CSS
 ======================================================================*/
 html{ -webkit-text-size-adjust: 100%;}
 *{ box-sizing: border-box; outline: none !important; -webkit-box-sizing: border-box;-moz-box-sizing: border-box;}
@@ -455,7 +455,7 @@ p.recommended {
 .step.finish:before {
     background-color: #002345;
 }
-.master-form {
+.signup-main-form {
     max-width: 60%;
     width: 100%;
     padding-left: 40px;
@@ -465,6 +465,7 @@ p.recommended {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin-bottom: 30px;
 }
 
 .step {
@@ -488,4 +489,158 @@ p.recommended {
     display: inline-block;
     position: absolute;
     bottom: 0;
+}
+.form-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    margin: 0 -18px;
+}
+
+.signup-field {
+    max-width: 50%;
+    width: 100%;
+    padding: 0 18px;
+    margin-bottom: 30px;
+}
+.signup-field textarea::-ms-input-placeholder,
+.signup-field select::-ms-input-placeholder,
+.signup-field input::-ms-input-placeholder,
+.signup-field textarea::-webkit-input-placeholder,
+.signup-field select::-webkit-input-placeholder,
+.signup-field input::-webkit-input-placeholder,
+.signup-field textarea::placeholder,
+.signup-field select::placeholder,
+.signup-field input::placeholder {
+    color: rgb(153, 153, 153);
+}
+.signup-field select{cursor: pointer;}
+.signup-field textarea, .signup-field select, .signup-field input {
+    font-size: 16px;
+    font-family: "Kantumruy Pro";
+    color: rgb(0, 0, 0);
+    line-height: 1.375;
+    width:100%;
+    border: 0;
+    border-bottom: 1px solid rgba(0,0,0,0.3);
+    padding: 14px 0;
+}
+
+.full-col {
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+.checkbox input {
+    vertical-align: middle;
+    background-color: #201c76;
+    width: 18px;
+    border-radius: 0;
+    height: 18px;
+    -webkit-appearance: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+.checkbox label {
+    max-width: calc(100% - 36px);
+    font-size: 16px;
+    font-family: "Kantumruy Pro";
+    color: rgb(153, 153, 153);
+    line-height: 1.375;
+    margin-left: auto;
+    cursor: pointer;
+}
+
+.checkbox input:checked {
+    background-image: url(/front/images/right.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.steps-button {
+    text-align: right;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+.steps-button button {
+    font-size: 18px;
+    font-family: "Kantumruy Pro";
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    line-height: 1;
+    padding: 11px 47px;
+    border: 2px solid #00254c;
+    background-color: #00254c;
+    border-radius: 0;
+    margin:0 7px;
+    cursor: pointer;
+}
+.steps-button button:hover{
+    background-color: #fff;
+    color: #00254c;
+}
+.signup-field textarea{
+    resize: none;height: 80px;
+}
+input:autofill {
+    background-color: transparent !important;
+}
+
+input:-webkit-autofill {
+    background-color: transparent !important;
+}
+
+/*  */
+.inner-banner {
+    padding-top: 28.2%;
+    position: relative;
+    background-color: #000;
+}
+
+img.inner-banner-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top center;
+}
+
+.inner-banner-content {
+    position: absolute;
+    bottom: 60px;
+    width: 100%;
+}
+.banner-title{
+    font-size: 50px;
+    font-family: "Kantumruy Pro";
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 1.2;
+    margin: 0 0 10px;
+}
+.inner-banner-content-wrap p{
+    font-size: 18px;
+    font-family: "Kantumruy Pro";
+    color: rgb(255, 255, 255);
+    line-height: 1.2;  
+}
+.inner-banner-content-wrap {
+    position: relative;
+    padding-bottom: 30px;
+}
+.inner-banner-content-wrap:before{
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    background-color: rgb(253, 193, 8);
+    width: 109px;
+    height: 2px;
+
 }
