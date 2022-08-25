@@ -21,6 +21,22 @@ class User extends Authenticatable
         'name',
         'email',
         'password',
+        'mobile_number',
+        'country',
+        'company_name',
+        'job_title',
+        'iec_code',
+        'bin_code',
+        'type_of_business',
+        'type_of_business',
+        'how_long_in_business',
+        'budget_for_fabric_annually',
+        'brand_price_point',
+        'which_month_start_sourcing_for_ss',
+        'which_month_start_sourcing_for_fw',
+        'business_description',
+        'company_website',
+        'company_instagram_url',
     ];
 
     /**

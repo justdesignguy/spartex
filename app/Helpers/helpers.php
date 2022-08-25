@@ -21,3 +21,21 @@ function showProductImage($image_name): string|\Illuminate\Contracts\Routing\Url
 {
     return url(\App\Models\Product::IMG_URL . $image_name);
 }
+
+function monthArray(): array
+{
+    return array(
+        'January',
+        'February',
+        'March',
+        'April',
+        'May',
+        'June',
+        'July ',
+        'August',
+        'September',
+        'October',
+        'November',
+        'December',
+    );
+}

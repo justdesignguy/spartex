@@ -1,19 +1,25 @@
 @extends('front.layout.master')
 @section('content')
-     <section class="signup-form-page">
-         <div class="wrapper">
+    <section class="signup-form-page">
+        <div class="wrapper">
             <h2 class="common-title">Sign up</h2>
             <div class="signup-form-wrap">
                 <div class="signup-instruction">
                     <h3 class="intro-title">Before you begin, please note :</h3>
                     <ol>
-                        <li> You must have an established business entity to activate your account. </li>
-                        <li>SwatchOn is an international fabric wholesale service for fashion businesses. Fabric suppliers on SwatchOn expect to do business with fashion companies only, and not individuals.</li>
-                        <li>Customs departments require recipient's tax identification on the delivery of the fabric orders. </li>
+                        <li> You must have an established business entity to activate your account.</li>
+                        <li>SwatchOn is an international fabric wholesale service for fashion businesses. Fabric
+                            suppliers on SwatchOn expect to do business with fashion companies only, and not
+                            individuals.
+                        </li>
+                        <li>Customs departments require recipient's tax identification on the delivery of the fabric
+                            orders.
+                        </li>
                     </ol>
                 </div>
                 <div class="signup-main-form">
-                    <form id="regForm" action="/action_page.php">
+                    <form id="regForm" method="POST" action="{{ route('user.store') }}">
+                        @csrf
                         <div class="steps-wrap">
                             <p class="step">Basic Information</p>
                             <p class="step">General Information</p>
@@ -29,85 +35,106 @@
                                         <option value="canada">canada</option>
                                     </select>
                                 </div>
-                                <div class="signup-field"><input placeholder="Full name*" oninput="this.className = ''" name="Full name"></div>
-                                <div class="signup-field"><input placeholder="Job title*" oninput="this.className = ''" name="Job title"></div>
-                                <div class="signup-field"><input placeholder="Email*" oninput="this.className = ''" name="Email"></div>
-                                <div class="signup-field"><input placeholder="Company name*" oninput="this.className = ''" name="Company name"></div>
-                                <div class="signup-field"><input placeholder="Password*" type="password" oninput="this.className = ''" name="Password"></div>
-                                <div class="signup-field full-col checkbox"><input type="checkbox" id="vehicle1" oninput="this.className = ''" name="vehicle1" value="Bike"> <label for="vehicle1"> Get emails from SwatchOn about product updates, industry news, and events. <a href="#">Privacy Policy</a></label></div>
+                                <div class="signup-field"><input placeholder="Full name*" oninput="this.className = ''"
+                                                                 name="name"></div>
+                                <div class="signup-field"><input placeholder="Job title*" oninput="this.className = ''"
+                                                                 name="job_title"></div>
+                                <div class="signup-field"><input placeholder="Email*" oninput="this.className = ''"
+                                                                 name="email"></div>
+                                <div class="signup-field"><input placeholder="Company name*"
+                                                                 oninput="this.className = ''" name="company_name">
+                                </div>
+                                <div class="signup-field"><input placeholder="Password*" type="password"
+                                                                 oninput="this.className = ''" name="password"></div>
+                                <div class="signup-field full-col checkbox"><input type="checkbox" id="vehicle1"
+                                                                                   oninput="this.className = ''"
+                                                                                   name="vehicle1" value="Bike"> <label
+                                        for="vehicle1"> Get emails from SwatchOn about product updates, industry news,
+                                        and events. <a href="#">Privacy Policy</a></label></div>
+                            </div>
+                        </div>
+                        <div class="tab">
+                            <div class="form-wrap">
+                                <div class="signup-field"><input placeholder="Mobile Contact*"
+                                                                 oninput="this.className = ''" name="mobile_number">
+                                </div>
+                                <div class="signup-field"><input placeholder="Importer Exporter Code (IEC)*"
+                                                                 oninput="this.className = ''" name="iec_code"></div>
+                                <div class="signup-field"><input placeholder="Business Identification Number (BIN)*"
+                                                                 oninput="this.className = ''" name="bin_code"></div>
                             </div>
                         </div>
                         <div class="tab">
                             <div class="form-wrap">
                                 <div class="signup-field">
-                                    <select name="cars" oninput="this.className = ''" id="cars">
-                                        <option value="volvo">Registered Business Country*</option>
-                                        <option value="loreum1">Loreum1</option>
-                                        <option value="loreum2">Loreum2</option>
-                                        <option value="loreum3">Loreum3</option>
-                                    </select>
-                                </div>
-                                <div class="signup-field"><input placeholder="Legal Business Name*" oninput="this.className = ''" name="Legal Business Name*"></div>
-                                <div class="signup-field"><input placeholder="Mobile Contact*" oninput="this.className = ''" name="Mobile Contact*"></div>
-                                <div class="signup-field"><input placeholder="Importer Exporter Code (IEC)*" oninput="this.className = ''" name="Importer Exporter Code (IEC)*"></div>
-                                <div class="signup-field"><input placeholder="Business Identification Number (BIN)*" oninput="this.className = ''" name="Business Identification Number (BIN)*"></div>
-                            </div>
-                        </div>
-                        <div class="tab">
-                            <div class="form-wrap">
-                                <div class="signup-field">
-                                    <select name="cars" oninput="this.className = ''" id="cars">
-                                        <option value="What is the type of your business?*">What is the type of your business?*</option>
-                                        <option value="loreum1">Loreum1</option>
-                                        <option value="loreum2">Loreum2</option>
-                                        <option value="loreum3">Loreum3</option>
+                                    <select name="type_of_business" oninput="this.className = ''" id="type_of_business">
+                                        <option>What is the type of your business?*</option>
+                                        <option value="Fashion Brand">Fashion Brand</option>
+                                        <option value="Fabric Sourcing Agency">Fabric Sourcing Agency</option>
+                                        <option value="Garment Development/Production">Garment Development/Production
+                                        </option>
+                                        <option value="Fabric Wholesale/Retail">Fabric Wholesale/Retail</option>
+                                        <option value="Others">Others</option>
                                     </select>
                                 </div>
                                 <div class="signup-field">
-                                    <select name="cars" oninput="this.className = ''" id="cars">
-                                        <option value="volvo">How long have you been in business?*</option>
-                                        <option value="loreum1">Loreum1</option>
-                                        <option value="loreum2">Loreum2</option>
-                                        <option value="loreum3">Loreum3</option>
+                                    <select name="how_long_in_business" oninput="this.className = ''" id="how_long_in_business">
+                                        <option>How long have you been in business?*</option>
+                                        <option value="Less Than A Year">Less Than A Year</option>
+                                        <option value="1 - 2 Year">1 - 2 Year</option>
+                                        <option value="3 - 5 Year">3 - 5 Year</option>
+                                        <option value="5 - 10 Year">5 - 10 Year</option>
+                                        <option value="Over 10 Years">Over 10 Years</option>
                                     </select>
                                 </div>
                                 <div class="signup-field full-col">
-                                    <select name="cars" oninput="this.className = ''" id="cars">
-                                        <option value="volvo">How much budget do you allocate for fabric annually?*</option>
-                                        <option value="loreum1">Loreum1</option>
-                                        <option value="loreum2">Loreum2</option>
-                                        <option value="loreum3">Loreum3</option>
+                                    <select name="budget_for_fabric_annually" oninput="this.className = ''" id="budget_for_fabric_annually">
+                                        <option>How much budget do you allocate for fabric annually?*</option>
+                                        <option value="Less tha 10k">Less tha 10k</option>
+                                        <option value="10k - 25k">10k - 25k</option>
+                                        <option value="25k - 50k">25k - 50k</option>
+                                        <option value="50k - 100k">50k - 100k</option>
+                                        <option value="100k - 500k">100k - 500k</option>
+                                        <option value="Over 500k">Over 500k</option>
                                     </select>
                                 </div>
                                 <div class="signup-field full-col">
-                                    <select name="cars" oninput="this.className = ''" id="cars">
-                                        <option value="volvo">What is the price point of the brand?*</option>
-                                        <option value="loreum1">Loreum1</option>
-                                        <option value="loreum2">Loreum2</option>
-                                        <option value="loreum3">Loreum3</option>
+                                    <select name="brand_price_point" oninput="this.className = ''" id="brand_price_point">
+                                        <option>What is the price point of the brand?*</option>
+                                        <option value="Budget">Budget</option>
+                                        <option value="Moderate">Moderate</option>
+                                        <option value="Contemporary">Contemporary</option>
+                                        <option value="Designer">Designer</option>
+                                        <option value="Couture">Couture</option>
                                     </select>
                                 </div>
                                 <div class="signup-field full-col">
-                                    <select name="cars" oninput="this.className = ''" id="cars">
-                                        <option value="volvo">On which month do you start sourcing for S/S?*</option>
-                                        <option value="loreum1">Loreum1</option>
-                                        <option value="loreum2">Loreum2</option>
-                                        <option value="loreum3">Loreum3</option>
+                                    <select name="which_month_start_sourcing_for_ss" oninput="this.className = ''" id="which_month_start_sourcing_for_ss">
+                                        <option>On which month do you start sourcing for S/S?*</option>
+                                        @foreach(monthArray() as $month)
+                                            <option value="{{ $month }}">{{ $month }}</option>
+                                        @endforeach
                                     </select>
                                 </div>
                                 <div class="signup-field full-col">
-                                    <select name="cars" oninput="this.className = ''" id="cars">
-                                        <option value="volvo">On which month do you start sourcing for F/W?*</option>
-                                        <option value="loreum1">Loreum1</option>
-                                        <option value="loreum2">Loreum2</option>
-                                        <option value="loreum3">Loreum3</option>
+                                    <select name="which_month_start_sourcing_for_fw" oninput="this.className = ''" id="which_month_start_sourcing_for_fw">
+                                        <option>On which month do you start sourcing for F/W?*</option>
+                                        @foreach(monthArray() as $month)
+                                            <option value="{{ $month }}">{{ $month }}</option>
+                                        @endforeach
                                     </select>
                                 </div>
                                 <div class="signup-field full-col">
-                                    <textarea placeholder="Please briefly describe your brand/business in 1 - 2 sentences.*" name="w3review" ></textarea>
+                                    <textarea
+                                        placeholder="Please briefly describe your brand/business in 1 - 2 sentences.*"
+                                        name="business_description"></textarea>
                                 </div>
-                                <div class="signup-field"><input placeholder="Company Website*" oninput="this.className = ''" name="Company Website"></div>
-                                <div class="signup-field"><input placeholder="Company Instagram*" oninput="this.className = ''" name="Company Instagram"></div>
+                                <div class="signup-field"><input placeholder="Company Website*"
+                                                                 oninput="this.className = ''" name="company_website">
+                                </div>
+                                <div class="signup-field"><input placeholder="Company Instagram*"
+                                                                 oninput="this.className = ''" name="company_instagram_url">
+                                </div>
                             </div>
                         </div>
                         <div style="overflow:auto;">
@@ -117,8 +144,8 @@
                             </div>
                         </div>
                     </form>
-                 </div>
-             </div>
-         </div>
-     </section>
+                </div>
+            </div>
+        </div>
+    </section>
 @endsection
