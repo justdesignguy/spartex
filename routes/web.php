@@ -25,12 +25,6 @@ Route::group(['middleware' => 'web'], function () {
     Route::get('/about', function () {
         return view('front.about');
     })->name('about_page');
-    Route::get('/signup', function () {
-        return view('front.signup');
-    })->name('signup_page');
-    Route::get('/signupform', function () {
-        return view('front.signupform');
-    })->name('signupform_page');
     Route::get('/explore', function () {
         return view('front.explore');
     })->name('explore_page');
@@ -43,6 +37,7 @@ Route::group(['middleware' => 'web'], function () {
     Route::get('login', [UserAuthController::class, 'index'])->name('user.login');
     Route::post('authenticate', [UserAuthController::class, 'authenticate'])->name('user.authenticate');
     Route::get('register', [UserAuthController::class, 'register'])->name('user.register');
+    Route::get('register/form', [UserAuthController::class, 'registerForm'])->name('user.register_form');
     Route::post('user/store', [UserAuthController::class, 'store'])->name('user.store');
     Route::get('logout', [UserAuthController::class, 'logout'])->name('user.logout');
 

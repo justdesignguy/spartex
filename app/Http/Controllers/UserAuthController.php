@@ -40,7 +40,13 @@ class UserAuthController extends Controller
     public function register()
     {
         if (auth()->user()) return redirect()->route('home');
-        return view('front.auth.register');
+        return view('front.auth.register_landing');
+    }
+
+    public function registerForm()
+    {
+        if (auth()->user()) return redirect()->route('home');
+        return view('front.auth.register_form');
     }
 
     public function store(Request $request)
