@@ -28,6 +28,12 @@ Route::group(['middleware' => 'web'], function () {
     Route::get('/explore', function () {
         return view('front.explore');
     })->name('explore_page');
+    Route::get('/fabrics', function () {
+        return view('front.fabrics');
+    })->name('fabrics_page');
+    Route::get('/contact', function () {
+        return view('front.contact');
+    })->name('contact_page');
 
     /*******************Admin Login ************************/
     Route::get('admin/login', [LoginController::class, 'index'])->name('admin.login');
