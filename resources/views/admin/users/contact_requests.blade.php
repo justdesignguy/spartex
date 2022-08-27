@@ -15,7 +15,7 @@
         <div class="row">
             <div class="col-lg-12">
                 <span class="pull-right float-right ml-auto">
-                    <a href="{{ route('admin.newsletters_export') }}" class="btn btn-info btn-sm"
+                    <a href="{{ route('admin.contact_requests_export') }}" class="btn btn-info btn-sm"
                        title="Add New">
                         <i class="fa fa-download" aria-hidden="true"></i> Export
                     </a>
@@ -34,7 +34,7 @@
                 <tbody>
                 @foreach($users as $item)
                     <tr>
-                        <td>{{ $item->name }}</td>
+                        <td>{{ $item->first_name }} {{ $item->last_name }}</td>
                         <td>{{ $item->email }}</td>
                     </tr>
                 @endforeach

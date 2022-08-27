@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 
 use App\Models\Category;
+use App\Models\ContactRequest;
 use App\Models\Newsletter;
 use App\Models\Product;
 use Illuminate\Http\Request;
@@ -37,5 +38,12 @@ class FrontController extends Controller
             'name' => $requestData['name']
         ]);
         return redirect()->back()->with('success', 'Newsletter Submitted Successfully');
+    }
+
+    public function contactStore(Request $request): \Illuminate\Http\RedirectResponse
+    {
+        $requestData = $request->all();
+        ContactRequest::create($requestData);
+        return redirect()->back()->with('success', 'Your Contact Request Received.');
     }
 }

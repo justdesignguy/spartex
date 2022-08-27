@@ -53,7 +53,7 @@ Route::group(['middleware' => 'web'], function () {
     Route::get('/contact', function () {
         return view('front.contact');
     })->name('contact');
-
+    Route::post('contact/store', [FrontController::class, 'contactStore'])->name('contact.store');
 
     Route::group(['prefix' => 'admin', 'as' => 'admin.'], function () {
         Route::get('logout', [LoginController::class, 'logout'])->name('logout');

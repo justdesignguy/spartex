@@ -10,5 +10,5 @@ class ContactRequest extends Model
 
     protected $table = 'contact_requests';
 
-    protected $fillable = ['first_name', 'last_name', 'email', 'mobile_number', 'country', 'how_did_you_hear_about_as', 'message'];
+        protected $fillable = ['first_name', 'last_name', 'email', 'mobile_number', 'country', 'how_did_you_hear_about_as', 'message'];
 }

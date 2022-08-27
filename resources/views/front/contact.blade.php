@@ -19,28 +19,31 @@
                 <div class="contact-page-fomr">
                     <h2 class="small-heading white text-center">Get in touch with us</h2>
                     <div class="contact-form">
-                        <form>
+                        <form method="POST" action="{{ route('contact.store') }}">
+                            @csrf
                             <div class="contact-field">
-                                <input type="text" name="First Name" placeholder="First Name">
+                                <input type="text" name="first_name" placeholder="First Name" autocomplete="off"
+                                       required>
                             </div>
                             <div class="contact-field">
-                                <input type="text" name="Last Name" placeholder="Last Name">
+                                <input type="text" name="last_name" placeholder="Last Name" autocomplete="off" required>
                             </div>
                             <div class="contact-field">
-                                <input type="text" name="Email" placeholder="Email">
+                                <input type="email" name="email" placeholder="Email" autocomplete="off" required>
                             </div>
                             <div class="contact-field">
-                                <input type="text" name="Phone" placeholder="Phone">
+                                <input type="text" name="mobile_number" placeholder="Phone" autocomplete="off" required>
                             </div>
                             <div class="contact-field">
-                                <input type="text" name="Country" placeholder="Country">
+                                <input type="text" name="country" placeholder="Country" autocomplete="off" required>
                             </div>
                             <div class="contact-field">
-                                <input type="text" name="How did you hear about us ?"
-                                       placeholder="How did you hear about us ?">
+                                <input type="text" name="how_did_you_hear_about_as"
+                                       placeholder="How did you hear about us?" autocomplete="off" required>
                             </div>
                             <div class="contact-field col-full">
-                                <textarea name="message" placeholder="Your Message"></textarea>
+                                <textarea name="message" placeholder="Your Message" autocomplete="off"
+                                          required></textarea>
                             </div>
                             <div class="contact-field submit">
                                 <input type="submit" value="Submit">
