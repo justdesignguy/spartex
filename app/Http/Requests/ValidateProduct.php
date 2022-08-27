@@ -28,8 +28,8 @@ class ValidateProduct extends FormRequest
                 'category_id' => 'required',
                 'title' => 'required',
                 'slug' => 'required|unique:products,slug,'.$this->id,
-                'short_description' => 'required',
-                'description' => 'required',
+//                'short_description' => 'required',
+//                'description' => 'required',
                 'image' => 'required',
             ];
         }else{
@@ -37,8 +37,8 @@ class ValidateProduct extends FormRequest
                 'category_id' => 'required',
                 'title' => 'required',
                 'slug' => 'required|unique:products',
-                'short_description' => 'required',
-                'description' => 'required',
+//                'short_description' => 'required',
+//                'description' => 'required',
                 'image' => 'required',
             ];
         }

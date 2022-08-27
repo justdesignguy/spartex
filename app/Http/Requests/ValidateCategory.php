@@ -23,8 +23,18 @@ class ValidateCategory extends FormRequest
      */
     public function rules()
     {
-        return [
-            'title' => ['required'],
-        ];
+        if ($this->id){
+            return [
+                'title' => 'required',
+                'slug' => 'required|unique:categories,slug,'.$this->id,
+                'image' => 'required',
+            ];
+        }else{
+            return [
+                'title' => 'required',
+                'slug' => 'required|unique:categories',
+                'image' => 'required',
+            ];
+        }
     }
 }

@@ -15,10 +15,10 @@
                         <a href="{{ route('about_page') }}">About us</a>
                     </li>
                     <li class="menu-list">
-                        <a href="#">Product</a>
+                        <a href="{{ route('explore') }}">Product</a>
                     </li>
                     <li class="menu-list">
-                        <a href="#">Blog</a>
+                        <a href="javascript:;">Blog</a>
                     </li>
                 </ul>
                 <a class="toggle" href="#toggle-btn">
@@ -30,7 +30,7 @@
                 </a>
             </div>
             <div class="site-btn">
-                <a class="common-btn" href="#">Contact Us</a>
+                <a class="common-btn" href="{{ route('contact') }}">Contact Us</a>
             </div>
         </div>
     </div>

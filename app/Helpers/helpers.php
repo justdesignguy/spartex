@@ -17,9 +17,22 @@ if (!function_exists('formatDate')) {
     }
 }
 
-function showProductImage($image_name): string|\Illuminate\Contracts\Routing\UrlGenerator|\Illuminate\Contracts\Foundation\Application
+function uploadFile($file, $path, $exist_file = null): string
 {
-    return url(\App\Models\Product::IMG_URL . $image_name);
+    $uploadPath = storage_path('app/public/' . $path . '/');
+    if (isset($exist_file)) {
+        $imagePath = $uploadPath . $exist_file;
+        @unlink($imagePath);
+    }
+    $extension = $file->getClientOriginalExtension();
+    $fileName = rand(11111, 99999) . '.' . $extension;
+    $file->move($uploadPath, $fileName);
+    return $fileName;
+}
+
+function getFileUrl($file_name, $path): string|\Illuminate\Contracts\Routing\UrlGenerator|\Illuminate\Contracts\Foundation\Application
+{
+    return url('storage/' . $path . '/' . $file_name);
 }
 
 function monthArray(): array

@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserAuthController;
+use App\Http\Controllers\FrontController;
 use App\Http\Controllers\Admin\LoginController;
 use App\Http\Controllers\Admin\UserController;
 use App\Http\Controllers\Admin\CategoryController;
@@ -25,15 +26,7 @@ Route::group(['middleware' => 'web'], function () {
     Route::get('/about', function () {
         return view('front.about');
     })->name('about_page');
-    Route::get('/explore', function () {
-        return view('front.explore');
-    })->name('explore_page');
-    Route::get('/fabrics', function () {
-        return view('front.fabrics');
-    })->name('fabrics_page');
-    Route::get('/contact', function () {
-        return view('front.contact');
-    })->name('contact_page');
+
 
     /*******************Admin Login ************************/
     Route::get('admin/login', [LoginController::class, 'index'])->name('admin.login');
@@ -52,6 +45,16 @@ Route::group(['middleware' => 'web'], function () {
     Route::get('user/reset-password/{token}', [UserAuthController::class, 'resetUserPassword'])->name('user.reset_password');
     Route::post('user/reset-password', [UserAuthController::class, 'resetPasswordStore'])->name('user.reset_password.store');
 
+    Route::get('explore', [FrontController::class, 'explore'])->name('explore');
+    Route::get('category/{slug}', [FrontController::class, 'categoryDetail'])->name('category_detail');
+
+    Route::post('newsletter/store', [FrontController::class, 'newsletterStore'])->name('newsletter.store');
+
+    Route::get('/contact', function () {
+        return view('front.contact');
+    })->name('contact');
+
+
     Route::group(['prefix' => 'admin', 'as' => 'admin.'], function () {
         Route::get('logout', [LoginController::class, 'logout'])->name('logout');
 
@@ -61,6 +64,10 @@ Route::group(['middleware' => 'web'], function () {
 
         Route::get('users', [UserController::class, 'index'])->name('users');
         Route::get('users/export', [UserController::class, 'export'])->name('users_export');
+        Route::get('newsletters', [UserController::class, 'newsletterList'])->name('newsletters');
+        Route::get('newsletters/export', [UserController::class, 'newsletterExport'])->name('newsletters_export');
+        Route::get('contact-requests', [UserController::class, 'contactRequestList'])->name('contact_requests');
+        Route::get('contact-requests/export', [UserController::class, 'contactRequestExport'])->name('contact_requests_export');
 
         Route::get('categories', [CategoryController::class, 'index'])->name('categories');
         Route::get('category/create', [CategoryController::class, 'create'])->name('category.create');

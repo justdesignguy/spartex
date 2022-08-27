@@ -25,7 +25,10 @@ class ProductController extends Controller
     {
         $requestData = $request->except('_token');
         if (isset($requestData['image'])){
-            $requestData['image'] = $this->uploadImage($requestData['image']);
+            $requestData['image'] = uploadFile($requestData['image'], 'product');
+        }
+        if (isset($requestData['small_image'])){
+            $requestData['small_image'] = uploadFile($requestData['small_image'], 'product');
         }
         Product::create($requestData);
         return redirect()->route('admin.products')->with('success', 'Data Created Successfully.');
@@ -43,7 +46,10 @@ class ProductController extends Controller
         $requestData = $request->except('_token');
         $product = Product::findOrFail($id);
         if (isset($requestData['image'])){
-            $requestData['image'] = $this->uploadImage($requestData['image'], $product);
+            $requestData['image'] = uploadFile($requestData['image'], 'product', $product->image);
+        }
+        if (isset($requestData['small_image'])){
+            $requestData['small_image'] = uploadFile($requestData['small_image'], 'product', $product->small_image);
         }
         $product->update($requestData);
         return redirect()->route('admin.products')->with('success', 'Data Updated Successfully.');
@@ -53,18 +59,5 @@ class ProductController extends Controller
     {
         Product::destroy($id);
         return redirect()->route('admin.products')->with('success', 'Data Deleted Successfully.');
-    }
-
-    public function uploadImage($file, $product = NULL): string
-    {
-        $uploadPath = storage_path(Product::IMG_PATH);
-        if (isset($product)) {
-            $imagePath = $uploadPath . $product->image;
-            @unlink($imagePath);
-        }
-        $extension = $file->getClientOriginalExtension();
-        $fileName = rand(11111, 99999) . '.' . $extension;
-        $file->move($uploadPath, $fileName);
-        return $fileName;
     }
 }

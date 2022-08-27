@@ -44,17 +44,20 @@
             </div>
             <div class="subscribe-form">
                 <h2 class="footer-title">Newsletter</h2>
-                <div class="master-form">
-                    <div class="form-field">
-                        <input type="name" name="" placeholder="Your Name">
+                <form action="{{ route('newsletter.store') }}" method="POST">
+                    @csrf
+                    <div class="master-form">
+                        <div class="form-field">
+                            <input type="text" name="name" placeholder="Your Name" autocomplete="off" required>
+                        </div>
+                        <div class="form-field">
+                            <input type="email" name="email" placeholder="Your Email" autocomplete="off" required>
+                        </div>
+                        <div class="form-field">
+                            <button class="common-btn submit-btn" type="submit">Submit</button>
+                        </div>
                     </div>
-                    <div class="form-field">
-                        <input type="email" name="" placeholder="Your Email">
-                    </div>
-                    <div class="form-field">
-                        <button class="common-btn submit-btn" type="submit">Submit</button>
-                    </div>
-                </div>
+                </form>
             </div>
         </div>
     </div>

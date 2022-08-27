@@ -6,18 +6,18 @@
     <div class="slim-pageheader">
         <ol class="breadcrumb slim-breadcrumb">
             <li class="breadcrumb-item"><a href="{{ route('admin.dashboard') }}">Home</a></li>
-            <li class="breadcrumb-item active" aria-current="page">Products</li>
+            <li class="breadcrumb-item active" aria-current="page">Contact Requests</li>
         </ol>
-        <h6 class="slim-pagetitle">Product List</h6>
+        <h6 class="slim-pagetitle">Contact Requests</h6>
     </div>
     <div class="section-wrapper">
         @include('admin.layout.partials.flash_messages')
         <div class="row">
             <div class="col-lg-12">
                 <span class="pull-right float-right ml-auto">
-                    <a href="{{ route('admin.product.create') }}" class="btn btn-success btn-sm"
+                    <a href="{{ route('admin.newsletters_export') }}" class="btn btn-info btn-sm"
                        title="Add New">
-                        <i class="fa fa-plus" aria-hidden="true"></i> Add New
+                        <i class="fa fa-download" aria-hidden="true"></i> Export
                     </a>
                 </span>
             </div>
@@ -27,26 +27,15 @@
             <table id="dataTable" class="table display responsive nowrap">
                 <thead>
                 <tr>
-                    <th class="wd-40p">Title</th>
-                    <th class="wd-30p">Category</th>
-                    <th class="wd-20p">Product Type</th>
-                    <th class="wd-10p">Actions</th>
+                    <th class="wd-40p">Name</th>
+                    <th class="wd-40p">Email</th>
                 </tr>
                 </thead>
                 <tbody>
-                @foreach($products as $item)
+                @foreach($users as $item)
                     <tr>
-                        <td>{{ $item->title }}</td>
-                        <td>{{ $item->categoryDetail->title ?? '--' }}</td>
-                        <td>{{ \App\Models\Product::TYPES[$item->type] ?? '--' }}</td>
-                        <td>
-                            <a href="{{ route('admin.product.edit', $item->id) }}" class="btn btn-info btn-sm" title="Edit">
-                                <div><i class="fa fa-edit"></i></div>
-                            </a>
-                            <a href="javascript:;" onclick="confirmDelete('{{ route("admin.product.delete",$item->id) }}')" class="btn btn-danger btn-sm" title="Delete">
-                                <div><i class="fa fa-trash"></i></div>
-                            </a>
-                        </td>
+                        <td>{{ $item->name }}</td>
+                        <td>{{ $item->email }}</td>
                     </tr>
                 @endforeach
                 </tbody>
