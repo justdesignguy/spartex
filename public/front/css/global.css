@@ -411,3 +411,87 @@ img.inner-banner-img {position: absolute; top: 0; left: 0; right: 0; width: 100%
 .fabrics-large-img img {width: 100%; }
 .types-fabrics {padding: 100px 0; background-color: #f9f9f9; }
 .types-fabrics .small-heading{margin: 0 0 50px;}
+
+.white{color: #fff;}
+.contact-page-fomr .small-heading{line-height: 1;}
+.contact-page-fomr {
+    padding: 75px;
+    background: #002245;
+}
+
+.contact-form form {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+    align-items: flex-start;
+}
+
+.contact-field {
+    max-width: 33.33%;
+    padding: 0 15px;
+    width: 100%;
+    margin-bottom: 42px;
+}
+
+.contact-field input {
+    width: 100%;
+    background: transparent;
+    border: 0;
+    border-bottom: 2px solid rgba(255,255,255,0.5);
+    padding: 15px 0;color: #ffffff !important;
+    font-size: 18px;
+    font-family: "Kantumruy Pro";
+    color: rgb(175, 175, 175);
+    line-height: 1.2;
+}
+
+.col-full {
+    max-width: 100%;
+    width: 100%;
+}
+::-webkit-input-placeholder { /* Edge */
+    opacity: 0.5;
+    color: #ffffff !important;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    opacity: 0.5;
+    color: #ffffff !important;
+}
+
+::placeholder {
+    opacity: 0.5;
+    color: #ffffff !important;
+}
+.col-full textarea {
+    width: 100%;
+    resize: none;color: #ffffff !important;
+    height: 120px;
+    padding: 15px 0;
+    background-color: transparent;
+    border: 0;
+    font-size: 18px;
+    font-family: "Kantumruy Pro";
+    color: rgb(175, 175, 175);
+    line-height: 1.2;
+    border-bottom: 2px solid rgba(255,255,255,0.5);
+}
+
+.submit {
+    text-align: center;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.submit input[type="submit"] {
+    display: inline-block;
+    width: auto;
+    background: #fdc108;
+    padding: 16px 55px;
+    font-size: 18px;
+    font-family: "Kantumruy Pro";
+    color: rgb(0, 34, 69) !important;
+    cursor: pointer;
+    line-height: 1.2;
+    font-weight:600
+}
