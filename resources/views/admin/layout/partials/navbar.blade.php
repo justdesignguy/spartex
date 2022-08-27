@@ -7,7 +7,7 @@
                     <span>Dashboard</span>
                 </a>
             </li>
-            <li class="nav-item with-sub @if(Request::is('admin/users') || Request::is('admin/contact-requests') || Request::is('admin/newsletters')) active @endif">
+            <li class="nav-item with-sub @if(Request::is('admin/users') || Request::is('admin/user/*') || Request::is('admin/contact-requests') || Request::is('admin/contact-request/*') || Request::is('admin/newsletters')) active @endif">
                 <a class="nav-link" href="javascript:;">
                     <i class="icon ion-ios-person-outline"></i>
                     <span>Users</span>

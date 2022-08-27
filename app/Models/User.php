@@ -28,7 +28,6 @@ class User extends Authenticatable
         'iec_code',
         'bin_code',
         'type_of_business',
-        'type_of_business',
         'how_long_in_business',
         'budget_for_fabric_annually',
         'brand_price_point',

@@ -29,6 +29,7 @@
                 <tr>
                     <th class="wd-40p">Name</th>
                     <th class="wd-40p">Email</th>
+                    <th class="wd-20p">Action</th>
                 </tr>
                 </thead>
                 <tbody>
@@ -36,6 +37,7 @@
                     <tr>
                         <td>{{ $item->name }}</td>
                         <td>{{ $item->email }}</td>
+                        <td><a href="{{ route('admin.user_detail', $item->id) }}" class="btn btn-dark btn-icon"><div><i class="fa fa-eye"></i></div></a></td>
                     </tr>
                 @endforeach
                 </tbody>

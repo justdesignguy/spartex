@@ -64,10 +64,12 @@ Route::group(['middleware' => 'web'], function () {
 
         Route::get('users', [UserController::class, 'index'])->name('users');
         Route::get('users/export', [UserController::class, 'export'])->name('users_export');
+        Route::get('user/detail/{id}', [UserController::class, 'userDetails'])->name('user_detail');
         Route::get('newsletters', [UserController::class, 'newsletterList'])->name('newsletters');
         Route::get('newsletters/export', [UserController::class, 'newsletterExport'])->name('newsletters_export');
         Route::get('contact-requests', [UserController::class, 'contactRequestList'])->name('contact_requests');
         Route::get('contact-requests/export', [UserController::class, 'contactRequestExport'])->name('contact_requests_export');
+        Route::get('contact-request/detail/{id}', [UserController::class, 'contactRequestDetails'])->name('contact_request_detail');
 
         Route::get('categories', [CategoryController::class, 'index'])->name('categories');
         Route::get('category/create', [CategoryController::class, 'create'])->name('category.create');

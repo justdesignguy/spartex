@@ -24,6 +24,12 @@ class UserController extends Controller
         return Excel::download(new UsersExport, 'users.xlsx');
     }
 
+    public function userDetails($id): \Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View|\Illuminate\Contracts\Foundation\Application
+    {
+        $user = User::findOrFail($id);
+        return view('admin.users.user_detail', compact('user'));
+    }
+
     public function newsletterList(): \Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View|\Illuminate\Contracts\Foundation\Application
     {
         $users = Newsletter::orderBy('id', 'DESC')->get();
@@ -46,4 +52,9 @@ class UserController extends Controller
         return Excel::download(new ContactRequestExport, 'contact_requests.xlsx');
     }
 
+    public function contactRequestDetails($id): \Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View|\Illuminate\Contracts\Foundation\Application
+    {
+        $request = ContactRequest::findOrFail($id);
+        return view('admin.users.contact_request_detail', compact('request'));
+    }
 }
