@@ -84,23 +84,26 @@
             </div>
         </div>
     </section>
-    <section class="products">
-        <div class="wrapper">
-            <div class="products-wrap">
-                @foreach($categories as $category)
-                    <div class="products-box">
-                        <div class="products-box-wrap">
-                            <div class="products-image">
-                                <img src="{{ getFileUrl($category->image, 'category') }}">
-                            </div>
-                            <div class="products-content">
-                                <h2 class="products-title">{{ $category->title }}</h2>
-                                <a class="common-btn blue-btn" href="{{ route('category_detail', $category->slug) }}">Read More</a>
+    @if(count($categories) > 0)
+        <section class="products">
+            <div class="wrapper">
+                <div class="products-wrap">
+                    @foreach($categories as $category)
+                        <div class="products-box">
+                            <div class="products-box-wrap">
+                                <div class="products-image">
+                                    <img src="{{ getFileUrl($category->image, 'category') }}">
+                                </div>
+                                <div class="products-content">
+                                    <h2 class="products-title">{{ $category->title }}</h2>
+                                    <a class="common-btn blue-btn"
+                                       href="{{ route('category_detail', $category->slug) }}">Read More</a>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                @endforeach
+                    @endforeach
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
+    @endif
 @endsection
