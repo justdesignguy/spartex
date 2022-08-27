@@ -231,7 +231,7 @@ ul.logo-list li img {max-height: 80px; margin: auto; }
 
 
 /* Signup */
-.signup-form {padding: 123px 0; background: url(/front/images/gray-bg.jpg) no-repeat center center; background-size: cover; }
+.signup-form {background: url(/front/images/gray-bg.jpg) no-repeat center center; background-size: cover; }
 .common-title {font-size: 48px; width:100%; font-family: "Kantumruy Pro"; color: rgb(0, 0, 0); font-weight: bold; text-transform: uppercase; line-height: 1.2; text-align: center; }
 .signup-main-title{margin: 0 0 60px; }
 .signup-boxes {max-width: 1170px; width: 100%; margin: 0 auto; display: flex; flex-wrap: wrap; justify-content: center; }
@@ -242,13 +242,13 @@ ul.logo-list li img {max-height: 80px; margin: auto; }
 .signup-title span {color: #00254c; font-weight: 700; }
 .signup-subtitle {font-size: 20px; font-family: "Kantumruy Pro"; color: rgb(0, 0, 0); text-transform: uppercase; line-height: 1.2; letter-spacing: 0.26em; font-weight: 600; margin-bottom: 25px; }
 .signup-box-wrap p {font-size: 16px; font-family: "Kantumruy Pro"; color: rgb(0, 0, 0); line-height: 1.625; max-width: 380px; width: 100%; }
-.recommended {position: absolute; top: 0; left: 0; margin: 0; display: inline-block; background-color: rgb(0, 37, 76); font-size: 16px; font-family: "Kantumruy Pro"; color: rgb(255, 255, 255); text-transform: uppercase; padding: 10px 20px; line-height: 1.2; width: auto; }
+.signup-box-wrap .recommended {position: absolute; top: 0; left: 0; margin: 0; display: inline-block; background-color: rgb(0, 37, 76); font-size: 16px; font-family: "Kantumruy Pro"; color: rgb(255, 255, 255); text-transform: uppercase; padding: 10px 20px; line-height: 1.2; width: auto; }
 .signup-btn {position: absolute; bottom: 0; right: 0; width: auto; display: inline-block; padding: 26px 80px 26px 0px; line-height: 1; }
 .signup-btn:before {width: 70px; height: 70px; content: ""; position: absolute; right: 0; background-color: #00254c; top: 0; background-image: url(/front/images/arrow.png); background-position: center; background-repeat: no-repeat; }
 /* Form css for signup */
 /* Hide all steps by default: */
 .tab {display: none; }
-.signup-form-page {padding: 100px 0; }
+
 .signup-form-wrap {display: flex; flex-wrap: wrap; align-items: flex-start; }
 .signup-instruction {max-width: 40%; width: 100%; background-color: #f1f5f8; padding: 40px; }
 .intro-title {font-size: 24px; font-family: "Kantumruy Pro"; color: rgb(0, 0, 0); font-weight: bold; line-height: 1.2; text-align: left; }
@@ -314,7 +314,7 @@ img.inner-banner-img {position: absolute; top: 0; left: 0; right: 0; width: 100%
 }
 
 .services-content {
-    max-width: 33.33%;
+    max-width: 35%;
     width: 100%;
     padding: 0 15px;
 }
@@ -344,11 +344,14 @@ img.inner-banner-img {position: absolute; top: 0; left: 0; right: 0; width: 100%
     border-radius: 10px;
     background-color: rgb(255, 255, 255);
     box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.12);
+    height: 100%;
     padding: 37px 15px;
 }
 
+
 .service-box-wrap img {
     margin: auto auto 22px auto;
+    max-width: 70px;
 }
 
 .service-box-wrap p { 
@@ -367,18 +370,13 @@ img.inner-banner-img {position: absolute; top: 0; left: 0; right: 0; width: 100%
 .service-box:nth-child(3), .service-box:nth-child(6), .service-box:nth-child(9) {
     top: -60px;
 }
-
-.our-service {
-    padding: 100px 0;
-}
-
 .our-service-wrap {
     padding: 60px 0 40px;
 }
 
 
 /*products*/
-.products{background-image: url(/front/images/gray-bg.jpg); background-repeat: no-repeat; background-size: cover; padding: 100px 0; }
+.products{background-image: url(/front/images/gray-bg.jpg); background-repeat: no-repeat; background-size: cover; }
 .products-wrap{display: flex; flex-wrap: wrap; justify-content: center; }
 .products-box{max-width: 50%;width: 100%;padding:0 15px; }
 .products-box-wrap{display: flex; flex-wrap: wrap; align-items: center; background-color: #fff; }

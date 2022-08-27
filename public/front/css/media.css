@@ -49,11 +49,17 @@
     .about-content-box{margin: 0 auto 50px;}
     .cta-section {padding: 40px 0;}
     .small-heading {font-size: 42px;}
-}   
+    .common-title {font-size: 44px;}
+    .signup-main-title {margin: 0 0 50px; }
+    .signup-box-wrap{padding: 60px 40px 110px;}
+    .signup-title {font-size: 32px; margin: 0 0 28px 0; padding-bottom: 28px;}
+    .service-box-wrap p {font-size: 24px;}
+    .products-title {font-size: 28px;}
+}
 @media only screen and (max-width: 1200px) {
     body, p, li {font-size: 16px; line-height: 1.5;}
     ul li:before{width: 8px; height: 8px;}
-    ul li{margin: 0 0 14px;}
+    ul li{margin: 0 0 14px;padding-left: 30px;}
     .process-menu li a:hover::after, .process-menu li a.active:after {width: 50px;}
     .site-menu .menu .menu-list {padding: 0 15px;}
     .wrapper {padding: 0 30px;}
@@ -98,10 +104,34 @@
     .contact-field textarea, .contact-field input{font-size: 16px;}
     .contact-box-wrap{border: 18px solid rgba(253,193,8,0.46);}
     .location-icon img {max-width: 40px;}
-
+    .common-title {font-size: 40px;}
+    .signup-main-title {margin: 0 0 40px; }
+    .signup-box-wrap{padding: 50px 30px 90px;}
+    .signup-title {font-size: 28px;}
+    .signup-subtitle{margin-bottom: 20px;}
+    .signup-btn{padding: 21px 80px 21px 0px;}
+    .signup-field{padding: 0 13px}
+    .form-wrap{margin: 0 -13px;}
+    .signup-main-form{padding-left: 30px;}
+    .signup-instruction{padding: 30px;}
+    .intro-title {font-size: 21px;}
+    .signup-instruction ol li{padding: 15px 0 15px 20px;}
+    .service-box-wrap > img {max-width: 55px;}
+    .service-box-wrap p {
+    font-size: 22px;}
+    .service-box-wrap {padding: 26px 15px;}
+    .service-box{padding: 12px;}
+    .services-list{margin: -12px;}
+    .service-box:nth-child(2), .service-box:nth-child(5), .service-box:nth-child(8) {top: 30px;}
+    .service-box:nth-child(3), .service-box:nth-child(6), .service-box:nth-child(9) {top: -40px;}
+    
+    .products-content{padding: 20px;}
+    
 }
 @media only screen and (max-width: 1023px) {
-    h1, h2, h3, h4, h5, h6 {margin: 0 0 14px;}
+    p {margin: 0 0 15px 0; }
+    ul li{padding-left: 20px;margin: 0 0 10px;}
+
     .site-logo {max-width: 150px;}
     .common-btn { padding: 12px 22px; }
     .site-menu .menu .menu-list a {font-size: 16px;}
@@ -165,12 +195,33 @@
     .contact-box {max-width: 35%;}
     .contact-box.google-map {max-width: 30%; }
     .google-map .contact-box-wrap {padding-top: 80%;}
+    .common-title {font-size: 36px;}
+    .signup-main-title {margin: 0 0 30px; }
+    .signup-title {font-size: 24px; margin: 0 0 24px 0; padding-bottom: 24px;}
+    .signup-box-wrap .recommended{font-size: 14px;}
+    .signup-subtitle{margin-bottom: 15px;}
+    .signup-btn:before {width: 60px; height: 60px;}
+    .signup-btn{padding: 16px 70px 16px 0px;}
+    .signup-box-wrap {padding: 50px 25px 80px; }
+    .signup-btn:before {width: 50px; height: 50px; }
+    
+    .signup-main-form {padding: 40px 0 0 0; max-width: 100%; }
+    .signup-instruction {max-width: 100%;}
+    .services-content {max-width: 100%;}
+    .small-heading br{display: none;}
+    .service-box{top: 0 !important; }
+
+    .our-service-wrap {padding: 0; }
+    .services-list {margin: 0; max-width: 100%; padding: 30px 0 0; }
+    .service-box-wrap p {font-size: 18px; }
+    .products-title {font-size: 24px;}
+    .products-content{padding: 20px;}
+    .products-box {max-width: 500px; padding: 15px; width: 100%; }
 }
 @media only screen and (max-width: 767px) {
     p {margin: 0 0 15px 0; }
-    br {display: none;}
+    h1, h2, h3, h4, h5, h6 {margin: 0 0 16px; }
     .ptb-120, .ptb-130 {padding:60px 0;}
-    
     .section-title {font-size: 45px;}
     .focus {max-width: 100%;}
     .formula {max-width: 100%;}
@@ -209,7 +260,14 @@
     .small-heading {font-size: 34px;}
     .contact-box {max-width: 50%;padding: 15px;}
     .contact-box.google-map{order: 3;max-width: 100%;width: 100%;}
-
+    .common-title {font-size: 32px;}
+    .signup-main-title {margin: 0 0 20px; }
+    .signup-subtitle{margin-bottom: 10px;}
+    .signup-box{max-width: 100%;width: 100%;margin: 15px 0;}
+    .signup-box-wrap .recommended {font-size: 12px; }
+    .signup-title{margin: 0 0 14px 0; padding-bottom: 14px;}
+    .signup-subtitle {font-size: 18px;letter-spacing: 0.16em;}
+    
 }
 @media only screen and (max-width: 640px) {
     .banner-content-wrap {max-width: 100%;}
@@ -237,6 +295,12 @@
     .contact-page-form {padding: 40px; }
     .small-heading {font-size: 30px;}
     .contact-box {max-width: 100%;padding: 15px}
+    .common-title {font-size: 28px;}
+    .signup-field {max-width: 100%;}
+    .steps-button button#prevBtn{padding: 11px 34px;}
+    .step {max-width: 100%; margin: 0 0 18px;}
+    .service-box {max-width: 50%;}
+    .services-list{justify-content: flex-start;}
 }
 @media only screen and (max-width: 480px) {
     .banner-section{padding-top: 140%;}
@@ -247,4 +311,10 @@
     ul.logo-list li{padding: 25px 15px;}
     .site-btn{display: none;}
     .site-menu{margin-left: auto;}
+    .contact-page-form {padding: 30px; }
+    .steps-button button{padding: 11px 22px !important; font-size: 16px !important; }
+    .products-image {max-width: 100%; padding-top: 100%;}
+    .products-content {padding: 30px 20px; max-width: 100%; }
+    .products-box {padding:15px 0;}
+    .service-box {max-width: 250px; margin: auto; }
 }

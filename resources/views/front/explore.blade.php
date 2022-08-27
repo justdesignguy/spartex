@@ -14,7 +14,7 @@
             </div>
         </div>
     </section>
-    <section class="our-service">
+    <section class="our-service ptb-120">
         <div class="wrapper">
             <div class="our-service-wrap">
                 <div class="services-content">
@@ -85,7 +85,7 @@
         </div>
     </section>
     @if(count($categories) > 0)
-        <section class="products">
+        <section class="products ptb-120">
             <div class="wrapper">
                 <div class="products-wrap">
                     @foreach($categories as $category)

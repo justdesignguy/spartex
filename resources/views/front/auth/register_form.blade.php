@@ -1,6 +1,6 @@
 @extends('front.layout.master')
 @section('content')
-    <section class="signup-form-page">
+    <section class="signup-form-page ptb-120">
         <div class="wrapper">
             <h2 class="common-title">Sign up</h2>
             <div class="signup-form-wrap">
