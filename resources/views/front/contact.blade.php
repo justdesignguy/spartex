@@ -13,10 +13,10 @@
             </div>
         </div>
     </section>
-    <section class="contact-us">
+    <section class="contact-us ptb-120">
         <div class="wrapper">
             <div class="contact-us-wrap">
-                <div class="contact-page-fomr">
+                <div class="contact-page-form">
                     <h2 class="small-heading white text-center">Get in touch with us</h2>
                     <div class="contact-form">
                         <form method="POST" action="{{ route('contact.store') }}">
@@ -57,14 +57,14 @@
                             <div class="location-icon">
                                 <img src="/front/images/location.png">
                             </div>
-                            <p>Akshya Nagar 1st Block 1st <br>Cross, Rammurthy nagar,<br> Bangalore-560016</p>
+                            <p>Akshya Nagar 1st Block 1st Cross, Rammurthy nagar, Bangalore-560016</p>
                         </div>
                     </div>
                     <div class="contact-box google-map">
                         <div class="contact-box-wrap">
                             <iframe
                                 src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d14691.59470790579!2d71.4655563!3d22.9907531!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1661542928471!5m2!1sen!2sin"
-                                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                                width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
                                 referrerpolicy="no-referrer-when-downgrade"></iframe>
                         </div>
                     </div>

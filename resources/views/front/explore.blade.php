@@ -18,7 +18,7 @@
         <div class="wrapper">
             <div class="our-service-wrap">
                 <div class="services-content">
-                    <h3 class="small-heading white">How Our <br>Fabrics Make a Difference</h3>
+                    <h3 class="small-heading">How Our <br>Fabrics Make a Difference</h3>
                     <p>Spartex is the leading supplier of anything and everything fabric - from sustainable material to
                         fashion fabric - for brands, fashion and sewing enthusiasts.</p>
                 </div>

@@ -278,7 +278,7 @@ ul.logo-list li img {max-height: 80px; margin: auto; }
 input:autofill {background-color: transparent !important; }
 input:-webkit-autofill {background-color: transparent !important; }
 /*  */
-.inner-banner {padding-top: 28.2%; position: relative; background-color: #000; }
+.inner-banner {padding-top: 57.2vh; position: relative; background-color: #000; }
 img.inner-banner-img {position: absolute; top: 0; left: 0; right: 0; width: 100%; height: 100%; object-fit: cover; object-position: top center; }
 .inner-banner-content {position: absolute; bottom: 60px; width: 100%; }
 .banner-title{font-size: 50px; font-family: "Kantumruy Pro"; color: rgb(255, 255, 255); font-weight: 600; text-transform: uppercase; line-height: 1.2; margin: 0 0 10px; }
@@ -413,9 +413,10 @@ img.inner-banner-img {position: absolute; top: 0; left: 0; right: 0; width: 100%
 .types-fabrics .small-heading{margin: 0 0 50px;}
 
 .white{color: #fff;}
-.contact-page-fomr .small-heading{line-height: 1;}
-.contact-page-fomr {
+.contact-page-form .small-heading{line-height: 1;}
+.contact-page-form {
     padding: 75px;
+    margin: 0 0 30px;
     background: #002245;
 }
 
@@ -426,72 +427,40 @@ img.inner-banner-img {position: absolute; top: 0; left: 0; right: 0; width: 100%
     align-items: flex-start;
 }
 
-.contact-field {
-    max-width: 33.33%;
-    padding: 0 15px;
-    width: 100%;
-    margin-bottom: 42px;
-}
+.contact-field {max-width: 33.33%; padding: 0 15px; width: 100%; margin-bottom: 42px; }
+.contact-field input {width: 100%; background: transparent; border: 0; border-bottom: 2px solid rgba(255,255,255,0.5); padding: 15px 0;color: #ffffff !important; font-size: 18px; font-family: "Kantumruy Pro"; color: rgb(175, 175, 175); line-height: 1.2; }
+.col-full {max-width: 100%; width: 100%; }
+.contact-field textarea::-webkit-input-placeholder, .contact-field input::-webkit-input-placeholder { /* Edge */ opacity: 0.5; color: #ffffff !important; }
+.contact-field textarea:-ms-input-placeholder, .contact-field input:-ms-input-placeholder { /* Internet Explorer 10-11 */ opacity: 0.5; color: #ffffff !important; }
+.contact-field textarea::placeholder , .contact-field input::placeholder {opacity: 0.5; color: #ffffff !important; }
+.col-full textarea {width: 100%; resize: none;color: #ffffff !important; height: 120px; padding: 15px 0; background-color: transparent; border: 0; font-size: 18px; font-family: "Kantumruy Pro"; color: rgb(175, 175, 175); line-height: 1.2; border-bottom: 2px solid rgba(255,255,255,0.5); }
 
-.contact-field input {
-    width: 100%;
-    background: transparent;
-    border: 0;
-    border-bottom: 2px solid rgba(255,255,255,0.5);
-    padding: 15px 0;color: #ffffff !important;
-    font-size: 18px;
-    font-family: "Kantumruy Pro";
-    color: rgb(175, 175, 175);
-    line-height: 1.2;
-}
+.submit {text-align: center; max-width: 100%; margin: 0 auto !important; }
+.submit input[type="submit"] {display: inline-block; width: auto; background: #fdc108; padding: 12px 55px; font-size: 18px; font-family: "Kantumruy Pro"; color: rgb(0, 34, 69) !important; cursor: pointer; line-height: 1.2; font-weight:600;border: 2px solid #fdc108; transition: all ease-in-out 0.3s;-webkit-transition: all ease-in-out 0.3s;-moz-transition: all ease-in-out 0.3s;-ms-transition: all ease-in-out 0.3s;}
+.submit input[type="submit"]:hover{background-color: transparent;color: #fdc108 !important;}
+.contact-details {display: flex; margin: 0 -15px; flex-wrap: wrap; }
+.contact-box {max-width: 33.33%; width: 100%; padding: 0 15px; }
+.location-icon img {max-width: 50px; margin: auto; }
+.contact-box-wrap {text-align: center; border: 25px solid rgba(253,193,8,0.46); height: 100%; display: flex; align-items: center; flex-wrap: wrap; flex-direction: column; justify-content: center; padding: 30px;}
+.location-icon {margin: 0px 0 12px; }
+.google-map .contact-box-wrap {padding-top: calc(100% - 30px); position: relative; border: 0; }
+.google-map .contact-box-wrap iframe {position: absolute; top: 0; left: 0; right: 0; width: 100%; border: 0; height: 100%; }
 
-.col-full {
-    max-width: 100%;
-    width: 100%;
-}
-::-webkit-input-placeholder { /* Edge */
-    opacity: 0.5;
-    color: #ffffff !important;
-}
+.mail{margin-bottom: 42px;}
 
-:-ms-input-placeholder { /* Internet Explorer 10-11 */
-    opacity: 0.5;
-    color: #ffffff !important;
-}
-
-::placeholder {
-    opacity: 0.5;
-    color: #ffffff !important;
-}
-.col-full textarea {
-    width: 100%;
-    resize: none;color: #ffffff !important;
-    height: 120px;
-    padding: 15px 0;
-    background-color: transparent;
-    border: 0;
-    font-size: 18px;
-    font-family: "Kantumruy Pro";
-    color: rgb(175, 175, 175);
-    line-height: 1.2;
-    border-bottom: 2px solid rgba(255,255,255,0.5);
-}
-
-.submit {
-    text-align: center;
-    max-width: 100%;
-    margin: 0 auto;
-}
-
-.submit input[type="submit"] {
-    display: inline-block;
-    width: auto;
-    background: #fdc108;
-    padding: 16px 55px;
-    font-size: 18px;
-    font-family: "Kantumruy Pro";
-    color: rgb(0, 34, 69) !important;
-    cursor: pointer;
-    line-height: 1.2;
-    font-weight:600
-}
+/* About Us */
+.goal {display: flex; flex-wrap: wrap; }
+.goal-box {max-width: 50%; width: 100%; position: relative; }
+.goal-content-boxes {position: absolute; top: 40px; left: 46px; max-width: 325px; width: 100%; color: #000; }
+.goal-title {font-size: 36px; font-family: "Kantumruy Pro"; color: inherit; font-weight: 600; line-height: 1.2; margin: 0 0 10px; }
+.goal-content-boxes p {font-size: 18px; font-family: "Kantumruy Pro"; color: inherit; line-height: 1.556; }
+.goal-box:nth-child(2) .goal-content-boxes {color: #fff;bottom: 40px;right: 46px;top: unset;left: unset;}
+.about-content-box {max-width: 960px; width: 100%; text-align: center; margin: auto auto 50px auto; }
+.about-title {font-size: 46px; font-weight:600; font-family: "Kantumruy Pro"; color: rgb(0, 0, 0); line-height: 1.2; text-align: center; width: 100%; margin: 0 0 24px; }
+.about-title span {font-weight: 800; }
+.ptb-120 {padding: 110px 0; }
+.cta-title {font-size: 36px; font-family: "Kantumruy Pro"; color: rgb(0, 0, 0); font-weight: bold; line-height: 1.2; }
+.cta-section-wrap{
+  text-align: center;
+} 
+.cta-section {padding: 60px 0; background: #f2f2f2; }

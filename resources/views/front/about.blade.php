@@ -40,4 +40,40 @@
         </div>
     </div>
 </section>
+<section class="about ptb-120">
+    <div class="wrapper">
+        <div class="about-wrap">
+            <h2 class="about-title">Welcome to <span>Spartex</span> the are of textiles</h2>
+            <div class="about-content-box">
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,.</p>
+            </div>
+            <div class="goal">
+                <div class="goal-box">    
+                    <img src="/front/images/our-goals.jpg">
+                    <div class="goal-content-boxes">
+                        <h2 class="goal-title">Our Mission</h2>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                    </div>                    
+                </div>
+                <div class="goal-box">    
+                    <img src="/front/images/our-vision.jpg">
+                    <div class="goal-content-boxes">
+                        <h2 class="goal-title">Our Mission</h2>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                    </div>                    
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="cta-section">
+    <div class="wrapper">
+        <div class="cta-section-wrap">
+            <h2 class="cta-title">The Best Solution For Your Textile And <br>Garment Needs. </h2>
+            <a class="common-btn blue-btn" href="#">Contact us</a>
+        </div>
+    </div>
+</section>
 @endsection
+

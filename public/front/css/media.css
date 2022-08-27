@@ -1,9 +1,11 @@
 @media only screen and (max-width: 1800px) {
-    .ptb-130 {padding:120p  x 0;}
+    .ptb-130 {padding:120px 0;}
+    .ptb-120 {padding: 100px 0;}
     .section-title {font-size: 75px;}
 }
 @media only screen and (max-width: 1600px) {
     .ptb-130 {padding:110px 0;}
+    
     .section-title {font-size: 70px;}
     .large-latter{font-size: 90px;}
     .process-menu li {padding: 25px 0;}
@@ -20,10 +22,13 @@
     .large-latter{font-size: 80px;}
     .ship-circle{width: 190px; height: 190px; font-size: 20px;}
     .process-menu li {padding: 20px 0;}
+    .banner-title {font-size: 45px;}
+    .pbt-120 {padding: 110px 0; }
 }
 @media only screen and (max-width: 1360px) {
     h1, h2, h3, h4, h5, h6 {margin: 0 0 24px;}
-    .ptb-130 {padding:90px 0;}
+    .ptb-120, .ptb-130 {padding:90px 0;}
+    
     .section-title {font-size: 60px;}
     .default-title {font-size: 38px;}
     .quality-img img{ max-width: 120px;}
@@ -39,10 +44,13 @@
     .samples-wrap .default-title, .video-content .default-title {font-size: 28px; }
     .process-menu li a{font-size: 16px;}
     .process-menu li {padding: 15px 0;}
-    
-}
+    .cta-title, .about-title {font-size: 40px;}
+    .goal-title {font-size: 32px;}
+    .about-content-box{margin: 0 auto 50px;}
+    .cta-section {padding: 40px 0;}
+    .small-heading {font-size: 42px;}
+}   
 @media only screen and (max-width: 1200px) {
-    h1, h2, h3, h4, h5, h6 {margin: 0 0 18px; }
     body, p, li {font-size: 16px; line-height: 1.5;}
     ul li:before{width: 8px; height: 8px;}
     ul li{margin: 0 0 14px;}
@@ -50,7 +58,8 @@
     .site-menu .menu .menu-list {padding: 0 15px;}
     .wrapper {padding: 0 30px;}
     .sub-title {font-size: 18px;letter-spacing: 0.2em;}
-    .ptb-130 {padding:80px 0;}
+    .ptb-120, .ptb-130 {padding:80px 0;}
+    
     .section-title {font-size: 55px;}
     .default-title {font-size: 34px;line-height: 1.2; }
     .quality-img img{ max-width: 100px;}
@@ -63,7 +72,7 @@
     .form-field button{font-size: 16px;padding: 14px 30px;}
     .common-btn{font-size: 16px;padding: 14px 30px;}
     .form-field input{padding: 13px 15px;}
-    .footer-title {font-size: 22px; margin: 0 0 24px 0;}
+    .footer-title {font-size: 22px; margin: 0 0 20px 0;}
     .social-media-list li {padding: 0 14px;}
     .social-media-list {margin: 0 -14px;}
     .site-footer{padding: 50px 0;}
@@ -77,6 +86,19 @@
     .explore-count {font-size: 22px;}
     .samples .large-latter{bottom: 0;}
     .process-menu li {padding: 10px 0;}
+    .banner-title {font-size: 40px;}
+    .inner-banner-content-wrap {padding-bottom: 20px; }
+    .cta-title, .about-title {font-size: 35px;}
+    .goal-title {font-size: 28px;}
+    .goal-content-boxes p {font-size: 16px;}
+    .about-content-box{margin: 0 auto 40px;}
+    .contact-page-form {padding: 60px;}
+    .contact-field{margin-bottom: 30px;}
+    .col-full textarea{height: 100px;}
+    .contact-field textarea, .contact-field input{font-size: 16px;}
+    .contact-box-wrap{border: 18px solid rgba(253,193,8,0.46);}
+    .location-icon img {max-width: 40px;}
+
 }
 @media only screen and (max-width: 1023px) {
     h1, h2, h3, h4, h5, h6 {margin: 0 0 14px;}
@@ -85,7 +107,8 @@
     .site-menu .menu .menu-list a {font-size: 16px;}
     .site-menu .menu .menu-list {padding: 0 10px;}
     .banner-section{padding-top: 70%;}
-    .ptb-130 {padding:70px 0;}
+    .ptb-120, .ptb-130 {padding:70px 0;}
+    
     .section-title {font-size: 50px;}
     .sub-title {font-size: 16px;letter-spacing: 0.1em;}
     .banner-content-wrap {max-width: 70%;}
@@ -125,11 +148,29 @@
     .ship-circle p{font-size: 20px;}
     .ship-box{padding: 0 10px;}
     .source-wrap p strong {font-size: 20px;}
+    .banner-title {font-size: 35px;}
+    .inner-banner-content-wrap:before{width: 90px;}
+    .cta-title, .about-title {font-size: 30px;}
+    .goal-title {font-size: 24px;}
+    .goal-content-boxes p {font-size: 15px;}
+    .goal-content-boxes{max-width: 70%; top: 30px; left: 30px;}
+    .goal-box:nth-child(2) .goal-content-boxes{bottom: 30px; right: 28px;}
+    .about-content-box{margin: 0 auto 20px;}
+    .contact-field {max-width: 50%;}
+    .col-full {max-width: 100% !important;}
+    .small-heading {font-size: 38px;}
+    .contact-box-wrap {border: 10px solid rgba(253,193,8,0.46); padding: 20px; }
+    .contact-box{padding: 0 12px;}
+    .contact-details{margin: 0 -12px;}
+    .contact-box {max-width: 35%;}
+    .contact-box.google-map {max-width: 30%; }
+    .google-map .contact-box-wrap {padding-top: 80%;}
 }
 @media only screen and (max-width: 767px) {
     p {margin: 0 0 15px 0; }
     br {display: none;}
-    .ptb-130 {padding:60px 0;}
+    .ptb-120, .ptb-130 {padding:60px 0;}
+    
     .section-title {font-size: 45px;}
     .focus {max-width: 100%;}
     .formula {max-width: 100%;}
@@ -159,13 +200,22 @@
     .site-menu .menu .menu-list{padding: 0;}
     .site-menu .menu .menu-list a{width: 100%;padding: 15px;display: inline-block; border-bottom: 2px solid #fff;}
 
-    
+    .banner-title {font-size: 30px;}
+    .cta-title, .about-title {font-size: 26px;}
+    .goal-box {max-width: 100%;}
+    .goal-box:nth-child(2) .goal-content-boxes, .goal-content-boxes{position: inherit; left: 0;right: 0;top: 0;bottom: 0; padding: 40px; width: 100%; max-width: 100%;}
+    .goal-box > img{position: absolute;left: 0;right: 0;top: 0;bottom: 0;width: 100%;height: 100%;object-fit: cover; object-position: center;}
+    .contact-page-form {padding: 50px;}
+    .small-heading {font-size: 34px;}
+    .contact-box {max-width: 50%;padding: 15px;}
+    .contact-box.google-map{order: 3;max-width: 100%;width: 100%;}
 
 }
 @media only screen and (max-width: 640px) {
     .banner-content-wrap {max-width: 100%;}
     .banner-section{padding-top: 80%;}
-    .ptb-130 {padding:50px 0;}
+    .ptb-120, .ptb-130 {padding:50px 0;}
+    
     .section-title {font-size: 40px;}
     .default-title {font-size: 26px;}
     ul.logo-list li {max-width: 100%;}
@@ -182,10 +232,16 @@
     .samples .large-latter{bottom: 0;}
     /*.process-menu li {padding: 15px 10px; }*/
     .process-menu ul{flex-wrap: unset;flex-direction: unset;justify-content: flex-start;overflow-x: auto;}
+    .goal-box:nth-child(2) .goal-content-boxes, .goal-content-boxes{padding: 30px;}
+    .contact-field {max-width: 100%;}
+    .contact-page-form {padding: 40px; }
+    .small-heading {font-size: 30px;}
+    .contact-box {max-width: 100%;padding: 15px}
 }
 @media only screen and (max-width: 480px) {
     .banner-section{padding-top: 140%;}
-    .ptb-130 {padding:40px 0;}
+    .ptb-120, .ptb-130 {padding:40px 0;}
+    
     .section-title {font-size: 32px;}
     
     ul.logo-list li{padding: 25px 15px;}
