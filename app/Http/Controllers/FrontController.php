@@ -3,11 +3,14 @@
 namespace App\Http\Controllers;
 
 
+use App\Mail\ContactRequestDetailMailToAdmin;
+use App\Mail\ContactRequestThankYouMail;
 use App\Models\Category;
 use App\Models\ContactRequest;
 use App\Models\Newsletter;
 use App\Models\Product;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
 
 class FrontController extends Controller
 {
@@ -42,8 +45,11 @@ class FrontController extends Controller
 
     public function contactStore(Request $request): \Illuminate\Http\RedirectResponse
     {
-        $requestData = $request->all();
-        ContactRequest::create($requestData);
+        $requestData = $request->except('_token');
+        $contactRequest = ContactRequest::create($requestData);
+        Mail::to($requestData['email'])->send(new ContactRequestThankYouMail($requestData));
+        $requestData['url'] = route('admin.contact_request_detail', $contactRequest->id);
+        Mail::to(env('ADMIN_MAIL'))->send(new ContactRequestDetailMailToAdmin($requestData));
         return redirect()->back()->with('success', 'Your Contact Request Received.');
     }
 }

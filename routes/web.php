@@ -19,7 +19,7 @@ use App\Http\Controllers\Admin\ProductController;
 |
 */
 
-Route::group(['middleware' => 'web'], function () {
+Route::group(['middleware' => ['web']], function () {
     Route::get('/', function () {
         return view('front.home');
     })->name('home');
@@ -54,8 +54,8 @@ Route::group(['middleware' => 'web'], function () {
         return view('front.contact');
     })->name('contact');
     Route::post('contact/store', [FrontController::class, 'contactStore'])->name('contact.store');
-
-    Route::group(['prefix' => 'admin', 'as' => 'admin.'], function () {
+    \Illuminate\Support\Facades\Log::info('web.php');
+    Route::group(['prefix' => 'admin', 'as' => 'admin.', 'middleware' => ['adminAccess']], function () {
         Route::get('logout', [LoginController::class, 'logout'])->name('logout');
 
         Route::get('dashboard', function () {

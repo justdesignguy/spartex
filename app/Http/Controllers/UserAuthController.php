@@ -2,7 +2,8 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\Controllers\Controller;
+use App\Mail\RegisterDetailMailToAdmin;
+use App\Mail\RegisterThankYouMail;
 use App\Mail\UserResetPassword;
 use App\Models\PasswordResets;
 use App\Models\User;
@@ -12,6 +13,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Mail;
+use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\Str;
 
 class UserAuthController extends Controller
@@ -51,12 +53,19 @@ class UserAuthController extends Controller
 
     public function store(Request $request)
     {
-        $this->validate($request, [
+        $requestData = $request->all();
+        $validator = Validator::make($requestData, [
             'name' => 'required',
             'email' => 'required|email|unique:users',
             'password' => 'required',
         ]);
-        User::create($request->all());
+        if ($validator->fails()) {
+            return redirect()->back()->with('error', $validator->messages()->all()[0]);
+        }
+        $user = User::create($requestData);
+        Mail::to($requestData['email'])->send(new RegisterThankYouMail($requestData));
+        $requestData['url'] = route('admin.user_detail', $user->id);
+        Mail::to(env('ADMIN_MAIL'))->send(new RegisterDetailMailToAdmin($requestData));
         return redirect()->route('user.login')->with('success', 'Registration Successfully');
     }
 
