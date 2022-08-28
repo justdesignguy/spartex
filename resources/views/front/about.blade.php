@@ -49,19 +49,19 @@
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,.</p>
             </div>
             <div class="goal">
-                <div class="goal-box">    
+                <div class="goal-box">
                     <img src="/front/images/our-goals.jpg">
                     <div class="goal-content-boxes">
                         <h2 class="goal-title">Our Mission</h2>
                         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
-                    </div>                    
+                    </div>
                 </div>
-                <div class="goal-box">    
+                <div class="goal-box">
                     <img src="/front/images/our-vision.jpg">
                     <div class="goal-content-boxes">
                         <h2 class="goal-title">Our Mission</h2>
                         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
-                    </div>                    
+                    </div>
                 </div>
             </div>
         </div>
@@ -71,7 +71,7 @@
     <div class="wrapper">
         <div class="cta-section-wrap">
             <h2 class="cta-title">The Best Solution For Your Textile And <br>Garment Needs. </h2>
-            <a class="common-btn blue-btn" href="#">Contact us</a>
+            <a class="common-btn blue-btn" href="{{ route('contact') }}">Contact us</a>
         </div>
     </div>
 </section>
