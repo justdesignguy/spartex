@@ -28,30 +28,35 @@
                         <div class="tab">
                             <div class="form-wrap">
                                 <div class="signup-field">
-                                    <select name="country" oninput="this.className = ''" id="country">
-                                        <option value="Country">Country*</option>
-                                        @foreach(countryArray() as $country)
-                                            <option value="{{ $country }}"
-                                                    @if(old('country') == $country) selected @endif>{{ $country }}</option>
-                                        @endforeach
-                                    </select>
+                                    {!! Form::select('country', countryArray(), old('country'), ['data-validation' => 'required', 'data-validation-error-msg' => 'Please select your country']) !!}
                                 </div>
                                 <div class="signup-field"><input placeholder="Full name*" oninput="this.className = ''"
                                                                  name="name" autocomplete="off"
-                                                                 value="{{ old('name') }}"></div>
+                                                                 value="{{ old('name') }}" data-validation="required"
+                                                                 data-validation-error-msg="Please enter your name">
+                                </div>
                                 <div class="signup-field"><input placeholder="Job title*" oninput="this.className = ''"
                                                                  name="job_title" autocomplete="off"
-                                                                 value="{{ old('job_title') }}"></div>
+                                                                 value="{{ old('job_title') }}"
+                                                                 data-validation="required"
+                                                                 data-validation-error-msg="Please enter your job title">
+                                </div>
                                 <div class="signup-field"><input placeholder="Email*" oninput="this.className = ''"
                                                                  name="email" autocomplete="off"
-                                                                 value="{{ old('email') }}"></div>
+                                                                 value="{{ old('email') }}" data-validation="email"
+                                                                 data-validation-error-msg="Please enter your correct email">
+                                </div>
                                 <div class="signup-field"><input placeholder="Company name*"
                                                                  oninput="this.className = ''" name="company_name"
-                                                                 autocomplete="off" value="{{ old('company_name') }}">
+                                                                 autocomplete="off" value="{{ old('company_name') }}"
+                                                                 data-validation="required"
+                                                                 data-validation-error-msg="Please enter your company name">
                                 </div>
                                 <div class="signup-field"><input placeholder="Password*" type="password"
                                                                  oninput="this.className = ''" name="password"
-                                                                 autocomplete="off"></div>
+                                                                 autocomplete="off" data-validation="required"
+                                                                 data-validation-error-msg="Please select your password">
+                                </div>
                                 <div class="signup-field full-col checkbox"><input type="checkbox" id="vehicle1"
                                                                                    oninput="this.className = ''"
                                                                                    name="vehicle1" value="Bike"> <label
@@ -61,99 +66,80 @@
                         </div>
                         <div class="tab">
                             <div class="form-wrap">
-                                <div class="signup-field"><input placeholder="Mobile Contact*"
+                                <div class="signup-field"><input placeholder="Mobile Contact*" type="text"
                                                                  oninput="this.className = ''" name="mobile_number"
-                                                                 autocomplete="off" value="{{ old('mobile_number') }}">
+                                                                 autocomplete="off" value="{{ old('mobile_number') }}"
+                                                                 data-validation="required"
+                                                                 data-validation-error-msg="Please enter mobile number">
                                 </div>
                                 <div class="signup-field"><input placeholder="Importer Exporter Code (IEC)*"
                                                                  oninput="this.className = ''" name="iec_code"
-                                                                 autocomplete="off" value="{{ old('iec_code') }}"></div>
+                                                                 autocomplete="off" value="{{ old('iec_code') }}"
+                                                                 data-validation="required"
+                                                                 data-validation-error-msg="Please enter IEC Code">
+                                </div>
                                 <div class="signup-field"><input placeholder="Business Identification Number (BIN)*"
                                                                  oninput="this.className = ''" name="bin_code"
-                                                                 autocomplete="off" value="{{ old('bin_code') }}"></div>
+                                                                 autocomplete="off" value="{{ old('bin_code') }}"
+                                                                 data-validation="required"
+                                                                 data-validation-error-msg="Please enter BIN Code">
+                                </div>
                             </div>
                         </div>
                         <div class="tab">
                             <div class="form-wrap">
                                 <div class="signup-field">
-                                    <select name="type_of_business" oninput="this.className = ''" id="type_of_business">
-                                        <option>What is the type of your business?*</option>
-                                        <option value="Fashion Brand">Fashion Brand</option>
-                                        <option value="Fabric Sourcing Agency">Fabric Sourcing Agency</option>
-                                        <option value="Garment Development/Production">Garment Development/Production
-                                        </option>
-                                        <option value="Fabric Wholesale/Retail">Fabric Wholesale/Retail</option>
-                                        <option value="Others">Others</option>
-                                    </select>
+                                    {!! Form::select('type_of_business',
+                                        ['' => 'What is the type of your business?*', 'Fashion Brand' => 'Fashion Brand', 'Fabric Sourcing Agency' => 'Fabric Sourcing Agency', 'Garment Development/Production' => 'Garment Development/Production', 'Fabric Wholesale/Retail' => 'Fabric Wholesale/Retail', 'Other' => 'Other'],
+                                        old('type_of_business'), ['id' => 'type_of_business', 'data-validation' => 'required']) !!}
                                 </div>
                                 <div class="signup-field">
-                                    <select name="how_long_in_business" oninput="this.className = ''"
-                                            id="how_long_in_business">
-                                        <option>How long have you been in business?*</option>
-                                        <option value="Less Than A Year">Less Than A Year</option>
-                                        <option value="1 - 2 Year">1 - 2 Year</option>
-                                        <option value="3 - 5 Year">3 - 5 Year</option>
-                                        <option value="5 - 10 Year">5 - 10 Year</option>
-                                        <option value="Over 10 Years">Over 10 Years</option>
-                                    </select>
+                                    {!! Form::select('how_long_in_business',
+                                        ['' => 'How long have you been in business?*', 'Less Than A Year' => 'Less Than A Year', '1 - 2 Year' => '1 - 2 Year', '3 - 5 Year' => '3 - 5 Year', '5 - 10 Year' => '5 - 10 Year', 'Over 10 Years' => 'Over 10 Years'],
+                                        old('how_long_in_business'), ['id' => 'how_long_in_business', 'data-validation' => 'required']) !!}
                                 </div>
                                 <div class="signup-field full-col">
-                                    <select name="budget_for_fabric_annually" oninput="this.className = ''"
-                                            id="budget_for_fabric_annually">
-                                        <option>How much budget do you allocate for fabric annually?*</option>
-                                        <option value="Less tha 10k">Less tha 10k</option>
-                                        <option value="10k - 25k">10k - 25k</option>
-                                        <option value="25k - 50k">25k - 50k</option>
-                                        <option value="50k - 100k">50k - 100k</option>
-                                        <option value="100k - 500k">100k - 500k</option>
-                                        <option value="Over 500k">Over 500k</option>
-                                    </select>
+                                    {!! Form::select('budget_for_fabric_annually',
+                                        ['' => 'How much budget do you allocate for fabric annually?*', 'Less tha 10k' => 'Less tha 10k', '10k - 25k' => '10k - 25k', '25k - 50k' => '25k - 50k', '50k - 100k' => '50k - 100k', '100k - 500k' => '100k - 500k', 'Over 500k' => 'Over 500k'],
+                                        old('budget_for_fabric_annually'), ['id' => 'budget_for_fabric_annually', 'data-validation' => 'required']) !!}
                                 </div>
                                 <div class="signup-field full-col">
-                                    <select name="brand_price_point" oninput="this.className = ''"
-                                            id="brand_price_point">
-                                        <option>What is the price point of the brand?*</option>
-                                        <option value="Budget">Budget</option>
-                                        <option value="Moderate">Moderate</option>
-                                        <option value="Contemporary">Contemporary</option>
-                                        <option value="Designer">Designer</option>
-                                        <option value="Couture">Couture</option>
-                                    </select>
+                                    {!! Form::select('brand_price_point',
+                                        ['' => 'What is the price point of the brand?*', 'Budget' => 'Budget', 'Moderate' => 'Moderate', 'Contemporary' => 'Contemporary', 'Designer' => 'Designer', 'Couture' => 'Couture'],
+                                        old('brand_price_point'), ['id' => 'brand_price_point', 'data-validation' => 'required']) !!}
                                 </div>
                                 <div class="signup-field full-col">
-                                    <select name="which_month_start_sourcing_for_ss" oninput="this.className = ''"
-                                            id="which_month_start_sourcing_for_ss">
-                                        <option>On which month do you start sourcing for S/S?*</option>
-                                        @foreach(monthArray() as $month)
-                                            <option value="{{ $month }}"
-                                                    @if(old('which_month_start_sourcing_for_ss') == $month) selected @endif>{{ $month }}</option>
-                                        @endforeach
-                                    </select>
+                                    @php
+                                        $which_month_start_sourcing_for_ss[''] = "On which month do you start sourcing for S/S?*";
+                                        $which_month_start_sourcing_for_fw[''] = "On which month do you start sourcing for F/W?*";
+                                        foreach (monthArray() as $month){
+                                            $which_month_start_sourcing_for_ss[$month] = $month;
+                                            $which_month_start_sourcing_for_fw[$month] = $month;
+                                        }
+                                    @endphp
+                                    {!! Form::select('which_month_start_sourcing_for_ss',
+                                        $which_month_start_sourcing_for_ss,
+                                        old('which_month_start_sourcing_for_ss'), ['id' => 'which_month_start_sourcing_for_ss', 'data-validation' => 'required']) !!}
                                 </div>
                                 <div class="signup-field full-col">
-                                    <select name="which_month_start_sourcing_for_fw" oninput="this.className = ''"
-                                            id="which_month_start_sourcing_for_fw">
-                                        <option>On which month do you start sourcing for F/W?*</option>
-                                        @foreach(monthArray() as $month)
-                                            <option value="{{ $month }}"
-                                                    @if(old('which_month_start_sourcing_for_fw') == $month) selected @endif>{{ $month }}</option>
-                                        @endforeach
-                                    </select>
+                                    {!! Form::select('which_month_start_sourcing_for_fw',
+                                        $which_month_start_sourcing_for_fw,
+                                        old('which_month_start_sourcing_for_fw'), ['id' => 'which_month_start_sourcing_for_fw', 'data-validation' => 'required']) !!}
                                 </div>
                                 <div class="signup-field full-col">
                                     <textarea
                                         placeholder="Please briefly describe your brand/business in 1 - 2 sentences.*"
-                                        name="business_description"
+                                        name="business_description" data-validation="required"
                                         autocomplete="off">{{ old('business_description') }}</textarea>
                                 </div>
                                 <div class="signup-field"><input placeholder="Company Website*"
                                                                  oninput="this.className = ''" name="company_website"
-                                                                 autocomplete="off"
+                                                                 autocomplete="off" data-validation="required" data-validation-error-msg="Please enter your website URL"
                                                                  value="{{ old('company_website') }}">
                                 </div>
                                 <div class="signup-field"><input placeholder="Company Instagram*"
                                                                  oninput="this.className = ''"
-                                                                 name="company_instagram_url" autocomplete="off"
+                                                                 name="company_instagram_url" autocomplete="off" data-validation="required" data-validation-error-msg="Please enter your instagram URL"
                                                                  value="{{ old('company_instagram_url') }}">
                                 </div>
                             </div>
@@ -169,4 +155,75 @@
             </div>
         </div>
     </section>
+@endsection
+@section('footer_scripts')
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/jquery.form-validator.min.js"></script>
+    <script type="text/javascript">
+        $.validate();
+
+        var currentTab = 0; // Current tab is set to be the first tab (0)
+        showTab(currentTab); // Display the current tab
+
+        function showTab(n) {
+            // This function will display the specified tab of the form...
+            var x = document.getElementsByClassName("tab");
+            if (x.length == 0) return false;
+            x[n].style.display = "block";
+            //... and fix the Previous/Next buttons:
+            if (n == 0) {
+                document.getElementById("prevBtn").style.display = "none";
+            } else {
+                document.getElementById("prevBtn").style.display = "inline";
+            }
+            if (n == (x.length - 1)) {
+                document.getElementById("nextBtn").innerHTML = "Submit";
+            } else {
+                document.getElementById("nextBtn").innerHTML = "Next";
+            }
+            //... and run a function that will display the correct step indicator:
+            fixStepIndicator(n)
+        }
+
+        function nextPrev(n) {
+            // This function will figure out which tab to display
+            var x = document.getElementsByClassName("tab");
+            // Exit the function if any field in the current tab is invalid:
+            if (x.length == 0) return false;
+            if (n == 1 && !validateForm()) return false;
+            // if you have reached the end of the form...
+            if (currentTab + n >= x.length) {
+                // ... the form gets submitted:
+                document.getElementById("nextBtn").disabled = true;
+                document.getElementById("regForm").submit();
+                return false;
+            }
+            // Hide the current tab:
+            x[currentTab].style.display = "none";
+            // Increase or decrease the current tab by 1:
+            currentTab = currentTab + n;
+            // Otherwise, display the correct tab:
+            showTab(currentTab);
+        }
+
+        function validateForm() {
+            // This function deals with validation of the form fields
+            var isValid = $("#regForm").isValid();
+            // If the valid status is true, mark the step as finished and valid:
+            if (isValid) {
+                document.getElementsByClassName("step")[currentTab].className += " finish";
+            }
+            return isValid; // return the valid status
+        }
+
+        function fixStepIndicator(n) {
+            // This function removes the "active" class of all steps...
+            var i, x = document.getElementsByClassName("step");
+            for (i = 0; i < x.length; i++) {
+                x[i].className = x[i].className.replace(" active", "");
+            }
+            //... and adds the "active" class on the current step:
+            x[n].className += " active";
+        }
+
+    </script>
 @endsection

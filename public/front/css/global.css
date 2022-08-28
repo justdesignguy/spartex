@@ -16,7 +16,7 @@ margin: 0 0 30px;}
 a:hover{color: #fdc108;}
 ul li {position: relative; padding-left:40px; line-height: 1.45; list-style-type: none; margin: 0 0 6px; }
 ul li:last-child{margin-bottom: 0 !important;}
-ul li:before {content: ""; position: absolute; top: 8px; left: 0; background-image: url(/front/images/b-arrow.png); background-repeat: no-repeat; width: 28px; height: 12px; } 
+ul li:before {content: ""; position: absolute; top: 8px; left: 0; background-image: url(/front/images/b-arrow.png); background-repeat: no-repeat; width: 28px; height: 12px; }
 ul {padding: 0; margin: 0; }
 .entry-content h1, .entry-content h2, .entry-content h3, .entry-content h4, .entry-content h5, .entry-content h6{display: inline-block;}
 blockquote{margin: 0; background-color: #0e192114; padding: 30px; border-left: 8px solid #0e1921;margin-bottom: 30px;}
@@ -354,11 +354,11 @@ img.inner-banner-img {position: absolute; top: 0; left: 0; right: 0; width: 100%
     max-width: 70px;
 }
 
-.service-box-wrap p { 
+.service-box-wrap p {
     font-size: 26px;
     font-family: "Kantumruy Pro";
     color: rgb(0, 0, 0);
-    line-height: 1.231; 
+    line-height: 1.231;
 }
 
 .service-box:nth-child(2n+2) {}
@@ -460,5 +460,6 @@ img.inner-banner-img {position: absolute; top: 0; left: 0; right: 0; width: 100%
 .cta-title {font-size: 36px; font-family: "Kantumruy Pro"; color: rgb(0, 0, 0); font-weight: bold; line-height: 1.2; }
 .cta-section-wrap{
   text-align: center;
-} 
+}
 .cta-section {padding: 60px 0; background: #f2f2f2; }
+.form-error {color: red; font-size: 12px; }
