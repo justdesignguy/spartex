@@ -17,7 +17,8 @@ a:hover{color: #fdc108;}
 ul li {position: relative; padding-left:40px; line-height: 1.45; list-style-type: none; margin: 0 0 6px; }
 ul li:last-child{margin-bottom: 0 !important;}
 ul li:before {content: ""; position: absolute; top: 8px; left: 0; background-image: url(/front/images/b-arrow.png); background-repeat: no-repeat; width: 28px; height: 12px; }
-ul {padding: 0; margin: 0; }
+ul {padding: 0; margin: 0 0 20px; }
+ul:last-child{margin: 0;}
 .entry-content h1, .entry-content h2, .entry-content h3, .entry-content h4, .entry-content h5, .entry-content h6{display: inline-block;}
 blockquote{margin: 0; background-color: #0e192114; padding: 30px; border-left: 8px solid #0e1921;margin-bottom: 30px;}
 .common-content{padding:60px 0;}
