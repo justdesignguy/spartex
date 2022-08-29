@@ -13,7 +13,7 @@
     <section class="full-content ptb-130" style="background-image: url('/front/images/about-bg.jpg');">
         <div class="wrapper">
             <div class="full-content-wrap">
-                <p>Fabric Order Policy</p>
+                <h1>Fabric Order Policy</h1>
                 <p>Although we take every step necessary to assure accurate representation of items displayed online, please understand that the photos provided may not fully represent the true color or nature of a particular item. Due to this discrepancy, we recommend you to request a sample before purchasing fabrics from our online store.</p>
                 <h2>Caution:</h2>
                 <ul>
