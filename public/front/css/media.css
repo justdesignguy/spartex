@@ -233,6 +233,7 @@
     p {margin: 0 0 15px 0; }
     h1, h2, h3, h4, h5, h6 {margin: 0 0 16px; }
     .ptb-120, .ptb-130 {padding:60px 0;}
+    .inner-banner-content-wrap p br{display: none;}
     .section-title {font-size: 45px;}
     .focus {max-width: 100%;}
     .formula {max-width: 100%;}
