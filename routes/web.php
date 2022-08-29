@@ -26,7 +26,10 @@ Route::group(['middleware' => ['web']], function () {
     Route::get('/about', function () {
         return view('front.about');
     })->name('about_page');
-
+    Route::get('/terms_and_conditions', function () {
+        return view('front.terms_and_conditions');
+    })->name('terms_and_conditions_page');
+    
 
     /*******************Admin Login ************************/
     Route::get('admin/login', [LoginController::class, 'index'])->name('admin.login');
