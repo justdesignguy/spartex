@@ -29,10 +29,12 @@
                             <div class="range-fabrics-image">
                                 <img src="{{ getFileUrl($product->image, 'product') }}">
                             </div>
-                            <div class="range-fabric-content">
-                                <h3 class="range-fabrics-title">{{ $product->title }}</h3>
-                                <p>{{ $product->short_description }}</p>
-                                <a class="common-btn blue-btn" href="javascript:;">Enquire Now</a>
+                            <div class="range-fabric-content-wrap">
+                                <div class="range-fabric-content">
+                                    <h3 class="range-fabrics-title">{{ $product->title }}</h3>
+                                    <p>{{ $product->short_description }}</p>
+                                    <a class="common-btn blue-btn" href="javascript:;">Enquire Now</a>
+                                </div>
                             </div>
                         </div>
                     </div>
