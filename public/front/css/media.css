@@ -5,7 +5,6 @@
 }
 @media only screen and (max-width: 1600px) {
     .ptb-130 {padding:110px 0;}
-    
     .section-title {font-size: 70px;}
     .large-latter{font-size: 90px;}
     .process-menu li {padding: 25px 0;}
@@ -27,10 +26,8 @@
     .inner-banner {padding-top: 550px;}
 }
 @media only screen and (max-width: 1360px) {
-    
     h1, h2, h3, h4, h5, h6 {margin: 0 0 24px;}
     .ptb-120, .ptb-130 {padding:90px 0;}
-    
     .section-title {font-size: 60px;}
     .default-title {font-size: 38px;}
     .quality-img img{ max-width: 120px;}
@@ -70,7 +67,6 @@
     .wrapper {padding: 0 30px;}
     .sub-title {font-size: 18px;letter-spacing: 0.2em;}
     .ptb-120, .ptb-130 {padding:80px 0;}
-    
     .section-title {font-size: 55px;}
     .default-title {font-size: 34px;line-height: 1.2; }
     .quality-img img{ max-width: 100px;}
@@ -122,14 +118,12 @@
     .intro-title {font-size: 21px;}
     .signup-instruction ol li{padding: 15px 0 15px 20px;}
     .service-box-wrap > img {max-width: 55px;}
-    .service-box-wrap p {
-    font-size: 22px;}
+    .service-box-wrap p {font-size: 22px;}
     .service-box-wrap {padding: 26px 15px;}
     .service-box{padding: 12px;}
     .services-list{margin: -12px;}
     .service-box:nth-child(2), .service-box:nth-child(5), .service-box:nth-child(8) {top: 30px;}
     .service-box:nth-child(3), .service-box:nth-child(6), .service-box:nth-child(9) {top: -40px;}
-    
     .products-content{padding: 20px;}
     .range-fabrics-title {font-size: 22px;margin: 0 0 13px;}
     .range-fabrics-box {padding: 0 12px; }
@@ -142,14 +136,12 @@
 @media only screen and (max-width: 1023px) {
     p {margin: 0 0 15px 0; }
     ul li{padding-left: 20px;margin: 0 0 10px;}
-
     .site-logo {max-width: 150px;}
     .common-btn { padding: 12px 22px; }
     .site-menu .menu .menu-list a {font-size: 16px;}
     .site-menu .menu .menu-list {padding: 0 10px;}
     .banner-section{padding-top: 70%;}
     .ptb-120, .ptb-130 {padding:70px 0;}
-    
     .section-title {font-size: 50px;}
     .sub-title {font-size: 16px;letter-spacing: 0.1em;}
     .banner-content-wrap {max-width: 70%;}
@@ -215,13 +207,11 @@
     .signup-btn{padding: 16px 70px 16px 0px;}
     .signup-box-wrap {padding: 50px 25px 80px; }
     .signup-btn:before {width: 50px; height: 50px; }
-    
     .signup-main-form {padding: 40px 0 0 0; max-width: 100%; }
     .signup-instruction {max-width: 100%;}
     .services-content {max-width: 100%;}
     .small-heading br{display: none;}
     .service-box{top: 0 !important; }
-
     .our-service-wrap {padding: 0; }
     .services-list {margin: 0; max-width: 100%; padding: 30px 0 0; }
     .service-box-wrap p {font-size: 18px; }
@@ -237,8 +227,7 @@
     .types-fabrics-box {padding: 20px 18px; }
     .fabrics-large-img {max-width: 84%; }
     .types-fabrics-wrap {margin: -20px -18px; }
-
-
+    .inner-banner{padding-top: 480px;}
 }
 @media only screen and (max-width: 767px) {
     p {margin: 0 0 15px 0; }
@@ -332,9 +321,7 @@
 @media only screen and (max-width: 480px) {
     .banner-section{padding-top: 140%;}
     .ptb-120, .ptb-130 {padding:40px 0;}
-    
     .section-title {font-size: 32px;}
-    
     ul.logo-list li{padding: 25px 15px;}
     .site-btn{display: none;}
     .site-menu{margin-left: auto;}
