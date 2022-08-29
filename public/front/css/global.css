@@ -435,7 +435,7 @@ img.inner-banner-img {position: absolute; top: 0; left: 0; right: 0; width: 100%
 .fabrics-small-img {margin-left: -128px; display: inline-block; margin-bottom: 35px; border: 6px solid #fff; }
 .fabrics-large-img {max-width: 74%; width: 100%; }
 .fabrics-large-img img {width: 100%; }
-.types-fabrics {padding: 100px 0; background-color: #f9f9f9; }
+.types-fabrics {background-color: #f9f9f9; }
 .types-fabrics .small-heading{margin: 0 0 50px;}
 
 .white{color: #fff;}

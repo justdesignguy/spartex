@@ -131,7 +131,7 @@
     .range-fabrics-title {font-size: 22px;margin: 0 0 13px;}
     .range-fabrics-box {padding: 0 12px; }
     .range-fabrics-wrap{margin: 0 -12px;}
-    .range-fabric-content{height: 50%;}
+    .range-fabrics-box-wrap p{margin: 0 0 15px; }
 }
 @media only screen and (max-width: 1023px) {
     p {margin: 0 0 15px 0; }
@@ -222,6 +222,9 @@
     .products-title {font-size: 24px;}
     .products-content{padding: 20px;}
     .products-box {max-width: 500px; padding: 15px; width: 100%; }
+    .range-fabrics-box {max-width: 50%;}
+    .range-fabrics-box {padding: 12px; }
+    .range-fabric-content{padding: 20px 15px;}
 }
 @media only screen and (max-width: 767px) {
     p {margin: 0 0 15px 0; }
@@ -306,6 +309,7 @@
     .step {max-width: 32%; margin: 0; font-size: 13px; }
     .service-box {max-width: 50%;}
     .services-list{justify-content: flex-start;}
+    .range-fabrics-box {max-width: 400px;}
 }
 @media only screen and (max-width: 480px) {
     .banner-section{padding-top: 140%;}

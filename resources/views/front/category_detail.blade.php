@@ -42,7 +42,7 @@
             </div>
         </div>
     </section>
-    <section class="types-fabrics">
+    <section class="types-fabrics ptb-120">
         <div class="wrapper">
             <h2 class="small-heading text-center">Types Of fabrics</h2>
             <div class="types-fabrics-wrap">
