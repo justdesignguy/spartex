@@ -18,7 +18,7 @@
                         <a href="{{ route('explore') }}">Product</a>
                     </li>
                     <li class="menu-list">
-                        <a href="javascript:;">Blog</a>
+                        <a href="{{ route('contact') }}">Contact Us</a>
                     </li>
                 </ul>
                 <a class="toggle" href="#toggle-btn">
@@ -30,7 +30,7 @@
                 </a>
             </div>
             <div class="site-btn">
-                <a class="common-btn" href="{{ route('contact') }}">Contact Us</a>
+                <a class="common-btn" href="{{ route('register') }}">Sign Up</a>
             </div>
         </div>
     </div>

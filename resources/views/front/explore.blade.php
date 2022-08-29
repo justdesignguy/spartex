@@ -33,50 +33,50 @@
                     <div class="service-box">
                         <div class="service-box-wrap">
                             <img src="/front/images/icon-1.png" alt="" class="entered lazyloaded">
-                            <p>Sustainable <br> Production
+                            <p>Sustainable  <br> Production
                         </div>
                         </p>
                     </div>
                     <div class="service-box">
                         <div class="service-box-wrap">
                             <img src="/front/images/icon-1.png" alt="" class="entered lazyloaded">
-                            <p>Silky <br> Smoothness</p>
+                            <p>Silky  <br> Smoothness</p>
                         </div>
                     </div>
                     <div class="service-box">
                         <div class="service-box-wrap">
                             <img src="/front/images/icon-1.png" alt="" class="entered lazyloaded">
-                            <p>Botanic <br> Origin</p>
+                            <p>Biodegradable</p>
                         </div>
                     </div>
                     <div class="service-box">
                         <div class="service-box-wrap">
                             <img src="/front/images/icon-1.png" alt="" class="entered lazyloaded">
-                            <p>Botanic <br> Origin</p>
+                            <p>Cooling  <br> Sensation</p>
                         </div>
                     </div>
                     <div class="service-box">
                         <div class="service-box-wrap">
                             <img src="/front/images/icon-1.png" alt="" class="entered lazyloaded">
-                            <p>Botanic <br> Origin</p>
+                            <p>Liquid-Like <br> Drape</p>
                         </div>
                     </div>
                     <div class="service-box">
                         <div class="service-box-wrap">
                             <img src="/front/images/icon-1.png" alt="" class="entered lazyloaded">
-                            <p>Botanic <br> Origin</p>
+                            <p>Vegan</p>
                         </div>
                     </div>
                     <div class="service-box">
                         <div class="service-box-wrap">
                             <img src="/front/images/icon-1.png" alt="" class="entered lazyloaded">
-                            <p>Botanic <br> Origin</p>
+                            <p>Yarn  <br> Strength</p>
                         </div>
                     </div>
                     <div class="service-box">
                         <div class="service-box-wrap">
                             <img src="/front/images/icon-1.png" alt="" class="entered lazyloaded">
-                            <p>Botanic <br> Origin</p>
+                            <p>Color  <br> Vibrancy</p>
                         </div>
                     </div>
 
