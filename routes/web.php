@@ -29,6 +29,10 @@ Route::group(['middleware' => ['web']], function () {
     Route::get('/terms_and_conditions', function () {
         return view('front.terms_and_conditions');
     })->name('terms_and_conditions_page');
+    Route::get('/policies', function () {
+        return view('front.policies');
+    })->name('policies_page');
+    
     
 
     /*******************Admin Login ************************/
