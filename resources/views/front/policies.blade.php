@@ -34,7 +34,7 @@
                 <p>Refunds are not permitted after fabric goods have been cut or ordered . All sales are final.</p>
                 <h2>Disclaimer </h2>
                 <p>With Ordering on Website , You are abided with our terms & conditions mentioned on the page </p>
-                <a href="{{ route('terms_and_conditions') }}">Check a look on ( Terms Page lInk) </a>
+                <a href="#">Check a look on ( Terms Page lInk) </a>
             </div>
         </div>
     </section>
