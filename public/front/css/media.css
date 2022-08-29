@@ -24,8 +24,10 @@
     .process-menu li {padding: 20px 0;}
     .banner-title {font-size: 45px;}
     .pbt-120 {padding: 110px 0; }
+    .inner-banner {padding-top: 550px;}
 }
 @media only screen and (max-width: 1360px) {
+    
     h1, h2, h3, h4, h5, h6 {margin: 0 0 24px;}
     .ptb-120, .ptb-130 {padding:90px 0;}
     
@@ -126,7 +128,9 @@
     .service-box:nth-child(3), .service-box:nth-child(6), .service-box:nth-child(9) {top: -40px;}
     
     .products-content{padding: 20px;}
-    
+    .range-fabrics-title {font-size: 22px;margin: 0 0 13px;}
+    .range-fabrics-box {padding: 0 12px; }
+    .range-fabrics-wrap{margin: 0 -12px;}
 }
 @media only screen and (max-width: 1023px) {
     p {margin: 0 0 15px 0; }
@@ -298,7 +302,7 @@
     .common-title {font-size: 28px;}
     .signup-field {max-width: 100%;}
     .steps-button button#prevBtn{padding: 11px 34px;}
-    .step {max-width: 100%; margin: 0 0 18px;}
+    .step {max-width: 32%; margin: 0; font-size: 13px; }
     .service-box {max-width: 50%;}
     .services-list{justify-content: flex-start;}
 }

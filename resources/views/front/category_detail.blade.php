@@ -15,7 +15,7 @@
             </div>
         </div>
     </section>
-    <section class="range-fabrics">
+    <section class="range-fabrics ptb-120">
         <div class="wrapper">
             <div class="range-fabrics-title-sec">
                 <h2 class="small-heading">Range of fabrics</h2>
