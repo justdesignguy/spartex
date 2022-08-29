@@ -57,6 +57,9 @@
     .signup-title {font-size: 32px; margin: 0 0 28px 0; padding-bottom: 28px;}
     .service-box-wrap p {font-size: 24px;}
     .products-title {font-size: 28px;}
+    .types-fabrics-box{padding: 30px 24px;}
+    .fabrics-img {margin: 0 0 28px}
+    .types-fabrics-wrap{margin: -30px -24px;}
 }
 @media only screen and (max-width: 1200px) {
     body, p, li {font-size: 16px; line-height: 1.5;}
@@ -132,6 +135,9 @@
     .range-fabrics-box {padding: 0 12px; }
     .range-fabrics-wrap{margin: 0 -12px;}
     .range-fabrics-box-wrap p{margin: 0 0 15px; }
+    .fabrics-large-img {max-width: 78%;}
+    .fabrics-small-img {border: 5px solid #fff; margin-left: -80px; max-width: 40%;}
+    .types-fabrics-title {font-size: 26px;}
 }
 @media only screen and (max-width: 1023px) {
     p {margin: 0 0 15px 0; }
@@ -224,7 +230,15 @@
     .products-box {max-width: 500px; padding: 15px; width: 100%; }
     .range-fabrics-box {max-width: 50%;}
     .range-fabrics-box {padding: 12px; }
+    .range-fabrics-wrap {margin: -12px; }
     .range-fabric-content{padding: 20px 15px;}
+    .fabrics-img {margin: 0 0 20px; }
+    .types-fabrics-title {font-size: 22px; }
+    .types-fabrics-box {padding: 20px 18px; }
+    .fabrics-large-img {max-width: 84%; }
+    .types-fabrics-wrap {margin: -20px -18px; }
+
+
 }
 @media only screen and (max-width: 767px) {
     p {margin: 0 0 15px 0; }
@@ -275,6 +289,10 @@
     .signup-box-wrap .recommended {font-size: 12px; }
     .signup-title{margin: 0 0 14px 0; padding-bottom: 14px;}
     .signup-subtitle {font-size: 18px;letter-spacing: 0.16em;}
+    .types-fabrics-box {max-width: 100%;}
+    .fabrics-small-img{margin-left: -120px;}
+    
+
     
 }
 @media only screen and (max-width: 640px) {
