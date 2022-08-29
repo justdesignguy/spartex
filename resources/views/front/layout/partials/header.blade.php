@@ -30,7 +30,7 @@
                 </a>
             </div>
             <div class="site-btn">
-                <a class="common-btn" href="{{ route('register') }}">Sign Up</a>
+                <a class="common-btn" href="#">Sign Up</a>
             </div>
         </div>
     </div>
