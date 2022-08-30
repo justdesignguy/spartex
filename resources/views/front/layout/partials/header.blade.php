@@ -1,4 +1,5 @@
-<header class="site-header @if(in_array(\Illuminate\Support\Facades\Route::currentRouteName(), ['user.register', 'user.register_form'])) dark-header @endif">
+<header
+    class="site-header @if(in_array(\Illuminate\Support\Facades\Route::currentRouteName(), ['user.register', 'user.register_form'])) dark-header @endif">
     <div class="wrapper">
         <div class="site-header-wrap">
             <div class="site-logo">
@@ -30,7 +31,11 @@
                 </a>
             </div>
             <div class="site-btn">
-                <a class="common-btn" href="#">Sign Up</a>
+                @if(auth()->check())
+                    <a class="common-btn" href="{{ route('register') }}">Sign Up</a>
+                @else
+                    <a class="common-btn" href="{{ route('logout') }}">Logout</a>
+                @endif
             </div>
         </div>
     </div>
