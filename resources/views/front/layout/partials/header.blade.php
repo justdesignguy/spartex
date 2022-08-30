@@ -32,7 +32,7 @@
             </div>
             <div class="site-btn">
                 @if(auth()->check())
-                    <a class="common-btn" href="{{ route('register') }}">Sign Up</a>
+                    <a class="common-btn" href="{{ route('user.register') }}">Sign Up</a>
                 @else
                     <a class="common-btn" href="{{ route('user.logout') }}">Logout</a>
                 @endif
