@@ -1,5 +1,5 @@
 <header
-    class="site-header @if(in_array(\Illuminate\Support\Facades\Route::currentRouteName(), ['user.register', 'user.register_form'])) dark-header @endif">
+    class="site-header @if(in_array(\Illuminate\Support\Facades\Route::currentRouteName(), ['user.login', 'user.register', 'user.register_form'])) dark-header @endif">
     <div class="wrapper">
         <div class="site-header-wrap">
             <div class="site-logo">
@@ -34,7 +34,7 @@
                 @if(auth()->check())
                     <a class="common-btn" href="{{ route('register') }}">Sign Up</a>
                 @else
-                    <a class="common-btn" href="{{ route('logout') }}">Logout</a>
+                    <a class="common-btn" href="{{ route('user.logout') }}">Logout</a>
                 @endif
             </div>
         </div>
