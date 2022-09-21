@@ -18,9 +18,8 @@
     <section class="range-fabrics ptb-120">
         <div class="wrapper">
             <div class="range-fabrics-title-sec">
-                <h2 class="small-heading">Range of fabrics</h2>
-                <p>This wide range can meet the needs of any designer, whether a small <br> startup or a multi-outlet
-                    brand. </p>
+                <h2 class="small-heading">Range Of Fabrics Replacement </h2>
+                <p>Wide Variety Of style To choose From </p>
             </div>
             <div class="range-fabrics-wrap">
                 @foreach($rangeOfProducts as $product)
@@ -44,7 +43,7 @@
     </section>
     <section class="types-fabrics ptb-120">
         <div class="wrapper">
-            <h2 class="small-heading text-center">Types Of fabrics</h2>
+            <h2 class="small-heading text-center">Type Of Fabric and their outcomes</h2>
             <div class="types-fabrics-wrap">
                 @foreach($typeOfProducts as $product)
                     <div class="types-fabrics-box">

@@ -1,0 +1,30 @@
+@extends('front.layout.master')
+@section('content')
+<section class="inner-banner">
+    <img class="inner-banner-img" src="/front/images/inner-banner.jpg">
+    <div class="inner-banner-content">
+        <div class="wrapper">
+            <div class="inner-banner-content-wrap">
+                <h1 class="banner-title">Thank You</h1>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="error-page ptb-120">
+    <div class="wrapper">
+        <div class="error-content text-center">
+            <div class="error-content">
+                <div class="thank-you-icon"><i class="fa fa-thumbs-up"></i></div>
+                <h1 class="common-title"><span>Thank you</span></h1>
+                <!-- <h2 class="error-title">Page Not Found!</h2> -->
+                <div class="error-disc">
+                    <p>Thanks for your interest with us. We will get back to you as soon as possible.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+@endsection
+

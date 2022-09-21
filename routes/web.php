@@ -26,6 +26,15 @@ Route::group(['middleware' => ['web']], function () {
     Route::get('/about', function () {
         return view('front.about');
     })->name('about_page');
+    Route::get('/404', function () {
+        return view('front.404');
+    })->name('404_page');
+    Route::get('/thank-you', function () {
+        return view('front.thank-you');
+    })->name('thank-you_page');
+    Route::get('/garments', function () {
+        return view('front.garments');
+    })->name('garments_page');
     Route::get('/terms_and_conditions', function () {
         return view('front.terms_and_conditions');
     })->name('terms_and_conditions_page');

@@ -232,13 +232,14 @@
     .goal-box > img {position: absolute; top: 0; left: 0; right: 0; width: 100%; height: 100%; object-fit: cover; object-position: center; }
     .new-plan-box {max-width: 50%;}
     .source-wrap:nth-child(2n) .source-image{order: 2;}
-
+    .thank-you-icon .fa.fa-thumbs-up {padding: 33px; font-size: 50px; }
+    .garments-box {max-width: 50%;}
 
 }
 @media only screen and (max-width: 767px) {
     p {margin: 0 0 15px 0; }
     h1, h2, h3, h4, h5, h6 {margin: 0 0 16px; }
-    .inner-banner-content-wrap p {font-size: 16px;}
+    .inner-banner-content-wrap p {font-size: 16px;line-height: 1.5;}
     .ptb-120, .ptb-130 {padding:60px 0;}
     .banner-title br{display: none;}
     .inner-banner-content-wrap p br{display: none;}
@@ -291,12 +292,14 @@
     .fabrics-small-img {margin-left: -20%;}
     .range-fabrics-title-sec br {display: none;}
     .login-form{padding: 30px 20px;}
-
+    .garments-content {padding: 20px; }
+    .garments-title {font-size: 20px;}
 }
 @media only screen and (max-width: 640px) {
     .banner-content-wrap {max-width: 100%;}
     .banner-section{padding-top: 80%;}
     .ptb-120, .ptb-130 {padding:50px 0;}
+    .garments-box {max-width: 100%;}
     
     .section-title {font-size: 28px;}
     .default-title {font-size: 26px;}

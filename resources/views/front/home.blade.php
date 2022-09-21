@@ -177,7 +177,7 @@
                             </div>
                             <div class="source-wrap">
                                 <div class="source-image" data-aos="fade-up" data-aos-duration="1000">
-                                    <img src="/front/images/mix-cloths.jpg">
+                                    <img src="/front/images/textiles.jpg">
                                     <div class="large-latter">Source</div>
                                 </div>
                                 <div class="source-content" data-aos="fade-up" data-aos-duration="1000">
@@ -192,12 +192,12 @@
                         <div class="wrapper">
                             <div class="samples-wrap">
                                 <div class="samples-left" data-aos="fade-up" data-aos-duration="1000">
-                                    <img src="/front/images/sample-1.jpg">
+                                    <img src="/front/images/textiles-structure.jpg">
                                     <h2 class="default-title">Spartex is all set to impress you!</h2>
                                 </div>
                                 <div class="samples-right" data-aos="fade-up" data-aos-duration="1000">
                                     <h2 class="default-title">Be it computer embroidery or hand embroidery. We carry super-speciality to provide you with all kinds of embroidery as per your design requirements.</h2>
-                                    <img src="/front/images/sample-2.jpg">
+                                    <img src="/front/images/textiles-sample.jpg">
                                 </div>
                             </div>
                             <div class="large-latter">samples</div>
@@ -210,7 +210,7 @@
                                 <div class="order-box" data-aos="fade-up" data-aos-duration="1000">
                                     <div class="order-box-wrap">
                                         <div class="order-img">
-                                            <img src="/front/images/order-1.jpg">
+                                            <img src="/front/images/low-moq.jpg">
                                         </div>
                                         <div class="order-content">
                                             <h3 class="order-title"> Low MOQ </h3>
@@ -221,7 +221,7 @@
                                 <div class="order-box" data-aos="fade-up" data-aos-duration="1500">
                                     <div class="order-box-wrap">
                                         <div class="order-img">
-                                            <img src="/front/images/order-1.jpg">
+                                            <img src="/front/images/easy-to-reorder.jpg">
                                         </div>
                                         <div class="order-content">
                                             <h3 class="order-title">Easy to Reorder</h3>
@@ -232,7 +232,7 @@
                                 <div class="order-box" data-aos="fade-up" data-aos-duration="2000">
                                     <div class="order-box-wrap">
                                         <div class="order-img">
-                                            <img src="/front/images/order-1.jpg">
+                                            <img src="/front/images/quick-leads.jpg">
                                         </div>
                                         <div class="order-content">
                                             <h3 class="order-title">Quick Lead Times</h3>

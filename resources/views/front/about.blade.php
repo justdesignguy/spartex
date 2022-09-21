@@ -38,7 +38,7 @@
             </div>
             <div class="goal">
                 <div class="goal-box">
-                    <img src="/front/images/our-goals.jpg">
+                    <img src="/front/images/our-mission.jpg">
                     <div class="goal-content-boxes">
                         <h2 class="goal-title">Our Mission</h2>
                         <p>We provide more than just <strong> private label clothing manufacturing</strong> solutions. We seek to further deepen the relationship with our clients and offer customized services which range from design suggestions to technical suggestions and the development of completely new pattern designs.</p><p> Ideally, that’s what every clothing brand should expect from its <strong>private label clothing manufacturer</strong>.</p>

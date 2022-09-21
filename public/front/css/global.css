@@ -162,8 +162,8 @@ ul.logo-list li img {max-height: 80px; margin: auto; }
 .order-wrap {display: flex; flex-wrap: wrap; margin: 0 -3px; }
 .order-box {max-width: 33.33%; width: 100%; padding: 0 3px; }
 .order-box-wrap {position: relative; }
-.order-img {position: relative; padding-top: 121%; overflow: hidden;}
-.order-img > img {position: absolute; top: 0; left: 0; right: 0; width: 100%; height: 100%; object-fit: cover; object-position: center; transition: all ease-in-out 0.3s; -webkit-transition: all ease-in-out 0.3s; -moz-transition: all ease-in-out 0.3s; -o-transition: all ease-in-out 0.3s; }
+.order-img {position: relative; padding-top: 121%; overflow: hidden; background-color: #000;}
+.order-img > img {position: absolute; top: 0; left: 0; right: 0; width: 100%; height: 100%; object-fit: cover; object-position: center; transition: all ease-in-out 0.3s; -webkit-transition: all ease-in-out 0.3s; -moz-transition: all ease-in-out 0.3s; -o-transition: all ease-in-out 0.3s; opacity: 0.6;}
 .order-box-wrap:hover img {transform: scale(1.2);}
 .order-content {position: absolute; top: 50%; transform: translateY(-50%); text-align: center; left: 0; right: 0; margin: 0 auto; max-width: 80%;}
 .order-title {font-size: 26px; font-family: "Kantumruy Pro"; color: rgb(255, 255, 255); font-weight: bold; line-height: 1.2; margin: 0 0 20px; }
@@ -185,17 +185,17 @@ ul.logo-list li img {max-height: 80px; margin: auto; }
 .ship-step:nth-child(2) {padding-top: 75px; }
 
 
-/*  */
+/* Focus */
 .focus-formula-wrap {display: flex; flex-wrap: wrap; align-items: flex-start; margin: -15px;}
 .focus, .formula {padding: 15px; }
 .formula {max-width: 42%; width: 100%; }
 .focus {max-width: 58%; width: 100%; height: 100%; }
-.formula-wrap {padding-top: 500px; position: relative; width: 100%; overflow: hidden;}
-.formula-wrap img {position: absolute; top: 0; left: 0; right: 0; width: 100%; height: 100%; object-fit: cover; transition: all ease-in-out 0.3s;-webkit-transition: all ease-in-out 0.3s;-moz-transition: all ease-in-out 0.3s;-o-transition: all ease-in-out 0.3s;}
+.formula-wrap {padding-top: 500px; position: relative; width: 100%; overflow: hidden;background: #000;}
+.formula-wrap img {position: absolute; top: 0; left: 0; right: 0; width: 100%; height: 100%; object-fit: cover; transition: all ease-in-out 0.3s;-webkit-transition: all ease-in-out 0.3s;-moz-transition: all ease-in-out 0.3s;-o-transition: all ease-in-out 0.3s;opacity: 0.6;}
 .formula-wrap:hover img{transform: scale(1.2);}
 .focus-title {position: absolute; bottom: 0; left: 0; padding: 40px; font-size: 32px; font-family: "Kantumruy Pro"; color: rgb(255, 255, 255); font-weight: bold; line-height: 1.375; text-align: left; margin: 0;}
-.focus-wrap {padding-top: 500px; position: relative; height: 100%; overflow: hidden;}
-.focus-wrap img {position: absolute; top: 0; left: 0; right: 0; width: 100%; height: 100%; object-fit: cover; transition: all ease-in-out 0.3s;-webkit-transition: all ease-in-out 0.3s;-moz-transition: all ease-in-out 0.3s;-o-transition: all ease-in-out 0.3s;}
+.focus-wrap {padding-top: 500px; position: relative; height: 100%; overflow: hidden;background-color: #000000;}
+.focus-wrap img {position: absolute; top: 0; left: 0; right: 0; width: 100%; height: 100%; object-fit: cover; transition: all ease-in-out 0.3s;-webkit-transition: all ease-in-out 0.3s;-moz-transition: all ease-in-out 0.3s;-o-transition: all ease-in-out 0.3s;opacity: 0.6;}
 .focus-wrap:hover img{transform: scale(1.2);}
 
 /* footer */
@@ -283,7 +283,7 @@ input:-webkit-autofill {background-color: transparent !important; }
 img.inner-banner-img {position: absolute; top: 0; left: 0; right: 0; width: 100%; height: 100%; object-fit: cover; object-position: top center; }
 .inner-banner-content {position: absolute; bottom: 60px; width: 100%; }
 .banner-title{font-size: 50px; font-family: "Kantumruy Pro"; color: rgb(255, 255, 255); font-weight: 600; text-transform: uppercase; line-height: 1.2; margin: 0 0 10px; }
-.inner-banner-content-wrap p{font-size: 18px; font-family: "Kantumruy Pro"; color: rgb(255, 255, 255); line-height: 1.2; }
+.inner-banner-content-wrap p{font-size: 18px; font-family: "Kantumruy Pro"; color: rgb(255, 255, 255); line-height: 2; }
 .inner-banner-content-wrap .banner-title:last-child{margin-bottom: 0;}
 .inner-banner-content-wrap {position: relative; padding-bottom: 30px; }
 .inner-banner-content-wrap:before{position: absolute; content: ""; left: 0; bottom: 0; background-color: rgb(253, 193, 8); width: 109px; height: 2px; }
@@ -319,8 +319,8 @@ img.inner-banner-img {position: absolute; top: 0; left: 0; right: 0; width: 100%
 .products-image img {width: 100%; position: absolute; top: 0; left: 0; object-fit: cover; object-position: center; height: 100%; }
 .range-fabrics-title-sec{text-align: center;}
 
-.range-fabrics-wrap {display: flex; flex-wrap: wrap; justify-content: center; margin: 0 -15px; }
-.range-fabrics-box {max-width: 25%; width: 100%; padding: 0 15px; }
+.range-fabrics-wrap {display: flex; flex-wrap: wrap; justify-content: center; margin: -15px; }
+.range-fabrics-box {max-width: 33.33%; width: 100%; padding: 15px; }
 .range-fabrics-title-sec .small-heading {margin: 0 0 10px; }
 .range-fabrics-title-sec {margin: 0 0 40px;}
 .range-fabrics-title {font-size: 26px; font-family: "Kantumruy Pro"; color: rgb(0, 0, 0); font-weight: 600; line-height: 1.077; margin: 0 0 20px; width: 100%; }
@@ -371,6 +371,8 @@ img.inner-banner-img {position: absolute; top: 0; left: 0; right: 0; width: 100%
 /* About Us */
 .goal {display: flex; flex-wrap: wrap; }
 .goal-box {max-width: 50%; width: 100%; position: relative; }
+.goal-box:first-child{background-color: #ffffff;}
+.goal-box:first-child img {opacity: 0.5; }
 .goal-content-boxes {position: absolute; top: 40px; left: 46px; max-width: 80%; width: 100%; color: #000; }
 .goal-title {font-size: 36px; font-family: "Kantumruy Pro"; color: inherit; font-weight: 600; line-height: 1.2; margin: 0 0 10px; }
 .goal-content-boxes p {font-size: 18px; font-family: "Kantumruy Pro"; color: inherit; line-height: 1.556; }
@@ -439,4 +441,70 @@ p.mg-b-0 a:hover {color: #fdc108; }
 
 .new-plan-title {
     margin: 0 0 30px;
+}
+
+/**/
+.garments-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -10px;
+}
+
+.garments-box {
+    max-width: 33.33%;
+    width: 100%;
+    padding: 10px;
+}
+
+.garments-box-wrap {
+    border: 1px solid #f0f0f0;
+    padding: 8px;
+    height: 100%;
+    border-top-left-radius: 56px;
+    border-bottom-right-radius: 56px;
+}
+
+.garments-img {
+    padding-top: 64%;
+    border-top-left-radius: 56px;
+    border-bottom-right-radius: 56px;
+    position: relative;
+    overflow: hidden;
+}
+
+.garments-img img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.garments-content {
+    padding: 26px;
+}
+
+.garments-title {
+    font-size: 24px;
+    line-height: 1.2;
+    margin: 0 0 10px 0;
+    font-weight: 600;
+    color: #000;
+}
+
+.garments-content p {
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+/**/
+.error-content{min-height: 50vh;display: flex;align-items: center;flex-wrap: wrap;align-content: center;justify-content: center;}
+.thank-you-icon .fa.fa-thumbs-up {
+    padding: 43px;
+    border-radius: 50%;
+    background: #000000;
+    color: #fff;
+    font-size: 70px;
+    margin-bottom: 30px;
 }
