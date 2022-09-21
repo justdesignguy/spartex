@@ -10,18 +10,18 @@ use Laravel\Sanctum\HasApiTokens;
 
 class User extends Authenticatable
 {
-    use HasApiTokens, HasFactory, Notifiable;
-
     /**
      * The attributes that are mass assignable.
      *
      * @var array<int, string>
      */
+    const PLAN = ['standard' => "Fashion Standard Membership", 'business' => "Fashion Business Membership"];
     protected $fillable = [
         'name',
         'email',
         'password',
         'mobile_number',
+        'plan_type',
         'country',
         'company_name',
         'job_title',
@@ -37,6 +37,8 @@ class User extends Authenticatable
         'company_website',
         'company_instagram_url',
     ];
+
+    use HasApiTokens, HasFactory, Notifiable;
 
     /**
      * The attributes that should be hidden for serialization.
@@ -60,5 +62,10 @@ class User extends Authenticatable
     public function setPasswordAttribute($value)
     {
         $this->attributes['password'] = bcrypt($value);
+    }
+
+    public function countryDetail(): \Illuminate\Database\Eloquent\Relations\HasOne
+    {
+        return $this->hasOne(Country::class, 'id', 'country');
     }
 }

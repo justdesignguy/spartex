@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Mail\RegisterDetailMailToAdmin;
 use App\Mail\RegisterThankYouMail;
 use App\Mail\UserResetPassword;
+use App\Models\Country;
 use App\Models\PasswordResets;
 use App\Models\User;
 use Carbon\Carbon;
@@ -48,7 +49,9 @@ class UserAuthController extends Controller
     public function registerForm()
     {
         if (auth()->user()) return redirect()->route('home');
-        return view('front.auth.register_form');
+        $countries = Country::pluck('name', 'id')->toArray();
+        $countryWiseLength = json_encode(Country::pluck('length', 'id')->toArray());
+        return view('front.auth.register_form', compact('countries', 'countryWiseLength'));
     }
 
     public function store(Request $request)
@@ -63,9 +66,9 @@ class UserAuthController extends Controller
             return redirect()->back()->with('error', $validator->messages()->all()[0]);
         }
         $user = User::create($requestData);
-        Mail::to($requestData['email'])->send(new RegisterThankYouMail($requestData));
-        $requestData['url'] = route('admin.user_detail', $user->id);
-        Mail::to(env('ADMIN_MAIL'))->send(new RegisterDetailMailToAdmin($requestData));
+//        Mail::to($requestData['email'])->send(new RegisterThankYouMail($requestData));
+//        $requestData['url'] = route('admin.user_detail', $user->id);
+//        Mail::to(env('ADMIN_MAIL'))->send(new RegisterDetailMailToAdmin($requestData));
         return redirect()->route('user.login')->with('success', 'Registration Successfully');
     }
 
