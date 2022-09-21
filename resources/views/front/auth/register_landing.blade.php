@@ -16,7 +16,7 @@
                                 <li>Free swatch samples</li>
                                 <li>Dedicated fabric sourcing manager</li>
                             </ul>
-                            <a class="signup-btn" href="{{ route('user.register_form') }}">Get Access</a>
+                            <a class="signup-btn" href="{{ route('user.register_form', ['plan' => 'business']) }}">Get Access</a>
                         </div>
                     </div>
                     <div class="signup-box recommended-box">
@@ -31,7 +31,7 @@
                                 <li>Free swatch samples</li>
                                 <li>Dedicated fabric sourcing manager</li>
                             </ul>
-                            <a class="signup-btn" href="{{ route('user.register_form') }}">Get Access</a>
+                            <a class="signup-btn" href="{{ route('user.register_form', ['plan' => 'standard']) }}">Get Access</a>
                         </div>
                     </div>
                 </div>

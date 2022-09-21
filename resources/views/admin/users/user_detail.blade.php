@@ -28,10 +28,10 @@
             </div>
             <div class="row no-gutters">
                 <div class="col-5 col-sm-4">
-                    Mobile Number:
+                    Plan:
                 </div>
                 <div class="col-7 col-sm-8">
-                    {{ $user->mobile_number ?? "--" }}
+                    {{ \App\Models\User::PLAN[$user->plan_type] ?? "--" }}
                 </div>
             </div>
             <div class="row no-gutters">
@@ -39,7 +39,15 @@
                     Country:
                 </div>
                 <div class="col-7 col-sm-8">
-                    {{ $user->country ?? "--" }}
+                    {{ $user->countryDetail->name ?? "--" }}
+                </div>
+            </div>
+            <div class="row no-gutters">
+                <div class="col-5 col-sm-4">
+                    Mobile Number:
+                </div>
+                <div class="col-7 col-sm-8">
+                    {{ $user->mobile_number ?? "--" }}
                 </div>
             </div>
             <div class="row no-gutters">

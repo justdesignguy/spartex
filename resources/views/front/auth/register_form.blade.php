@@ -28,8 +28,9 @@
                         <div class="tab">
                             <div class="form-wrap">
                                 <div class="signup-field">
-                                    {!! Form::select('country', countryArray(), old('country'), ['data-validation' => 'required', 'data-validation-error-msg' => 'Please select your country']) !!}
+                                    {!! Form::select('country', $countries, old('country'), ['data-validation' => 'required', 'data-validation-error-msg' => 'Please select your country', 'id' => 'country', 'placeholder' => 'Select Country*']) !!}
                                 </div>
+                                <input type="hidden" name="plan_type" value="{{ in_array(request('plan'), ['business', 'standard']) ? request('plan') : 'business' }}">
                                 <div class="signup-field"><input placeholder="Full name*" oninput="this.className = ''"
                                                                  name="name" autocomplete="off"
                                                                  value="{{ old('name') }}" data-validation="required"
@@ -66,23 +67,18 @@
                         </div>
                         <div class="tab">
                             <div class="form-wrap">
-                                <div class="signup-field"><input placeholder="Mobile Contact*" type="text"
+                                <div class="signup-field"><input placeholder="Mobile Contact*" type="text" id="mobile_number"
                                                                  oninput="this.className = ''" name="mobile_number"
                                                                  autocomplete="off" value="{{ old('mobile_number') }}"
-                                                                 data-validation="required"
-                                                                 data-validation-error-msg="Please enter mobile number">
+                                                                 data-validation="required number length" data-validation-length="10">
                                 </div>
                                 <div class="signup-field"><input placeholder="Importer Exporter Code (IEC)*"
                                                                  oninput="this.className = ''" name="iec_code"
-                                                                 autocomplete="off" value="{{ old('iec_code') }}"
-                                                                 data-validation="required"
-                                                                 data-validation-error-msg="Please enter IEC Code">
+                                                                 autocomplete="off" value="{{ old('iec_code') }}">
                                 </div>
                                 <div class="signup-field"><input placeholder="Business Identification Number (BIN)*"
                                                                  oninput="this.className = ''" name="bin_code"
-                                                                 autocomplete="off" value="{{ old('bin_code') }}"
-                                                                 data-validation="required"
-                                                                 data-validation-error-msg="Please enter BIN Code">
+                                                                 autocomplete="off" value="{{ old('bin_code') }}">
                                 </div>
                             </div>
                         </div>
@@ -134,12 +130,12 @@
                                 </div>
                                 <div class="signup-field"><input placeholder="Company Website*"
                                                                  oninput="this.className = ''" name="company_website"
-                                                                 autocomplete="off" data-validation="required" data-validation-error-msg="Please enter your website URL"
+                                                                 autocomplete="off" data-validation="url"
                                                                  value="{{ old('company_website') }}">
                                 </div>
                                 <div class="signup-field"><input placeholder="Company Instagram*"
                                                                  oninput="this.className = ''"
-                                                                 name="company_instagram_url" autocomplete="off" data-validation="required" data-validation-error-msg="Please enter your instagram URL"
+                                                                 name="company_instagram_url" autocomplete="off" data-validation="url"
                                                                  value="{{ old('company_instagram_url') }}">
                                 </div>
                             </div>
@@ -159,6 +155,14 @@
 @section('footer_scripts')
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/jquery.form-validator.min.js"></script>
     <script type="text/javascript">
+        var $countryISDCodes = JSON.parse('{!!  $countryWiseLength !!}');
+        var length = 10;
+
+        $("#country").on('change', function (){
+            length = $countryISDCodes[$(this).val()] ?? 10;
+            $("#mobile_number").attr('data-validation-length', length);
+        })
+
         $.validate();
 
         var currentTab = 0; // Current tab is set to be the first tab (0)
