@@ -26,56 +26,56 @@
 
                     <div class="service-box">
                         <div class="service-box-wrap">
-                            <img src="/front/images/icon-1.png" alt="" class="entered lazyloaded">
+                            <img src="/front/images/product-icon/Botanic-Origin.png" alt="" class="entered lazyloaded">
                             <p>Botanic <br> Origin</p>
                         </div>
                     </div>
                     <div class="service-box">
                         <div class="service-box-wrap">
-                            <img src="/front/images/icon-1.png" alt="" class="entered lazyloaded">
+                            <img src="/front/images/product-icon/Sustainable-Production.png" alt="" class="entered lazyloaded">
                             <p>Sustainable  <br> Production
                         </div>
                         </p>
                     </div>
                     <div class="service-box">
                         <div class="service-box-wrap">
-                            <img src="/front/images/icon-1.png" alt="" class="entered lazyloaded">
+                            <img src="/front/images/product-icon/Silky-Smoothness.png" alt="" class="entered lazyloaded">
                             <p>Silky  <br> Smoothness</p>
                         </div>
                     </div>
                     <div class="service-box">
                         <div class="service-box-wrap">
-                            <img src="/front/images/icon-1.png" alt="" class="entered lazyloaded">
+                            <img src="/front/images/product-icon/Biodegradable.png" alt="" class="entered lazyloaded">
                             <p>Biodegradable</p>
                         </div>
                     </div>
                     <div class="service-box">
                         <div class="service-box-wrap">
-                            <img src="/front/images/icon-1.png" alt="" class="entered lazyloaded">
+                            <img src="/front/images/product-icon/Cooling-Sensation.png" alt="" class="entered lazyloaded">
                             <p>Cooling  <br> Sensation</p>
                         </div>
                     </div>
                     <div class="service-box">
                         <div class="service-box-wrap">
-                            <img src="/front/images/icon-1.png" alt="" class="entered lazyloaded">
+                            <img src="/front/images/product-icon/Liquid-Like-Drape.png" alt="" class="entered lazyloaded">
                             <p>Liquid-Like <br> Drape</p>
                         </div>
                     </div>
                     <div class="service-box">
                         <div class="service-box-wrap">
-                            <img src="/front/images/icon-1.png" alt="" class="entered lazyloaded">
+                            <img src="/front/images/product-icon/Vegan.png" alt="" class="entered lazyloaded">
                             <p>Vegan</p>
                         </div>
                     </div>
                     <div class="service-box">
                         <div class="service-box-wrap">
-                            <img src="/front/images/icon-1.png" alt="" class="entered lazyloaded">
+                            <img src="/front/images/product-icon/Yarn-Strength.png" alt="" class="entered lazyloaded">
                             <p>Yarn  <br> Strength</p>
                         </div>
                     </div>
                     <div class="service-box">
                         <div class="service-box-wrap">
-                            <img src="/front/images/icon-1.png" alt="" class="entered lazyloaded">
+                            <img src="/front/images/product-icon/Color-Vibrancy.png" alt="" class="entered lazyloaded">
                             <p>Color  <br> Vibrancy</p>
                         </div>
                     </div>

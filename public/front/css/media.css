@@ -1,11 +1,11 @@
 @media only screen and (max-width: 1800px) {
     .ptb-130 {padding:120px 0;}
     .ptb-120 {padding: 100px 0;}
-    .section-title {font-size: 75px;}
+    .section-title {font-size: 54px;}
 }
 @media only screen and (max-width: 1600px) {
     .ptb-130 {padding:110px 0;}
-    .section-title {font-size: 70px;}
+    .section-title {font-size: 50px;}
     .large-latter{font-size: 90px;}
     .process-menu li {padding: 25px 0;}
 }
@@ -13,7 +13,7 @@
     .wrapper {padding: 0 40px;}
     .banner-section{padding-top: 60%;}
     .ptb-130 {padding:100px 0;}
-    .section-title {font-size: 65px;}
+    .section-title {font-size: 48px;}
     .default-title {font-size: 42px;}
     .site-header{padding: 30px 0;}
     .site-footer{padding: 70px 0;}
@@ -28,7 +28,7 @@
 @media only screen and (max-width: 1360px) {
     h1, h2, h3, h4, h5, h6 {margin: 0 0 24px;}
     .ptb-120, .ptb-130 {padding:90px 0;}
-    .section-title {font-size: 60px;}
+    .section-title {font-size: 44px;}
     .default-title {font-size: 38px;}
     .quality-img img{ max-width: 120px;}
     .quality-img {top: -40px;}
@@ -57,6 +57,7 @@
     .types-fabrics-box{padding: 30px 24px;}
     .fabrics-img {margin: 0 0 28px}
     .types-fabrics-wrap{margin: -30px -24px;}
+    .new-plan-box {max-width: 33.33%;}
 }
 @media only screen and (max-width: 1200px) {
     body, p, li {font-size: 16px; line-height: 1.5;}
@@ -67,7 +68,7 @@
     .wrapper {padding: 0 30px;}
     .sub-title {font-size: 18px;letter-spacing: 0.2em;}
     .ptb-120, .ptb-130 {padding:80px 0;}
-    .section-title {font-size: 55px;}
+    .section-title {font-size: 40px;}
     .default-title {font-size: 34px;line-height: 1.2; }
     .quality-img img{ max-width: 100px;}
     .quality-img {top: -30px;}
@@ -142,7 +143,7 @@
     .site-menu .menu .menu-list {padding: 0 10px;}
     .banner-section{padding-top: 70%;}
     .ptb-120, .ptb-130 {padding:70px 0;}
-    .section-title {font-size: 50px;}
+    .section-title {font-size: 36px;}
     .sub-title {font-size: 16px;letter-spacing: 0.1em;}
     .banner-content-wrap {max-width: 70%;}
     .default-title {font-size: 30px;}
@@ -186,8 +187,8 @@
     .cta-title, .about-title {font-size: 30px;}
     .goal-title {font-size: 24px;}
     .goal-content-boxes p {font-size: 15px;}
-    .goal-content-boxes{max-width: 70%; top: 30px; left: 30px;}
-    .goal-box:nth-child(2) .goal-content-boxes{bottom: 30px; right: 28px;}
+    .goal-content-boxes{max-width: 100%; top: 0; left: 0;position: inherit;padding: 30px;}
+    .goal-box:nth-child(2) .goal-content-boxes{bottom: 0; right: 0;}
     .about-content-box{margin: 0 auto 20px;}
     .contact-field {max-width: 50%;}
     .col-full {max-width: 100% !important;}
@@ -228,6 +229,11 @@
     .fabrics-large-img {max-width: 84%; }
     .types-fabrics-wrap {margin: -20px -18px; }
     .inner-banner{padding-top: 480px;}
+    .goal-box > img {position: absolute; top: 0; left: 0; right: 0; width: 100%; height: 100%; object-fit: cover; object-position: center; }
+    .new-plan-box {max-width: 50%;}
+    .source-wrap:nth-child(2n) .source-image{order: 2;}
+
+
 }
 @media only screen and (max-width: 767px) {
     p {margin: 0 0 15px 0; }
@@ -236,7 +242,7 @@
     .ptb-120, .ptb-130 {padding:60px 0;}
     .banner-title br{display: none;}
     .inner-banner-content-wrap p br{display: none;}
-    .section-title {font-size: 45px;}
+    .section-title {font-size: 32px;}
     .focus {max-width: 100%;}
     .formula {max-width: 100%;}
     .large-latter{font-size: 40px;}
@@ -284,7 +290,7 @@
     .types-fabrics-box {max-width: 100%;}
     .fabrics-small-img {margin-left: -20%;}
     .range-fabrics-title-sec br {display: none;}
-
+    .login-form{padding: 30px 20px;}
 
 }
 @media only screen and (max-width: 640px) {
@@ -292,7 +298,7 @@
     .banner-section{padding-top: 80%;}
     .ptb-120, .ptb-130 {padding:50px 0;}
     
-    .section-title {font-size: 40px;}
+    .section-title {font-size: 28px;}
     .default-title {font-size: 26px;}
     ul.logo-list li {max-width: 100%;}
     ul.logo-list li:after{display: none;}
@@ -320,11 +326,12 @@
     .service-box {max-width: 50%;}
     .services-list{justify-content: flex-start;}
     .range-fabrics-box {max-width: 400px;}
+    .new-plan-box {max-width: 320px;}   
 }
 @media only screen and (max-width: 480px) {
     .banner-section{padding-top: 140%;}
     .ptb-120, .ptb-130 {padding:40px 0;}
-    .section-title {font-size: 32px;}
+    
     ul.logo-list li{padding: 25px 15px;}
     .site-btn{display: none;}
     .site-menu{margin-left: auto;}
@@ -334,4 +341,6 @@
     .products-content {padding: 30px 20px; max-width: 100%; }
     .products-box {padding:15px 0;}
     .service-box {max-width: 250px; margin: auto; }
+    p.mg-b-0{font-size: 14px;}
+    .mg-b-10 {font-size: 14px;}
 }
