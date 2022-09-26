@@ -7,6 +7,7 @@ use App\Http\Controllers\Admin\LoginController;
 use App\Http\Controllers\Admin\UserController;
 use App\Http\Controllers\Admin\CategoryController;
 use App\Http\Controllers\Admin\ProductController;
+use App\Http\Controllers\Admin\EmailTemplateController;
 
 /*
 |--------------------------------------------------------------------------
@@ -41,8 +42,8 @@ Route::group(['middleware' => ['web']], function () {
     Route::get('/policies', function () {
         return view('front.policies');
     })->name('policies_page');
-    
-    
+
+
 
     /*******************Admin Login ************************/
     Route::get('admin/login', [LoginController::class, 'index'])->name('admin.login');
@@ -100,5 +101,9 @@ Route::group(['middleware' => ['web']], function () {
         Route::get('product/edit/{id}', [ProductController::class, 'edit'])->name('product.edit');
         Route::post('product/update/{id}', [ProductController::class, 'update'])->name('product.update');
         Route::get('product/delete/{id}', [ProductController::class, 'delete'])->name('product.delete');
+
+        Route::get('email-templates', [EmailTemplateController::class, 'index'])->name('email_templates');
+        Route::get('email-template/edit/{id}', [EmailTemplateController::class, 'edit'])->name('email_template.edit');
+        Route::post('email-template/update/{id}', [EmailTemplateController::class, 'update'])->name('email_template.update');
     });
 });

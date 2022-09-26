@@ -2,12 +2,11 @@
 
 namespace App\Http\Controllers;
 
-use App\Mail\RegisterDetailMailToAdmin;
-use App\Mail\RegisterThankYouMail;
 use App\Mail\UserResetPassword;
 use App\Models\Country;
 use App\Models\PasswordResets;
 use App\Models\User;
+use App\Services\EmailService;
 use Carbon\Carbon;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
 use Illuminate\Http\Request;
@@ -20,6 +19,13 @@ use Illuminate\Support\Str;
 class UserAuthController extends Controller
 {
     use AuthenticatesUsers;
+
+    protected $emailService;
+
+    public function __construct(EmailService $emailService)
+    {
+        $this->emailService = $emailService;
+    }
 
     public function index()
     {
@@ -66,9 +72,10 @@ class UserAuthController extends Controller
             return redirect()->back()->with('error', $validator->messages()->all()[0]);
         }
         $user = User::create($requestData);
-//        Mail::to($requestData['email'])->send(new RegisterThankYouMail($requestData));
-//        $requestData['url'] = route('admin.user_detail', $user->id);
-//        Mail::to(env('ADMIN_MAIL'))->send(new RegisterDetailMailToAdmin($requestData));
+
+        $emailData = ['URL' => route('admin.user_detail', $user->id), 'NAME' => $user->name, 'EMAIL' => $user->email];
+        $this->emailService->sendEmailToUser($requestData['email'], 'register_thank_you_mail', $emailData);
+        $this->emailService->sendEmailToUser(env('ADMIN_MAIL'), 'register_details_mail_to_admin', $emailData);
         return redirect()->route('user.login')->with('success', 'Registration Successfully');
     }
 
@@ -77,7 +84,6 @@ class UserAuthController extends Controller
         Auth::logout();
         return redirect()->route('home');
     }
-
 
 
     public function forgotUserPassword(): \Illuminate\Contracts\View\View|\Illuminate\Contracts\View\Factory|\Illuminate\Http\RedirectResponse|\Illuminate\Contracts\Foundation\Application
@@ -104,9 +110,9 @@ class UserAuthController extends Controller
                 } else {
                     PasswordResets::create($emailData);
                 }
-                $emailData['reset_link'] = route('user.reset_password', $token);
-                $emailData['name'] = $user->name;
-                Mail::to($requestData['email'])->send(new UserResetPassword($emailData));
+
+                $emailData = ['NAME' => $user->name, 'URL' => route('user.reset_password', $token)];
+                $this->emailService->sendEmailToUser($user->email, 'reset_password_mail', $emailData);
                 DB::commit();
                 return redirect()->route('user.login')->with('success', 'Please check your email.');
             } else {

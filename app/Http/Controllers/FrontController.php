@@ -2,18 +2,22 @@
 
 namespace App\Http\Controllers;
 
-
-use App\Mail\ContactRequestDetailMailToAdmin;
-use App\Mail\ContactRequestThankYouMail;
 use App\Models\Category;
 use App\Models\ContactRequest;
 use App\Models\Newsletter;
 use App\Models\Product;
+use App\Services\EmailService;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Mail;
 
 class FrontController extends Controller
 {
+    protected $emailService;
+
+    public function __construct(EmailService $emailService)
+    {
+        $this->emailService = $emailService;
+    }
+
     public function explore(): \Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View|\Illuminate\Contracts\Foundation\Application
     {
         $categories = Category::all();
@@ -47,9 +51,15 @@ class FrontController extends Controller
     {
         $requestData = $request->except('_token');
         $contactRequest = ContactRequest::create($requestData);
-        Mail::to($requestData['email'])->send(new ContactRequestThankYouMail($requestData));
-        $requestData['url'] = route('admin.contact_request_detail', $contactRequest->id);
-        Mail::to(env('ADMIN_MAIL'))->send(new ContactRequestDetailMailToAdmin($requestData));
+
+        $emailData = [
+            'URL' => route('admin.contact_request_detail', $contactRequest->id),
+            'NAME' => $contactRequest->first_name . ' ' . $contactRequest->last_name,
+            'EMAIL' => $contactRequest->email,
+            'MESSAGE' => $contactRequest->message,
+        ];
+        $this->emailService->sendEmailToUser($requestData['email'], 'contact_request_thank_you_mail', $emailData);
+        $this->emailService->sendEmailToUser(env('ADMIN_MAIL'), 'contact_request_details_mail_to_admin', $emailData);
         return redirect()->back()->with('success', 'Your Contact Request Received.');
     }
 }

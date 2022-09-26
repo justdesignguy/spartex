@@ -32,6 +32,12 @@
                     <span>Products</span>
                 </a>
             </li>
+            <li class="nav-item @if(Request::is('admin/email-templates') || Request::is('admin/email-template/*')) active @endif">
+                <a class="nav-link" href="{{ route('admin.email_templates') }}">
+                    <i class="icon ion-settings"></i>
+                    <span>Email Templates</span>
+                </a>
+            </li>
         </ul>
     </div>
 </div>
