@@ -19,7 +19,8 @@
                 <h1 class="common-title"><span>Thank you</span></h1>
                 <!-- <h2 class="error-title">Page Not Found!</h2> -->
                 <div class="error-disc">
-                    <p>Thanks for your interest with us. We will get back to you as soon as possible.</p>
+                    <p>Thank you and welcome to the family!</p>
+                    <p>We appreciate your decision and are excited to have you join our community!</p>
                 </div>
             </div>
         </div>

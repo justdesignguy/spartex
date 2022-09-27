@@ -8,6 +8,7 @@
     .section-title {font-size: 50px;}
     .large-latter{font-size: 90px;}
     .process-menu li {padding: 25px 0;}
+    .banner-title {font-size: 44px;}
 }
 @media only screen and (max-width: 1440px) {
     .wrapper {padding: 0 40px;}
@@ -23,7 +24,7 @@
     .process-menu li {padding: 20px 0;}
     .banner-title {font-size: 45px;}
     .pbt-120 {padding: 110px 0; }
-    .inner-banner {padding-top: 550px;}
+    .inner-banner {padding-top: 600px;}
 }
 @media only screen and (max-width: 1360px) {
     h1, h2, h3, h4, h5, h6 {margin: 0 0 24px;}
@@ -330,6 +331,7 @@
     .services-list{justify-content: flex-start;}
     .range-fabrics-box {max-width: 400px;}
     .new-plan-box {max-width: 320px;}   
+    .banner-title {font-size: 24px; }
 }
 @media only screen and (max-width: 480px) {
     .banner-section{padding-top: 140%;}
