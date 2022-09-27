@@ -27,22 +27,12 @@ Route::group(['middleware' => ['web']], function () {
     Route::get('/about', function () {
         return view('front.about');
     })->name('about_page');
-    Route::get('/404', function () {
-        return view('front.404');
-    })->name('404_page');
-    Route::get('/thank-you', function () {
-        return view('front.thank-you');
-    })->name('thank-you_page');
-    Route::get('/garments', function () {
-        return view('front.garments');
-    })->name('garments_page');
     Route::get('/terms_and_conditions', function () {
         return view('front.terms_and_conditions');
     })->name('terms_and_conditions_page');
     Route::get('/policies', function () {
         return view('front.policies');
     })->name('policies_page');
-
 
 
     /*******************Admin Login ************************/
@@ -55,6 +45,9 @@ Route::group(['middleware' => ['web']], function () {
     Route::get('register', [UserAuthController::class, 'register'])->name('user.register');
     Route::get('register/form', [UserAuthController::class, 'registerForm'])->name('user.register_form');
     Route::post('user/store', [UserAuthController::class, 'store'])->name('user.store');
+    Route::get('/thank-you', function () {
+        return view('front.thank-you');
+    })->name('user.thank_you');
     Route::get('logout', [UserAuthController::class, 'logout'])->name('user.logout');
 
     Route::get('user/forgot-password', [UserAuthController::class, 'forgotUserPassword'])->name('user.forgot_password');

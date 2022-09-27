@@ -28,9 +28,20 @@ class FrontController extends Controller
     {
         $category = Category::where('slug', $slug)->first();
         if (isset($category)) {
-            $rangeOfProducts = Product::where(['category_id' => $category->id, 'type' => 'range_product'])->get();
-            $typeOfProducts = Product::where(['category_id' => $category->id, 'type' => 'type_product'])->get();
-            return view('front.category_detail', compact('rangeOfProducts', 'typeOfProducts'));
+            if ($category->layout_type == 'fabric'){
+                $rangeOfProducts = Product::whereHas('categoryDetail', function ($q){
+                    $q->where('layout_type', 'fabric');
+                })->where(['category_id' => $category->id, 'type' => 'range_product'])->get();
+                $typeOfProducts = Product::whereHas('categoryDetail', function ($q){
+                    $q->where('layout_type', 'fabric');
+                })->where(['category_id' => $category->id, 'type' => 'type_product'])->get();
+                return view('front.category_fabric_layout', compact('rangeOfProducts', 'typeOfProducts'));
+            }else{
+                $products = Product::whereHas('categoryDetail', function ($q){
+                    $q->where('layout_type', 'garment');
+                })->where(['category_id' => $category->id, 'type' => 'range_product'])->get();
+                return view('front.category_garment_layout', compact('products'));
+            }
         }
         return redirect()->back();
     }

@@ -15,6 +15,12 @@
         </div>
         <div class="col-lg-6">
             <div class="form-group">
+                <label class="form-control-label">Layout: <span class="tx-danger">*</span></label>
+                {!! Form::select('layout_type', \App\Models\Category::LAYOUT_TYPES, $category->layout_type ?? old('layout_type'), ['class' => 'form-control select2', 'id' => 'layout_type', 'data-validation' => 'required']) !!}
+            </div>
+        </div>
+        <div class="col-lg-6">
+            <div class="form-group">
                 <label class="form-control-label">Image: <span class="tx-danger">*</span></label>
                 <input type="file" accept="image/*" class="file-upload dropify" data-show-remove="false"
                        @if(isset($category->image)) data-default-file="{{ getFileUrl($category->image, 'category') }}" @endif

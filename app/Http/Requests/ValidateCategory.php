@@ -27,7 +27,6 @@ class ValidateCategory extends FormRequest
             return [
                 'title' => 'required',
                 'slug' => 'required|unique:categories,slug,'.$this->id,
-                'image' => 'required',
             ];
         }else{
             return [

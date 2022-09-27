@@ -9,6 +9,7 @@ class Product extends Model
     const TYPES = [
         'range_product' => 'Range Of Fabrics',
         'type_product' => 'Type Of Fabrics',
+        'garment' => 'Garment',
     ];
 
     protected $primaryKey = 'id';

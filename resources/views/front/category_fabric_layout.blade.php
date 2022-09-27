@@ -26,7 +26,7 @@
                     <div class="range-fabrics-box">
                         <div class="range-fabrics-box-wrap">
                             <div class="range-fabrics-image">
-                                <img src="{{ getFileUrl($product->image, 'product') }}">
+                                <img src="{{ getFileUrl($product->image, 'product') }}" alt="{{ $product->title }}">
                             </div>
                             <div class="range-fabric-content-wrap">
                                 <div class="range-fabric-content">
@@ -50,7 +50,7 @@
                         <div class="types-fabrics-box-wrap">
                             <div class="fabrics-img">
                                 <div class="fabrics-large-img">
-                                    <img src="{{ getFileUrl($product->image, 'product') }}">
+                                    <img src="{{ getFileUrl($product->image, 'product') }}" alt="{{ $product->title }}">
                                 </div>
                                 @if(isset($product->small_image))
                                     <div class="fabrics-small-img">

@@ -76,7 +76,7 @@ class UserAuthController extends Controller
         $emailData = ['URL' => route('admin.user_detail', $user->id), 'NAME' => $user->name, 'EMAIL' => $user->email];
         $this->emailService->sendEmailToUser($requestData['email'], 'register_thank_you_mail', $emailData);
         $this->emailService->sendEmailToUser(env('ADMIN_MAIL'), 'register_details_mail_to_admin', $emailData);
-        return redirect()->route('user.login')->with('success', 'Registration Successfully');
+        return redirect()->route('user.thank_you');
     }
 
     public function logout()
