@@ -252,23 +252,23 @@
                                         <div class="ship-circle">
                                             <p>Quality <span>Control</span> </p>
                                         </div>
-                                        <p>Spartex works on the "Quality First" policy. Our quality team remains active right from the time of sourcing of fabric till the final packing of finished garments.</p>
+                                        <p>From the time of sourcing of fabric to the final packing of finished garments.</p>
                                     </div>
                                 </div>
                                 <div class="ship-step" data-aos="fade-up" data-aos-duration="1500">
                                     <div class="ship-box">
                                         <div class="ship-circle">
-                                            <p>Delivered <span>to your door </span> </p>
+                                            <p>Eco-friendly <span>packaging </span> </p>
                                         </div>
-                                        <p>At every critical stage, Spartex ensures that the quality is under control and as per the approval we have by you.</p>
+                                        <p>We pack each of your garments in a clear bag (preferably biodegradable) and all go inside a carton.</p>
                                     </div>
                                 </div>
                                 <div class="ship-step" data-aos="fade-up" data-aos-duration="2000">
                                     <div class="ship-box">
                                         <div class="ship-circle">
-                                            <p>Easy <span>Importing </span> </p>
+                                            <p>Custom  <span>packing </span> </p>
                                         </div>
-                                        <p>Last but not least, we pack each of your garments in a clear bag (preferably biodegradable) and all go inside a carton.</p>
+                                        <p>For any customisation, we can execute the exact requirements for your brand.</p>
                                     </div>
                                 </div>
                             </div>

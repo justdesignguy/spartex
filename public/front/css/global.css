@@ -279,7 +279,7 @@ ul.logo-list li img {max-height: 80px; margin: auto; }
 input:autofill {background-color: transparent !important; }
 input:-webkit-autofill {background-color: transparent !important; }
 /*  */
-.inner-banner {padding-top: 57.2vh; position: relative; background-color: #000; }
+.inner-banner {padding-top: 600px; position: relative; background-color: #000; }
 img.inner-banner-img {position: absolute; top: 0; left: 0; right: 0; width: 100%; height: 100%; object-fit: cover; object-position: top center; }
 .inner-banner-content {position: absolute; bottom: 60px; width: 100%; }
 .banner-title{font-size: 50px; font-family: "Kantumruy Pro"; color: rgb(255, 255, 255); font-weight: 600; text-transform: uppercase; line-height: 1.2; margin: 0 0 10px; }
@@ -330,14 +330,14 @@ img.inner-banner-img {position: absolute; top: 0; left: 0; right: 0; width: 100%
 .range-fabric-content .common-btn {padding: 7px 18px; font-size: 16px; }
 .range-fabrics-image {padding-top: 100%; position: relative; width: 100%; }
 .range-fabric-content-wrap{width: 100%; height: 100%; }
-.range-fabrics-image img {width: 100%; height: 100%; position: absolute; top: 0; left: 0; }
+.range-fabrics-image img {width: 100%; height: 100%; position: absolute; top: 0; left: 0; object-fit: cover; object-position: center top;}
 .range-fabrics-box-wrap {height: 100%; display: flex; flex-direction: column; }
 /* Types of fabrics */
 .types-fabrics-title {font-size: 30px; font-family: "Kantumruy Pro"; color: rgb(0, 0, 0); font-weight: 600; line-height: 1.267; text-align: center; margin: 0;}
 .types-fabrics-wrap {display: flex; flex-wrap: wrap; margin: -40px -38px; }
 .types-fabrics-box {max-width: 50%; width: 100%; padding: 40px 38px; }
 .fabrics-img {display: flex; align-items: flex-end; margin: 0 0 35px; }
-.fabrics-small-img {margin-left: -128px; display: inline-block; margin-bottom: 35px; border: 6px solid #fff; }
+.fabrics-small-img {margin-left: -128px; display: inline-block; margin-bottom: 35px; border: 6px solid #fff; max-width: 48%; width: 100%;}
 .fabrics-large-img {max-width: 74%; width: 100%; }
 .fabrics-large-img img {width: 100%; }
 .types-fabrics {background-color: #f9f9f9; }
