@@ -39,7 +39,7 @@ class FrontController extends Controller
             }else{
                 $products = Product::whereHas('categoryDetail', function ($q){
                     $q->where('layout_type', 'garment');
-                })->where(['category_id' => $category->id, 'type' => 'range_product'])->get();
+                })->where(['category_id' => $category->id])->get();
                 return view('front.category_garment_layout', compact('products'));
             }
         }
