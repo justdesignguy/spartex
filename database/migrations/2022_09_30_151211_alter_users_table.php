@@ -17,6 +17,8 @@ return new class extends Migration
             $table->dropColumn('budget_for_fabric_annually');
             $table->string('whatsapp_number')->nullable()->after('mobile_number');
             $table->string('preferred_communication_mode')->nullable()->after('whatsapp_number');
+            $table->string('nature_of_business')->nullable()->after('type_of_business');
+            $table->string('category_of_collection')->nullable()->after('nature_of_business');
         });
     }
 
@@ -31,6 +33,8 @@ return new class extends Migration
             $table->string('budget_for_fabric_annually')->nullable()->after('how_long_in_business');
             $table->dropColumn('whatsapp_number');
             $table->dropColumn('preferred_communication_mode');
+            $table->dropColumn('nature_of_business');
+            $table->dropColumn('category_of_collection');
         });
     }
 };

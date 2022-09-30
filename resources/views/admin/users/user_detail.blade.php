@@ -116,6 +116,22 @@
             </div>
             <div class="row no-gutters">
                 <div class="col-5 col-sm-4">
+                    Nature of business?:
+                </div>
+                <div class="col-7 col-sm-8">
+                    {{ $user->nature_of_business ?? "--" }}
+                </div>
+            </div>
+            <div class="row no-gutters">
+                <div class="col-5 col-sm-4">
+                    Category of collection?:
+                </div>
+                <div class="col-7 col-sm-8">
+                    {{ $user->category_of_collection ?? "--" }}
+                </div>
+            </div>
+            <div class="row no-gutters">
+                <div class="col-5 col-sm-4">
                     What is the price point of the brand?:
                 </div>
                 <div class="col-7 col-sm-8">

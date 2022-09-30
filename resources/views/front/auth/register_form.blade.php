@@ -99,6 +99,16 @@
                                         ['' => 'How long have you been in business?*', 'Less Than A Year' => 'Less Than A Year', '1 - 2 Year' => '1 - 2 Year', '3 - 5 Year' => '3 - 5 Year', '5 - 10 Year' => '5 - 10 Year', 'Over 10 Years' => 'Over 10 Years'],
                                         old('how_long_in_business'), ['id' => 'how_long_in_business', 'data-validation' => 'required']) !!}
                                 </div>
+                                <div class="signup-field">
+                                    {!! Form::select('nature_of_business',
+                                        ['' => 'Nature of business?*', 'Registered Importer' => 'Registered Importer', 'Unregistered Importer' => 'Unregistered Importer', 'Home Business' => 'Home Business', 'Startup' => 'Startup'],
+                                        old('nature_of_business'), ['id' => 'nature_of_business', 'data-validation' => 'required']) !!}
+                                </div>
+                                <div class="signup-field">
+                                    {!! Form::select('category_of_collection',
+                                        ['' => 'Category of collection?*', "Men's Wear" => "Men's Wear", "Women's Wear" => "Women's Wear", "Designer" => "Designer", "Costume Designer" => "Costume Designer", "Contract Designer" => "Contract Designer", "Kids Wear" => "Kids Wear", "All of the above" => "All of the above", "Others" => "Others"],
+                                        old('category_of_collection'), ['id' => 'category_of_collection', 'data-validation' => 'required']) !!}
+                                </div>
                                 <div class="signup-field full-col">
                                     {!! Form::select('brand_price_point',
                                         ['' => 'What is the price point of the brand?*', 'Budget' => 'Budget', 'Moderate' => 'Moderate', 'Contemporary' => 'Contemporary', 'Designer' => 'Designer', 'Couture' => 'Couture'],

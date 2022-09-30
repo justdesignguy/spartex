@@ -30,6 +30,8 @@ class User extends Authenticatable
         'iec_code',
         'bin_code',
         'type_of_business',
+        'category_of_collection',
+        'nature_of_business',
         'how_long_in_business',
         'brand_price_point',
         'which_month_start_sourcing_for_ss',
