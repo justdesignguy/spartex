@@ -22,7 +22,6 @@
                         @csrf
                         <div class="steps-wrap">
                             <p class="step">Basic Information</p>
-                            <p class="step">General Information</p>
                             <p class="step">Business Details</p>
                         </div>
                         <div class="tab">
@@ -58,6 +57,11 @@
                                                                  autocomplete="off" data-validation="required"
                                                                  data-validation-error-msg="Please select your password">
                                 </div>
+                                <div class="signup-field"><input placeholder="Mobile Contact*" type="text" id="mobile_number"
+                                                                 oninput="this.className = ''" name="mobile_number"
+                                                                 autocomplete="off" value="{{ old('mobile_number') }}"
+                                                                 data-validation="required number length" data-validation-length="10">
+                                </div>
                                 <div class="signup-field full-col checkbox"><input type="checkbox" id="vehicle1"
                                                                                    oninput="this.className = ''"
                                                                                    name="vehicle1" value="Bike"> <label
@@ -67,23 +71,24 @@
                         </div>
                         <div class="tab">
                             <div class="form-wrap">
-                                <div class="signup-field"><input placeholder="Mobile Contact*" type="text" id="mobile_number"
-                                                                 oninput="this.className = ''" name="mobile_number"
-                                                                 autocomplete="off" value="{{ old('mobile_number') }}"
+                                <div class="signup-field"><input placeholder="Whatsapp Number*" type="text" id="whatsapp_number"
+                                                                 oninput="this.className = ''" name="whatsapp_number"
+                                                                 autocomplete="off" value="{{ old('whatsapp_number') }}"
                                                                  data-validation="required number length" data-validation-length="10">
                                 </div>
-                                <div class="signup-field"><input placeholder="Importer Exporter Code (IEC)*"
+                                <div class="signup-field">
+                                    {!! Form::select('preferred_communication_mode',
+                                        ['' => 'Preferred Communication Mode*', 'Whatsapp' => 'Whatsapp', 'Email' => 'Email', 'Call' => 'Call'],
+                                        old('preferred_communication_mode'), ['id' => 'preferred_communication_mode', 'data-validation' => 'required']) !!}
+                                </div>
+                                <div class="signup-field"><input placeholder="Importer Exporter Code (IEC)"
                                                                  oninput="this.className = ''" name="iec_code"
                                                                  autocomplete="off" value="{{ old('iec_code') }}">
                                 </div>
-                                <div class="signup-field"><input placeholder="Business Identification Number (BIN)*"
+                                <div class="signup-field"><input placeholder="Business Identification Number (BIN)"
                                                                  oninput="this.className = ''" name="bin_code"
                                                                  autocomplete="off" value="{{ old('bin_code') }}">
                                 </div>
-                            </div>
-                        </div>
-                        <div class="tab">
-                            <div class="form-wrap">
                                 <div class="signup-field">
                                     {!! Form::select('type_of_business',
                                         ['' => 'What is the type of your business?*', 'Fashion Brand' => 'Fashion Brand', 'Fabric Sourcing Agency' => 'Fabric Sourcing Agency', 'Garment Development/Production' => 'Garment Development/Production', 'Fabric Wholesale/Retail' => 'Fabric Wholesale/Retail', 'Other' => 'Other'],
@@ -93,11 +98,6 @@
                                     {!! Form::select('how_long_in_business',
                                         ['' => 'How long have you been in business?*', 'Less Than A Year' => 'Less Than A Year', '1 - 2 Year' => '1 - 2 Year', '3 - 5 Year' => '3 - 5 Year', '5 - 10 Year' => '5 - 10 Year', 'Over 10 Years' => 'Over 10 Years'],
                                         old('how_long_in_business'), ['id' => 'how_long_in_business', 'data-validation' => 'required']) !!}
-                                </div>
-                                <div class="signup-field full-col">
-                                    {!! Form::select('budget_for_fabric_annually',
-                                        ['' => 'How much budget do you allocate for fabric annually?*', 'Less tha 10k' => 'Less tha 10k', '10k - 25k' => '10k - 25k', '25k - 50k' => '25k - 50k', '50k - 100k' => '50k - 100k', '100k - 500k' => '100k - 500k', 'Over 500k' => 'Over 500k'],
-                                        old('budget_for_fabric_annually'), ['id' => 'budget_for_fabric_annually', 'data-validation' => 'required']) !!}
                                 </div>
                                 <div class="signup-field full-col">
                                     {!! Form::select('brand_price_point',
@@ -124,18 +124,18 @@
                                 </div>
                                 <div class="signup-field full-col">
                                     <textarea
-                                        placeholder="Please briefly describe your brand/business in 1 - 2 sentences.*"
-                                        name="business_description" data-validation="required"
+                                        placeholder="Please briefly describe your brand/business in 1 - 2 sentences."
+                                        name="business_description"
                                         autocomplete="off">{{ old('business_description') }}</textarea>
                                 </div>
-                                <div class="signup-field"><input placeholder="Company Website*"
+                                <div class="signup-field"><input placeholder="Company Website"
                                                                  oninput="this.className = ''" name="company_website"
-                                                                 autocomplete="off" data-validation="url"
+                                                                 autocomplete="off"
                                                                  value="{{ old('company_website') }}">
                                 </div>
-                                <div class="signup-field"><input placeholder="Company Instagram*"
+                                <div class="signup-field"><input placeholder="Company Instagram"
                                                                  oninput="this.className = ''"
-                                                                 name="company_instagram_url" autocomplete="off" data-validation="url"
+                                                                 name="company_instagram_url" autocomplete="off"
                                                                  value="{{ old('company_instagram_url') }}">
                                 </div>
                             </div>
@@ -161,6 +161,7 @@
         $("#country").on('change', function (){
             length = $countryISDCodes[$(this).val()] ?? 10;
             $("#mobile_number").attr('data-validation-length', length);
+            $("#whatsapp_number").attr('data-validation-length', length);
         })
 
         $.validate();

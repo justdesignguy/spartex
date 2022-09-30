@@ -52,6 +52,22 @@
             </div>
             <div class="row no-gutters">
                 <div class="col-5 col-sm-4">
+                    Whatsapp Number:
+                </div>
+                <div class="col-7 col-sm-8">
+                    {{ $user->whatsapp_number ?? "--" }}
+                </div>
+            </div>
+            <div class="row no-gutters">
+                <div class="col-5 col-sm-4">
+                    Preferred Communication Mode:
+                </div>
+                <div class="col-7 col-sm-8">
+                    {{ $user->preferred_communication_mode ?? "--" }}
+                </div>
+            </div>
+            <div class="row no-gutters">
+                <div class="col-5 col-sm-4">
                     Company Name:
                 </div>
                 <div class="col-7 col-sm-8">
@@ -96,14 +112,6 @@
                 </div>
                 <div class="col-7 col-sm-8">
                     {{ $user->how_long_in_business ?? "--" }}
-                </div>
-            </div>
-            <div class="row no-gutters">
-                <div class="col-5 col-sm-4">
-                    How much budget do you allocate for fabric annually?:
-                </div>
-                <div class="col-7 col-sm-8">
-                    {{ $user->budget_for_fabric_annually ?? "--" }}
                 </div>
             </div>
             <div class="row no-gutters">
