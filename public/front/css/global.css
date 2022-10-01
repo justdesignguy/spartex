@@ -265,7 +265,7 @@ ul.logo-list li img {max-height: 80px; margin: auto; }
 .step:before {background-color: #e5e5e5; content: ""; width: 100%; height: 5px; display: inline-block; position: absolute; bottom: 0; }
 .form-wrap {display: flex; flex-wrap: wrap; align-items: flex-start; margin: 0 -18px; }
 .signup-field {max-width: 50%; width: 100%; padding: 0 18px; margin-bottom: 30px; }
-.signup-field textarea::-ms-input-placeholder, .signup-field select::-ms-input-placeholder, .signup-field input::-ms-input-placeholder, .signup-field textarea::-webkit-input-placeholder, .signup-field select::-webkit-input-placeholder, .signup-field input::-webkit-input-placeholder, .signup-field textarea::placeholder, .signup-field select::placeholder, .signup-field input::placeholder {color: rgb(153, 153, 153); }
+.signup-field textarea::-ms-input-placeholder, .signup-field select::-ms-input-placeholder, .signup-field input::-ms-input-placeholder, .signup-field textarea::-webkit-input-placeholder, .signup-field select::-webkit-input-placeholder, .signup-field input::-webkit-input-placeholder, .signup-field textarea::placeholder, .signup-field select::placeholder, .signup-field input::placeholder {color: rgba(153, 153, 153, 0.5); }
 .signup-field select{cursor: pointer;}
 .signup-field textarea, .signup-field select, .signup-field input {font-size: 16px; font-family: "Kantumruy Pro"; color: rgb(0, 0, 0); line-height: 1.375; width:100%; border: 0; border-bottom: 1px solid rgba(0,0,0,0.3); padding: 14px 0; }
 .full-col {max-width: 100%; display: flex; flex-wrap: wrap; align-items: flex-start; }
@@ -350,7 +350,7 @@ img.inner-banner-img {position: absolute; top: 0; left: 0; right: 0; width: 100%
 .contact-field {max-width: 33.33%; padding: 0 15px; width: 100%; margin-bottom: 42px; }
 .contact-field input {width: 100%; background: transparent; border: 0; border-bottom: 2px solid rgba(255,255,255,0.5); padding: 15px 0;color: #ffffff !important; font-size: 18px; font-family: "Kantumruy Pro"; color: rgb(175, 175, 175); line-height: 1.2; }
 .col-full {max-width: 100%; width: 100%; }
-.contact-field textarea::-webkit-input-placeholder, .contact-field input::-webkit-input-placeholder { /* Edge */ opacity: 0.25; color: #ffffff !important; }
+.contact-field textarea::-webkit-input-placeholder, .contact-field input::-webkit-input-placeholder { /* Edge */ opacity: 0.5; color: #ffffff !important; }
 .contact-field textarea:-ms-input-placeholder, .contact-field input:-ms-input-placeholder { /* Internet Explorer 10-11 */ opacity: 0.5; color: #ffffff !important; }
 .contact-field textarea::placeholder , .contact-field input::placeholder {opacity: 0.5; color: #ffffff !important; }
 .col-full textarea {width: 100%; resize: none;color: #ffffff !important; height: 120px; padding: 15px 0; background-color: transparent; border: 0; font-size: 18px; font-family: "Kantumruy Pro"; color: rgb(175, 175, 175); line-height: 1.2; border-bottom: 2px solid rgba(255,255,255,0.5); }
