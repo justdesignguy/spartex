@@ -18,6 +18,7 @@
                 <div class="about-content" data-aos="fade-up" data-aos-duration="1000">
                     <h2 class="default-title">We seamlessly connect tech with textiles to solve your sourcing needs.</h2>
                     <p>Spartex is the leading supplier of anything and everything fabric - from sustainable material to fashion fabric - for brands, fashion and sewing enthusiasts who love being individual. We value all our customers and provide them with an experience of fabric sourcing like never before. </p>
+                    <h3 class="small-title text-center">Affilated With</h3>
                     <ul class="logo-list">
                         <li>
                             <img src="/front/images/textile-logo.png">
@@ -44,9 +45,8 @@
     </section>
     <section class="process">
         <div class="wrapper">
-            <div class="process-title-wrap text-center ptb-130">
+            <div class="process-title-wrap text-center ptb-120">
                 <h2 class="default-title" data-aos="fade-up" data-aos-duration="1000">Our Process</h2>
-                <p data-aos="fade-up" data-aos-duration="1500">Spartex is the leading supplier of anything and everything fabric - from sustainable material to fashion fabric - for brands, fashion and sewing enthusiasts who love being individual. </p>
             </div>
         </div>
         <div class="pro-wrap">
@@ -192,12 +192,12 @@
                         <div class="wrapper">
                             <div class="samples-wrap">
                                 <div class="samples-left" data-aos="fade-up" data-aos-duration="1000">
-                                    <img src="/front/images/textiles-structure.jpg">
-                                    <h2 class="default-title">Spartex is all set to impress you!</h2>
+                                    
+                                    <h2 class="default-title">Spartex is all set to impress you! We at Spartex do all kinds of sampling/prototyping, send them to you and take your approval before we begin the production.</h2>
                                 </div>
                                 <div class="samples-right" data-aos="fade-up" data-aos-duration="1000">
-                                    <h2 class="default-title">Be it computer embroidery or hand embroidery. We carry super-speciality to provide you with all kinds of embroidery as per your design requirements.</h2>
                                     <img src="/front/images/textiles-sample.jpg">
+                                    
                                 </div>
                             </div>
                             <div class="large-latter">samples</div>
@@ -266,9 +266,9 @@
                                 <div class="ship-step" data-aos="fade-up" data-aos-duration="2000">
                                     <div class="ship-box">
                                         <div class="ship-circle">
-                                            <p>Custom  <span>packing </span> </p>
+                                            <p>Easy <span>Importing </span> </p>
                                         </div>
-                                        <p>For any customisation, we can execute the exact requirements for your brand.</p>
+                                        <p>To make it a smoother process, we provide a hassle-free importing process and documentation, easy order status tracking, and assistance throughout the process.</p>
                                     </div>
                                 </div>
                             </div>

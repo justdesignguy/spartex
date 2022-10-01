@@ -30,34 +30,46 @@
                                     {!! Form::select('country', $countries, old('country'), ['data-validation' => 'required', 'data-validation-error-msg' => 'Please select your country', 'id' => 'country', 'placeholder' => 'Select Country*']) !!}
                                 </div>
                                 <input type="hidden" name="plan_type" value="{{ in_array(request('plan'), ['business', 'standard']) ? request('plan') : 'business' }}">
-                                <div class="signup-field"><input placeholder="Full name*" oninput="this.className = ''"
+                                <div class="signup-field">
+                                    <label>Full name</label>
+                                    <input placeholder="Full name*" oninput="this.className = ''"
                                                                  name="name" autocomplete="off"
                                                                  value="{{ old('name') }}" data-validation="required"
                                                                  data-validation-error-msg="Please enter your name">
                                 </div>
-                                <div class="signup-field"><input placeholder="Job title*" oninput="this.className = ''"
+                                <div class="signup-field">
+                                    <label>Job title</label>
+                                    <input placeholder="Job title*" oninput="this.className = ''"
                                                                  name="job_title" autocomplete="off"
                                                                  value="{{ old('job_title') }}"
                                                                  data-validation="required"
                                                                  data-validation-error-msg="Please enter your job title">
                                 </div>
-                                <div class="signup-field"><input placeholder="Email*" oninput="this.className = ''"
+                                <div class="signup-field">
+                                    <label>Email</label>
+                                    <input placeholder="Email*" oninput="this.className = ''"
                                                                  name="email" autocomplete="off"
                                                                  value="{{ old('email') }}" data-validation="email"
                                                                  data-validation-error-msg="Please enter your correct email">
                                 </div>
-                                <div class="signup-field"><input placeholder="Company name*"
+                                <div class="signup-field">
+                                    <label>Company name</label>
+                                    <input placeholder="Company name*"
                                                                  oninput="this.className = ''" name="company_name"
                                                                  autocomplete="off" value="{{ old('company_name') }}"
                                                                  data-validation="required"
                                                                  data-validation-error-msg="Please enter your company name">
                                 </div>
-                                <div class="signup-field"><input placeholder="Password*" type="password"
+                                <div class="signup-field">
+                                    <label>Password</label>
+                                    <input placeholder="Password*" type="password"
                                                                  oninput="this.className = ''" name="password"
                                                                  autocomplete="off" data-validation="required"
                                                                  data-validation-error-msg="Please select your password">
                                 </div>
-                                <div class="signup-field"><input placeholder="Mobile Contact*" type="text" id="mobile_number"
+                                <div class="signup-field">
+                                    <label>Mobile Contact</label>
+                                    <input placeholder="Mobile Contact*" type="text" id="mobile_number"
                                                                  oninput="this.className = ''" name="mobile_number"
                                                                  autocomplete="off" value="{{ old('mobile_number') }}"
                                                                  data-validation="required number length" data-validation-length="10">
@@ -71,7 +83,9 @@
                         </div>
                         <div class="tab">
                             <div class="form-wrap">
-                                <div class="signup-field"><input placeholder="Whatsapp Number*" type="text" id="whatsapp_number"
+                                <div class="signup-field">
+                                    <label>Whatsapp Number</label>
+                                    <input placeholder="Whatsapp Number*" type="text" id="whatsapp_number"
                                                                  oninput="this.className = ''" name="whatsapp_number"
                                                                  autocomplete="off" value="{{ old('whatsapp_number') }}"
                                                                  data-validation="required number length" data-validation-length="10">
@@ -81,11 +95,15 @@
                                         ['' => 'Preferred Communication Mode*', 'Whatsapp' => 'Whatsapp', 'Email' => 'Email', 'Call' => 'Call'],
                                         old('preferred_communication_mode'), ['id' => 'preferred_communication_mode', 'data-validation' => 'required']) !!}
                                 </div>
-                                <div class="signup-field"><input placeholder="Importer Exporter Code (IEC)"
+                                <div class="signup-field">
+                                    <label>Importer Exporter Code (IEC)</label>
+                                    <input placeholder="Importer Exporter Code (IEC)"
                                                                  oninput="this.className = ''" name="iec_code"
                                                                  autocomplete="off" value="{{ old('iec_code') }}">
                                 </div>
-                                <div class="signup-field"><input placeholder="Business Identification Number (BIN)"
+                                <div class="signup-field">
+                                    <label>Business Identification Number (BIN)</label>
+                                    <input placeholder="Business Identification Number (BIN)"
                                                                  oninput="this.className = ''" name="bin_code"
                                                                  autocomplete="off" value="{{ old('bin_code') }}">
                                 </div>
@@ -133,17 +151,22 @@
                                         old('which_month_start_sourcing_for_fw'), ['id' => 'which_month_start_sourcing_for_fw', 'data-validation' => 'required']) !!}
                                 </div>
                                 <div class="signup-field full-col">
+                                    <label>Please briefly describe your brand/business in 1 - 2 sentences.</label>
                                     <textarea
                                         placeholder="Please briefly describe your brand/business in 1 - 2 sentences."
                                         name="business_description"
                                         autocomplete="off">{{ old('business_description') }}</textarea>
                                 </div>
-                                <div class="signup-field"><input placeholder="Company Website"
+                                <div class="signup-field">
+                                    <label>Company Website</label>
+                                    <input placeholder="Company Website"
                                                                  oninput="this.className = ''" name="company_website"
                                                                  autocomplete="off"
                                                                  value="{{ old('company_website') }}">
                                 </div>
-                                <div class="signup-field"><input placeholder="Company Instagram"
+                                <div class="signup-field">
+                                    <label>Company Instagram</label>
+                                    <input placeholder="Company Instagram"
                                                                  oninput="this.className = ''"
                                                                  name="company_instagram_url" autocomplete="off"
                                                                  value="{{ old('company_instagram_url') }}">

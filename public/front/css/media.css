@@ -8,7 +8,7 @@
     .section-title {font-size: 50px;}
     .large-latter{font-size: 90px;}
     .process-menu li {padding: 25px 0;}
-    .banner-title {font-size: 44px;}
+    .banner-title {font-size: 38px;}
 }
 @media only screen and (max-width: 1440px) {
     .wrapper {padding: 0 40px;}
@@ -22,7 +22,7 @@
     .large-latter{font-size: 80px;}
     .ship-circle{width: 190px; height: 190px; font-size: 20px;}
     .process-menu li {padding: 20px 0;}
-    .banner-title {font-size: 45px;}
+    .banner-title {font-size: 34px;}
     .pbt-120 {padding: 110px 0; }
     .inner-banner {padding-top: 600px;}
 }
@@ -95,7 +95,7 @@
     .explore-count {font-size: 22px;}
     .samples .large-latter{bottom: 0;}
     .process-menu li {padding: 10px 0;}
-    .banner-title {font-size: 40px;}
+    .banner-title {font-size: 30px;}
     .inner-banner-content-wrap {padding-bottom: 20px; }
     .cta-title, .about-title {font-size: 35px;}
     .goal-title {font-size: 28px;}
@@ -183,7 +183,7 @@
     .ship-circle p{font-size: 20px;}
     .ship-box{padding: 0 10px;}
     .source-wrap p strong {font-size: 20px;}
-    .banner-title {font-size: 35px;}
+    .banner-title {font-size: 28px;}
     .inner-banner-content-wrap:before{width: 90px;}
     .cta-title, .about-title {font-size: 30px;}
     .goal-title {font-size: 24px;}
@@ -255,7 +255,7 @@
     .ship-step{padding: 10px;}
     .process-steps {padding-left: 0;}
     .process-menu li a {writing-mode: unset;}
-    .process-menu{background: transparent;width: 100%;position: inherit;}
+    .process-menu{background: transparent;width: 100%;position: sticky;}
     .process-menu ul {background-color: #ffffff;}
     .process-menu ul{min-height: auto;display: flex;flex-direction: row;}
     .process-menu li {padding: 15px;}
@@ -273,7 +273,7 @@
     .site-menu .menu .menu-list{padding: 0;}
     .site-menu .menu .menu-list a{width: 100%;padding: 15px;display: inline-block; border-bottom: 2px solid #fff;}
 
-    .banner-title {font-size: 30px;}
+    .banner-title {font-size: 26px;}
     .cta-title, .about-title {font-size: 26px;}
     .goal-box {max-width: 100%;}
     .goal-box:nth-child(2) .goal-content-boxes, .goal-content-boxes{position: inherit; left: 0;right: 0;top: 0;bottom: 0; padding: 40px; width: 100%; max-width: 100%;}
@@ -326,12 +326,12 @@
     .common-title {font-size: 28px;}
     .signup-field {max-width: 100%;}
     .steps-button button#prevBtn{padding: 11px 34px;}
-    .step {max-width: 32%; margin: 0; font-size: 13px; }
+    .step {max-width: 49%; margin: 0; font-size: 13px; }
     .service-box {max-width: 50%;}
     .services-list{justify-content: flex-start;}
     .range-fabrics-box {max-width: 400px;}
     .new-plan-box {max-width: 320px;}   
-    .banner-title {font-size: 24px; }
+    .banner-title {font-size: 22px; }
 }
 @media only screen and (max-width: 480px) {
     .banner-section{padding-top: 140%;}

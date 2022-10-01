@@ -123,7 +123,7 @@ ul.logo-list li img {max-height: 80px; margin: auto; }
 .explore-lists {display: flex; flex-wrap: wrap; justify-content: flex-start; margin: -20px; }
 .explore-box {max-width: 50%; width: 100%; padding: 20px; text-align: center; }
 .explore-box-wrap {border: 2px solid #000; padding: 21px 14px; height: 100%;}
-.large-latter {font-size: 100px; font-family: "Kantumruy Pro"; color: rgba(0, 0, 0, 0); font-weight: bold; line-height: 1; -webkit-text-stroke: 2px #ffffff; text-stroke: 2px #ffffff; text-align: right; position: absolute; bottom: 0; right: 0; text-transform: uppercase;}
+.large-latter {font-size: 100px; font-family: "Kantumruy Pro"; color: rgba(0, 0, 0, 0); font-weight: bold; line-height: 1; -webkit-text-stroke: 2px #002245; text-stroke: 2px #002245; text-align: right; position: absolute; bottom: 0; right: 0; text-transform: uppercase; }
 
 /*  */
 .video {position: relative;}
@@ -261,7 +261,7 @@ ul.logo-list li img {max-height: 80px; margin: auto; }
 .step.active:before, .step.finish:before {background-color: #002345; }
 .signup-main-form {max-width: 60%; width: 100%; padding-left: 40px; }
 .steps-wrap {display: flex; flex-wrap: wrap; justify-content: space-between; margin-bottom: 30px; }
-.step {max-width: 32%; width: 100%; margin: 0; padding-bottom: 10px; font-size: 16px; font-family: "Kantumruy Pro"; color: rgb(0, 35, 69); line-height: 1.375; position: relative; }
+.step {max-width: 49%; width: 100%; margin: 0; padding-bottom: 10px; font-size: 16px; font-family: "Kantumruy Pro"; color: rgb(0, 35, 69); line-height: 1.375; position: relative; }
 .step:before {background-color: #e5e5e5; content: ""; width: 100%; height: 5px; display: inline-block; position: absolute; bottom: 0; }
 .form-wrap {display: flex; flex-wrap: wrap; align-items: flex-start; margin: 0 -18px; }
 .signup-field {max-width: 50%; width: 100%; padding: 0 18px; margin-bottom: 30px; }
@@ -282,7 +282,7 @@ input:-webkit-autofill {background-color: transparent !important; }
 .inner-banner {padding-top: 600px; position: relative; background-color: #000; }
 img.inner-banner-img {position: absolute; top: 0; left: 0; right: 0; width: 100%; height: 100%; object-fit: cover; object-position: top center; }
 .inner-banner-content {position: absolute; bottom: 60px; width: 100%; }
-.banner-title{font-size: 50px; font-family: "Kantumruy Pro"; color: rgb(255, 255, 255); font-weight: 600; text-transform: uppercase; line-height: 1.2; margin: 0 0 10px; }
+.banner-title{font-size: 42px; font-family: "Kantumruy Pro"; color: rgb(255, 255, 255); font-weight: 600; text-transform: uppercase; line-height: 1.2; margin: 0 0 10px; }
 .inner-banner-content-wrap p{font-size: 18px; font-family: "Kantumruy Pro"; color: rgb(255, 255, 255); line-height: 2; }
 .inner-banner-content-wrap .banner-title:last-child{margin-bottom: 0;}
 .inner-banner-content-wrap {position: relative; padding-bottom: 30px; }
@@ -371,6 +371,7 @@ img.inner-banner-img {position: absolute; top: 0; left: 0; right: 0; width: 100%
 /* About Us */
 .goal {display: flex; flex-wrap: wrap; }
 .goal-box {max-width: 50%; width: 100%; position: relative; }
+.goal-box > img{width: 100%;height: 100%; object-fit: cover; object-position: center;}
 .goal-box:first-child{background-color: #ffffff;}
 .goal-box:first-child img {opacity: 0.5; }
 .goal-content-boxes {position: absolute; top: 40px; left: 46px; max-width: 80%; width: 100%; color: #000; }
@@ -508,3 +509,6 @@ p.mg-b-0 a:hover {color: #fdc108; }
     font-size: 70px;
     margin-bottom: 30px;
 }
+
+.small-title{color: #000;font-weight: 700;}
+.process-title-wrap .default-title{margin: 0;} 

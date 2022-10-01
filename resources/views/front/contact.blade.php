@@ -57,7 +57,7 @@
                             <div class="location-icon">
                                 <img src="/front/images/location.png">
                             </div>
-                            <p>Akshya Nagar 1st Block 1st Cross, Rammurthy nagar, Bangalore-560016</p>
+                            <p>243, Avadh Arena VIP Road, Surat - 395007 India </p>
                         </div>
                     </div>
                     <div class="contact-box google-map">
@@ -74,13 +74,16 @@
                                 <div class="location-icon">
                                     <img src="/front/images/mail-icon.png">
                                 </div>
-                                <a href="mailto:contact@spartex.com">contact@spartex.com</a>
+                                <a href="mailto:support@spartexglobal.com">support@spartexglobal.com</a>
                             </div>
                             <div class="whatsapp">
                                 <div class="location-icon">
                                     <img src="/front/images/whatsapp.png">
                                 </div>
-                                <a href="mailto:+1 800 123 45 67">+1 800 123 45 67</a>
+                                <a href="tel:+91 98983 43908">+91 98983 43908</a><br />
+                                <a href="tel:+91 90160 41153">+91 90160 41153</a>
+                                
+
                             </div>
                         </div>
                     </div>
