@@ -27,6 +27,7 @@
                         <div class="tab">
                             <div class="form-wrap">
                                 <div class="signup-field">
+                                    <label>Full name</label>
                                     {!! Form::select('country', $countries, old('country'), ['data-validation' => 'required', 'data-validation-error-msg' => 'Please select your country', 'id' => 'country', 'placeholder' => 'Select Country*']) !!}
                                 </div>
                                 <input type="hidden" name="plan_type" value="{{ in_array(request('plan'), ['business', 'standard']) ? request('plan') : 'business' }}">
@@ -108,31 +109,37 @@
                                                                  autocomplete="off" value="{{ old('bin_code') }}">
                                 </div>
                                 <div class="signup-field">
+                                    <label>What is the type of your business?</label>
                                     {!! Form::select('type_of_business',
                                         ['' => 'What is the type of your business?*', 'Fashion Brand' => 'Fashion Brand', 'Fabric Sourcing Agency' => 'Fabric Sourcing Agency', 'Garment Development/Production' => 'Garment Development/Production', 'Fabric Wholesale/Retail' => 'Fabric Wholesale/Retail', 'Other' => 'Other'],
                                         old('type_of_business'), ['id' => 'type_of_business', 'data-validation' => 'required']) !!}
                                 </div>
                                 <div class="signup-field">
+                                    <label>How long have you been in business?</label>
                                     {!! Form::select('how_long_in_business',
                                         ['' => 'How long have you been in business?*', 'Less Than A Year' => 'Less Than A Year', '1 - 2 Year' => '1 - 2 Year', '3 - 5 Year' => '3 - 5 Year', '5 - 10 Year' => '5 - 10 Year', 'Over 10 Years' => 'Over 10 Years'],
                                         old('how_long_in_business'), ['id' => 'how_long_in_business', 'data-validation' => 'required']) !!}
                                 </div>
                                 <div class="signup-field">
+                                    <label>Nature of business?</label>
                                     {!! Form::select('nature_of_business',
                                         ['' => 'Nature of business?*', 'Registered Importer' => 'Registered Importer', 'Unregistered Importer' => 'Unregistered Importer', 'Home Business' => 'Home Business', 'Startup' => 'Startup'],
                                         old('nature_of_business'), ['id' => 'nature_of_business', 'data-validation' => 'required']) !!}
                                 </div>
                                 <div class="signup-field">
+                                    <label>Category of collection?</label>
                                     {!! Form::select('category_of_collection',
                                         ['' => 'Category of collection?*', "Men's Wear" => "Men's Wear", "Women's Wear" => "Women's Wear", "Designer" => "Designer", "Costume Designer" => "Costume Designer", "Contract Designer" => "Contract Designer", "Kids Wear" => "Kids Wear", "All of the above" => "All of the above", "Others" => "Others"],
                                         old('category_of_collection'), ['id' => 'category_of_collection', 'data-validation' => 'required']) !!}
                                 </div>
                                 <div class="signup-field full-col">
+                                    <label>What is the price point of the brand?</label>
                                     {!! Form::select('brand_price_point',
                                         ['' => 'What is the price point of the brand?*', 'Budget' => 'Budget', 'Moderate' => 'Moderate', 'Contemporary' => 'Contemporary', 'Designer' => 'Designer', 'Couture' => 'Couture'],
                                         old('brand_price_point'), ['id' => 'brand_price_point', 'data-validation' => 'required']) !!}
                                 </div>
                                 <div class="signup-field full-col">
+                                    <label>On which month do you start sourcing for S/S?</label>
                                     @php
                                         $which_month_start_sourcing_for_ss[''] = "On which month do you start sourcing for S/S?*";
                                         $which_month_start_sourcing_for_fw[''] = "On which month do you start sourcing for F/W?*";
@@ -146,6 +153,7 @@
                                         old('which_month_start_sourcing_for_ss'), ['id' => 'which_month_start_sourcing_for_ss', 'data-validation' => 'required']) !!}
                                 </div>
                                 <div class="signup-field full-col">
+                                    <label>On which month do you start sourcing for F/W?*</label>
                                     {!! Form::select('which_month_start_sourcing_for_fw',
                                         $which_month_start_sourcing_for_fw,
                                         old('which_month_start_sourcing_for_fw'), ['id' => 'which_month_start_sourcing_for_fw', 'data-validation' => 'required']) !!}
