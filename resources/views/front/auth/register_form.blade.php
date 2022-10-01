@@ -92,6 +92,7 @@
                                                                  data-validation="required number length" data-validation-length="10">
                                 </div>
                                 <div class="signup-field">
+                                    <label>Preferred Communication Mode</label>
                                     {!! Form::select('preferred_communication_mode',
                                         ['' => 'Preferred Communication Mode*', 'Whatsapp' => 'Whatsapp', 'Email' => 'Email', 'Call' => 'Call'],
                                         old('preferred_communication_mode'), ['id' => 'preferred_communication_mode', 'data-validation' => 'required']) !!}

@@ -350,7 +350,7 @@ img.inner-banner-img {position: absolute; top: 0; left: 0; right: 0; width: 100%
 .contact-field {max-width: 33.33%; padding: 0 15px; width: 100%; margin-bottom: 42px; }
 .contact-field input {width: 100%; background: transparent; border: 0; border-bottom: 2px solid rgba(255,255,255,0.5); padding: 15px 0;color: #ffffff !important; font-size: 18px; font-family: "Kantumruy Pro"; color: rgb(175, 175, 175); line-height: 1.2; }
 .col-full {max-width: 100%; width: 100%; }
-.contact-field textarea::-webkit-input-placeholder, .contact-field input::-webkit-input-placeholder { /* Edge */ opacity: 0.5; color: #ffffff !important; }
+.contact-field textarea::-webkit-input-placeholder, .contact-field input::-webkit-input-placeholder { /* Edge */ opacity: 0.25; color: #ffffff !important; }
 .contact-field textarea:-ms-input-placeholder, .contact-field input:-ms-input-placeholder { /* Internet Explorer 10-11 */ opacity: 0.5; color: #ffffff !important; }
 .contact-field textarea::placeholder , .contact-field input::placeholder {opacity: 0.5; color: #ffffff !important; }
 .col-full textarea {width: 100%; resize: none;color: #ffffff !important; height: 120px; padding: 15px 0; background-color: transparent; border: 0; font-size: 18px; font-family: "Kantumruy Pro"; color: rgb(175, 175, 175); line-height: 1.2; border-bottom: 2px solid rgba(255,255,255,0.5); }
