@@ -27,19 +27,19 @@
                         <div class="tab">
                             <div class="form-wrap">
                                 <div class="signup-field">
-                                    <label>Full name</label>
+                                    <label>Full name*</label>
                                     {!! Form::select('country', $countries, old('country'), ['data-validation' => 'required', 'data-validation-error-msg' => 'Please select your country', 'id' => 'country', 'placeholder' => 'Select Country*']) !!}
                                 </div>
                                 <input type="hidden" name="plan_type" value="{{ in_array(request('plan'), ['business', 'standard']) ? request('plan') : 'business' }}">
                                 <div class="signup-field">
-                                    <label>Full name</label>
+                                    <label>Full name*</label>
                                     <input placeholder="Full name*" oninput="this.className = ''"
                                                                  name="name" autocomplete="off"
                                                                  value="{{ old('name') }}" data-validation="required"
                                                                  data-validation-error-msg="Please enter your name">
                                 </div>
                                 <div class="signup-field">
-                                    <label>Job title</label>
+                                    <label>Job title*</label>
                                     <input placeholder="Job title*" oninput="this.className = ''"
                                                                  name="job_title" autocomplete="off"
                                                                  value="{{ old('job_title') }}"
@@ -47,14 +47,14 @@
                                                                  data-validation-error-msg="Please enter your job title">
                                 </div>
                                 <div class="signup-field">
-                                    <label>Email</label>
+                                    <label>Email*</label>
                                     <input placeholder="Email*" oninput="this.className = ''"
                                                                  name="email" autocomplete="off"
                                                                  value="{{ old('email') }}" data-validation="email"
                                                                  data-validation-error-msg="Please enter your correct email">
                                 </div>
                                 <div class="signup-field">
-                                    <label>Company name</label>
+                                    <label>Company name*</label>
                                     <input placeholder="Company name*"
                                                                  oninput="this.className = ''" name="company_name"
                                                                  autocomplete="off" value="{{ old('company_name') }}"
@@ -62,14 +62,14 @@
                                                                  data-validation-error-msg="Please enter your company name">
                                 </div>
                                 <div class="signup-field">
-                                    <label>Password</label>
+                                    <label>Password*</label>
                                     <input placeholder="Password*" type="password"
                                                                  oninput="this.className = ''" name="password"
                                                                  autocomplete="off" data-validation="required"
                                                                  data-validation-error-msg="Please select your password">
                                 </div>
                                 <div class="signup-field">
-                                    <label>Mobile Contact</label>
+                                    <label>Mobile Contact*</label>
                                     <input placeholder="Mobile Contact*" type="text" id="mobile_number"
                                                                  oninput="this.className = ''" name="mobile_number"
                                                                  autocomplete="off" value="{{ old('mobile_number') }}"
@@ -85,14 +85,14 @@
                         <div class="tab">
                             <div class="form-wrap">
                                 <div class="signup-field">
-                                    <label>Whatsapp Number</label>
+                                    <label>Whatsapp Number*</label>
                                     <input placeholder="Whatsapp Number*" type="text" id="whatsapp_number"
                                                                  oninput="this.className = ''" name="whatsapp_number"
                                                                  autocomplete="off" value="{{ old('whatsapp_number') }}"
                                                                  data-validation="required number length" data-validation-length="10">
                                 </div>
                                 <div class="signup-field">
-                                    <label>Preferred Communication Mode</label>
+                                    <label>Preferred Communication Mode*</label>
                                     {!! Form::select('preferred_communication_mode',
                                         ['' => 'Preferred Communication Mode*', 'Whatsapp' => 'Whatsapp', 'Email' => 'Email', 'Call' => 'Call'],
                                         old('preferred_communication_mode'), ['id' => 'preferred_communication_mode', 'data-validation' => 'required']) !!}
@@ -110,37 +110,37 @@
                                                                  autocomplete="off" value="{{ old('bin_code') }}">
                                 </div>
                                 <div class="signup-field">
-                                    <label>What is the type of your business?</label>
+                                    <label>What is the type of your business?*</label>
                                     {!! Form::select('type_of_business',
                                         ['' => 'What is the type of your business?*', 'Fashion Brand' => 'Fashion Brand', 'Fabric Sourcing Agency' => 'Fabric Sourcing Agency', 'Garment Development/Production' => 'Garment Development/Production', 'Fabric Wholesale/Retail' => 'Fabric Wholesale/Retail', 'Other' => 'Other'],
                                         old('type_of_business'), ['id' => 'type_of_business', 'data-validation' => 'required']) !!}
                                 </div>
                                 <div class="signup-field">
-                                    <label>How long have you been in business?</label>
+                                    <label>How long have you been in business?*</label>
                                     {!! Form::select('how_long_in_business',
                                         ['' => 'How long have you been in business?*', 'Less Than A Year' => 'Less Than A Year', '1 - 2 Year' => '1 - 2 Year', '3 - 5 Year' => '3 - 5 Year', '5 - 10 Year' => '5 - 10 Year', 'Over 10 Years' => 'Over 10 Years'],
                                         old('how_long_in_business'), ['id' => 'how_long_in_business', 'data-validation' => 'required']) !!}
                                 </div>
                                 <div class="signup-field">
-                                    <label>Nature of business?</label>
+                                    <label>Nature of business?*</label>
                                     {!! Form::select('nature_of_business',
                                         ['' => 'Nature of business?*', 'Registered Importer' => 'Registered Importer', 'Unregistered Importer' => 'Unregistered Importer', 'Home Business' => 'Home Business', 'Startup' => 'Startup'],
                                         old('nature_of_business'), ['id' => 'nature_of_business', 'data-validation' => 'required']) !!}
                                 </div>
                                 <div class="signup-field">
-                                    <label>Category of collection?</label>
+                                    <label>Category of collection?*</label>
                                     {!! Form::select('category_of_collection',
                                         ['' => 'Category of collection?*', "Men's Wear" => "Men's Wear", "Women's Wear" => "Women's Wear", "Designer" => "Designer", "Costume Designer" => "Costume Designer", "Contract Designer" => "Contract Designer", "Kids Wear" => "Kids Wear", "All of the above" => "All of the above", "Others" => "Others"],
                                         old('category_of_collection'), ['id' => 'category_of_collection', 'data-validation' => 'required']) !!}
                                 </div>
                                 <div class="signup-field full-col">
-                                    <label>What is the price point of the brand?</label>
+                                    <label>What is the price point of the brand?*</label>
                                     {!! Form::select('brand_price_point',
                                         ['' => 'What is the price point of the brand?*', 'Budget' => 'Budget', 'Moderate' => 'Moderate', 'Contemporary' => 'Contemporary', 'Designer' => 'Designer', 'Couture' => 'Couture'],
                                         old('brand_price_point'), ['id' => 'brand_price_point', 'data-validation' => 'required']) !!}
                                 </div>
                                 <div class="signup-field full-col">
-                                    <label>On which month do you start sourcing for S/S?</label>
+                                    <label>On which month do you start sourcing for S/S?*</label>
                                     @php
                                         $which_month_start_sourcing_for_ss[''] = "On which month do you start sourcing for S/S?*";
                                         $which_month_start_sourcing_for_fw[''] = "On which month do you start sourcing for F/W?*";
