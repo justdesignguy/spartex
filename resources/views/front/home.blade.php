@@ -24,13 +24,13 @@
                             <img src="/front/images/textile-logo.png">
                         </li>
                         <li>
-                            <img src="/front/images/textile-logo.png">
+                            <img src="/front/images/textile-logo-1.png">
                         </li>
                         <li>
-                            <img src="/front/images/textile-logo.png">
+                            <img src="/front/images/textile-logo-2.png">
                         </li>
                         <li>
-                            <img src="/front/images/textile-logo.png">
+                            <img src="/front/images/textile-logo-3.png">
                         </li>
                     </ul>
                 </div>
