@@ -177,7 +177,7 @@
                             </div>
                             <div class="source-wrap">
                                 <div class="source-image" data-aos="fade-up" data-aos-duration="1000">
-                                    <img src="/front/images/textiles.jpg">
+                                    <img src="/front/images/Source-2.jpg">
                                     <div class="large-latter">Source</div>
                                 </div>
                                 <div class="source-content" data-aos="fade-up" data-aos-duration="1000">
@@ -232,7 +232,7 @@
                                 <div class="order-box" data-aos="fade-up" data-aos-duration="2000">
                                     <div class="order-box-wrap">
                                         <div class="order-img">
-                                            <img src="/front/images/quick-leads.jpg">
+                                            <img src="/front/images/Quick-lead.jpg">
                                         </div>
                                         <div class="order-content">
                                             <h3 class="order-title">Quick Lead Times</h3>
@@ -283,7 +283,7 @@
             <div class="focus-formula-wrap">
                 <div class="formula" data-aos="fade-up" data-aos-duration="1000">
                     <div class="formula-wrap">
-                        <img src="/front/images/formula.jpg">
+                        <img src="/front/images/Accurate-and-fast-service.jpg">
                         <h2 class="focus-title">Accurate & Fast service is our magical formula.</h2>
                     </div>
                 </div>
