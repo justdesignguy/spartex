@@ -3,9 +3,10 @@
         <div class="site-footer-wrap">
             <div class="office">
                 <h2 class="footer-title">Office</h2>
-                <p>Germany — 785 15h Street, Office 478 Berlin, De 81566</p>
-                <a href="mailto:info@email.com">info@email.com</a>
-                <a class="phone" href="tel:+1 800 123 45 67">+1 800 123 45 67</a>
+                <p>243, Avadh Arena VIP Road, Surat - 395007 India</p>
+                <a href="mailto:support@spartexglobal.com">support@spartexglobal.com</a>
+                <a class="phone" href="tel:+91 98983 43908">+91 98983 43908</a>
+                <a class="phone" href="tel:+91 90160 41153">+91 90160 41153</a>
             </div>
             <div class="links">
                 <h2 class="footer-title">Links</h2>
