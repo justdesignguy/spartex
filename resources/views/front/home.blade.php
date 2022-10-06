@@ -21,16 +21,16 @@
                     <h3 class="small-title text-center">Affilated With</h3>
                     <ul class="logo-list">
                         <li>
-                            <img src="/front/images/textile-logo.png">
+                            <img src="/front/images/textile-logo.jpg">
                         </li>
                         <li>
-                            <img src="/front/images/textile-logo-1.png">
+                            <img src="/front/images/textile-logo-1.jpg">
                         </li>
                         <li>
-                            <img src="/front/images/textile-logo-2.png">
+                            <img src="/front/images/textile-logo-2.jpg">
                         </li>
                         <li>
-                            <img src="/front/images/textile-logo-3.png">
+                            <img src="/front/images/textile-logo-3.jpg">
                         </li>
                     </ul>
                 </div>
