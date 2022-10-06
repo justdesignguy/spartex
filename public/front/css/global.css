@@ -337,9 +337,41 @@ img.inner-banner-img {position: absolute; top: 0; left: 0; right: 0; width: 100%
 .types-fabrics-wrap {display: flex; flex-wrap: wrap; margin: -40px -38px; }
 .types-fabrics-box {max-width: 50%; width: 100%; padding: 40px 38px; }
 .fabrics-img {display: flex; align-items: flex-end; margin: 0 0 35px; }
-.fabrics-small-img {margin-left: -128px; display: inline-block; margin-bottom: 35px; border: 6px solid #fff; max-width: 48%; width: 100%;}
-.fabrics-large-img {max-width: 74%; width: 100%; }
-.fabrics-large-img img {width: 100%; }
+.fabrics-small-img {
+    margin-left: -128px;
+    display: inline-block;
+    margin-bottom: 35px;
+    border: 6px solid #fff;
+    max-width: 41%;
+    width: 100%;
+    padding-top: 46%;
+    position: relative;
+}
+.fabrics-large-img {
+    max-width: 82%;
+    width: 100%;
+    padding-top: 64%;
+    position: relative;
+}
+.fabrics-large-img img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    object-fit: cover;
+}
+.fabrics-small-img img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top center;
+}
 .types-fabrics {background-color: #f9f9f9; }
 .types-fabrics .small-heading{margin: 0 0 50px;}
 
