@@ -8,8 +8,8 @@
                     <h3 class="intro-title">Before you begin, please note :</h3>
                     <ol>
                         <li> You must have an established business entity to activate your account.</li>
-                        <li>SwatchOn is an international fabric wholesale service for fashion businesses. Fabric
-                            suppliers on SwatchOn expect to do business with fashion companies only, and not
+                        <li>Spartex is an international fabric wholesale service for fashion businesses. Fabric
+                            suppliers on Spartex expect to do business with fashion companies only, and not
                             individuals.
                         </li>
                         <li>Customs departments require recipient's tax identification on the delivery of the fabric
@@ -27,7 +27,7 @@
                         <div class="tab">
                             <div class="form-wrap">
                                 <div class="signup-field">
-                                    <label>Full name<span class="red">*</span></label>
+                                    <label>Select City<span class="red">*</span></label>
                                     {!! Form::select('country', $countries, old('country'), ['data-validation' => 'required', 'data-validation-error-msg' => 'Please select your country', 'id' => 'country', 'placeholder' => 'Select Country*']) !!}
                                 </div>
                                 <input type="hidden" name="plan_type" value="{{ in_array(request('plan'), ['business', 'standard']) ? request('plan') : 'business' }}">
@@ -78,7 +78,7 @@
                                 <div class="signup-field full-col checkbox"><input type="checkbox" id="vehicle1"
                                                                                    oninput="this.className = ''"
                                                                                    name="vehicle1" value="Bike"> <label
-                                        for="vehicle1"> Get emails from SwatchOn about product updates, industry news,
+                                        for="vehicle1"> Get emails from Spartex about product updates, industry news,
                                         and events. <a href="#">Privacy Policy</a></label></div>
                             </div>
                         </div>
