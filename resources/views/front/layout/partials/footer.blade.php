@@ -11,11 +11,10 @@
             <div class="links">
                 <h2 class="footer-title">Links</h2>
                 <ul class="footer-links">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Features</a></li>
-                    <li><a href="#">Contacts</a></li>
+                    <li><a href="{{ route('home') }}">Home</a></li>
+                    <li><a href="{{ route('about_page') }}">About Us</a></li>
+                    <li><a href="{{ route('explore') }}">Product</a></li>
+                    <li><a href="{{ route('contact') }}">Contact Us</a></li>
                 </ul>
             </div>
             <div class="social-media">
