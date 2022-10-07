@@ -115,6 +115,7 @@ ul.logo-list li img {max-height: 80px; margin: auto; }
 /*Explore*/
 .explore { position: relative; background-color: rgb(0 34 69 / 7%);}
 .explore-wrap{display: flex; align-items: center; justify-content: flex-start; flex-wrap: wrap;}
+.explore-wrap .large-latter{ -webkit-text-stroke: unset; text-stroke: unset;color: rgba(0, 34, 71,0.25);}
 .explore-img {max-width: 48.5%; width: 100%; }
 .explore-content {max-width: 51.5%; width: 100%; padding-left: 68px; }
 
@@ -156,7 +157,7 @@ ul.logo-list li img {max-height: 80px; margin: auto; }
 .samples-wrap .default-title {font-size: 32px; font-family: "Kantumruy Pro"; color: rgb(0, 0, 0); font-weight: bold; line-height: 1.438; }
 .samples {background-color: rgb(0 34 69 / 7%); position: relative; }
 /*.samples:before {content: ""; position: absolute; top: 0;  height: 100%; left: 50%; width: 100vw;transform: translateX(-50%);  background-color: rgb(0 34 69 / 7%); z-index: -1; }*/
-.samples .large-latter{left: 0; right: unset; bottom: 4%;}
+.samples .large-latter{left: 0; right: unset; bottom: 4%; -webkit-text-stroke: unset; text-stroke: unset;color: rgba(0, 34, 71,0.25);}
 
 /* Order */
 .order-wrap {display: flex; flex-wrap: wrap; margin: 0 -3px; }
