@@ -18,7 +18,7 @@
                 <div class="about-content" data-aos="fade-up" data-aos-duration="1000">
                     <h2 class="default-title"><strong>Private label clothing manufacturing in India</strong>, or branded apparel, is Spartex’s speciality.</h2>
                     <p>Private label garments are expertly designed over many weeks or even months by fashion designers, who put together sketches, line drawings, patterns, and other preparation materials. There are a number of necessary steps in the process of manufacturing private label clothing.</p>
-                    <h3 class="small-title text-center">Affilated With</h3>
+                    <h3 class="small-title text-center">Affiliated With</h3>
                     <ul class="logo-list">
                         <li>
                             <img src="/front/images/textile-logo.jpg">
