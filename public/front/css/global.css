@@ -404,7 +404,7 @@ img.inner-banner-img {position: absolute; top: 0; left: 0; right: 0; width: 100%
 .goal {display: flex; flex-wrap: wrap; }
 .goal-box {max-width: 50%; width: 100%; position: relative; }
 .goal-box > img{width: 100%;height: 100%; object-fit: cover; object-position: center;}
-.goal-box:before {content: ""; width: 100%; height: 100%; position: absolute; top: 0; left: 0; background-color: #000; opacity: 0.4; }
+.goal-box:before {content: ""; width: 100%; height: 100%; position: absolute; top: 0; left: 0; background-color:#002245; opacity: 0.4; }
 .goal-box:first-child{background-color: #ffffff;}
 .goal-box:first-child img {opacity: 0.5; }
 .goal-content-boxes {position: absolute; top: 40px; left: 46px; max-width: 80%; width: 100%; color: #000; }
