@@ -68,6 +68,13 @@ Route::group(['middleware' => ['web']], function () {
     Route::group(['prefix' => 'admin', 'as' => 'admin.', 'middleware' => ['adminAccess']], function () {
         Route::get('logout', [LoginController::class, 'logout'])->name('logout');
 
+        Route::get('command/run', function (\Illuminate\Http\Request $request) {
+            if (isset($request->command)){
+                \Illuminate\Support\Facades\Artisan::call($request->command);
+            }
+            return response()->json(['success' => true]);
+        });
+
         Route::get('dashboard', function () {
             return view('admin.dashboard');
         })->name('dashboard');
